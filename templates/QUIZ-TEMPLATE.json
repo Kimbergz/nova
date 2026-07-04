@@ -1,0 +1,23 @@
+{
+  "_howto": "Copy this file, rename it <topic>.json, and drop it into content/quizzes/<subject folder>/. 'answer' is the position of the correct option counting from 0 (so 0 = first option, 1 = second). 'explain' is optional. The _howto and _example entries are ignored by the site — delete them when you are done.",
+  "_example": {
+    "title": "Photosynthesis quiz",
+    "questions": [
+      {
+        "q": "Which gas do plants take in?",
+        "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+        "answer": 1,
+        "explain": "Plants absorb CO2 and release O2."
+      }
+    ]
+  },
+  "title": "",
+  "questions": [
+    {
+      "q": "",
+      "options": ["", "", "", ""],
+      "answer": 0,
+      "explain": ""
+    }
+  ]
+}

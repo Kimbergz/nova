@@ -1,0 +1,56 @@
+# ============================================================
+# cairn — publish to GitHub Pages
+# Runs on every push to main:
+#   1. rebuild manifest.json from whatever is in content/
+#   2. publish the whole repo to GitHub Pages
+# So: drop a note file -> site updates itself in ~1-2 minutes.
+# ============================================================
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the site files
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Rebuild the content index (manifest.json)
+        run: node scripts/build-manifest.mjs
+
+      - name: Prepare Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
