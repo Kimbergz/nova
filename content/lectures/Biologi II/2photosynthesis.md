@@ -1,6 +1,6 @@
 ---
 subject: Biologi I
-topic: Photosynthesis
+topic: boogus
 date: 05-07-2026
 summary: How plants turn light into energy.
 ---
