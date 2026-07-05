@@ -4,7 +4,7 @@ topic: boogus
 date: 05-07-2026
 summary: How plants turn light into energy.
 ---
-# Photosynthesis
+# boogus
 
 Photosynthesis is the process plants use to turn **sunlight**, **water**, and **carbon dioxide** into food (sugar) and oxygen. It happens mostly in the leaves.
 
