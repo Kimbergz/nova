@@ -46,7 +46,10 @@ The full spec lives in `design-system/` (start with SKILL.md). Summary:
 
 - Playful hand-drawn "doodle" look: warm cream #F9F6F0 light / #1A1A1D dark backgrounds,
   dot-grid page texture, wavy hand-drawn divider lines.
-- Font: "Delius Swash Caps" (hand-lettered) for EVERYTHING. Headings weight 600.
+- Font: "Switzer" via Fontshare (owner swapped the kit's hand-lettered Delius for a
+  Suisse International-style Swiss grotesque, 2026-07-05). One font for EVERYTHING,
+  weights 400-700; headings weight 600. Never load paid fonts (e.g. actual Suisse)
+  without the owner providing licensed files.
 - Borders: 3px solid in the ink token (#111827 light / #F3F4F6 dark) with asymmetric
   "sketch" border-radii (never uniform) — rotate the three radius variants across grids.
 - Shadows: SOLID OFFSET only (e.g. 4px 5px 0 0), zero blur, ink-colored. Hover = lift

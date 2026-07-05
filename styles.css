@@ -44,7 +44,7 @@
   --sh-lg: 5px 6px 0 0 var(--ink);
   --sh-xl: 6px 7px 0 0 var(--ink);
 
-  --font: "Delius Swash Caps", "Comic Sans MS", cursive;
+  --font: "Switzer", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --wrap: 1000px;
   --gutter: clamp(18px, 4vw, 32px);
