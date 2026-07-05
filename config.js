@@ -37,6 +37,16 @@ window.SITE_CONFIG = {
     "Academic English Skills"
   ],
 
+  // When the site language is ENGLISH, these Malay words inside subject
+  // names are swapped for display only. Folder names on GitHub never change.
+  // Add more lines freely, e.g. "Sejarah": "History",
+  subjectTranslations: {
+    "Biologi": "Biology",
+    "Kimia": "Chemistry",
+    "Matematik": "Mathematics",
+    "Fizik": "Physics"
+  },
+
   defaultLang: "en",
 
   heroKicker: {

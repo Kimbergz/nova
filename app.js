@@ -116,6 +116,16 @@
     if (typeof value === "string" || Array.isArray(value)) return value;
     return value[lang()] || value.en || "";
   }
+  /* Subject DISPLAY names: folder names stay canonical (Malay); when the
+     site language is English, word-swap via config.subjectTranslations.
+     Routing always uses the canonical name — display only. */
+  function subjectLabel(subject) {
+    if (lang() === "ms") return String(subject);
+    var map = CFG.subjectTranslations || {};
+    return Object.keys(map).reduce(function (out, word) {
+      return out.replace(new RegExp("\\b" + word + "\\b", "g"), map[word]);
+    }, String(subject));
+  }
 
   /* ---------------- tiny helpers ---------------- */
   function esc(value) {
@@ -337,7 +347,7 @@
     return '<a class="row" href="' + href("note", note.subject, note.file) + '">' +
       '<span class="row-num">' + pad2(index + 1) + "</span>" +
       '<span class="row-main">' +
-        '<span class="mono-label row-meta">' + esc(note.subject) +
+        '<span class="mono-label row-meta">' + esc(subjectLabel(note.subject)) +
           (note.date ? " · " + esc(note.date) : "") + " · " + esc(t("note")) + "</span>" +
         '<span class="row-title">' + esc(note.topic) + "</span>" +
         (note.summary ? '<span class="row-sub">' + esc(note.summary) + "</span>" : "") +
@@ -349,7 +359,7 @@
     return '<a class="row" href="' + href("quiz", quizMeta.subject, quizMeta.id) + '">' +
       '<span class="row-num">' + pad2(index + 1) + "</span>" +
       '<span class="row-main">' +
-        '<span class="mono-label row-meta">' + esc(quizMeta.subject) + " · " + esc(t("quiz")) +
+        '<span class="mono-label row-meta">' + esc(subjectLabel(quizMeta.subject)) + " · " + esc(t("quiz")) +
           " · " + pad2(quizMeta.count) + " " + esc(t("questionsWord")) + "</span>" +
         '<span class="row-title">' + esc(quizMeta.title) + "</span>" +
       "</span>" +
@@ -360,7 +370,7 @@
     return '<a class="row" href="' + href("paper", paper.subject, paper.file) + '">' +
       '<span class="row-num">' + pad2(index + 1) + "</span>" +
       '<span class="row-main">' +
-        '<span class="mono-label row-meta">' + esc(paper.subject) + " · " + esc(t("paper")) + "</span>" +
+        '<span class="mono-label row-meta">' + esc(subjectLabel(paper.subject)) + " · " + esc(t("paper")) + "</span>" +
         '<span class="row-title">' + esc(paper.title) + "</span>" +
       "</span>" +
       '<span class="row-end"><span class="row-arrow">' + ICONS.arrow + "</span></span>" +
@@ -419,7 +429,7 @@
       (latest.length
         ? '<div class="card-grid">' + latest.map(function (note) {
             return '<a class="card" href="' + href("note", note.subject, note.file) + '">' +
-              '<span class="mono-label">' + esc(note.subject) + (note.date ? " · " + esc(note.date) : "") + "</span>" +
+              '<span class="mono-label">' + esc(subjectLabel(note.subject)) + (note.date ? " · " + esc(note.date) : "") + "</span>" +
               '<span class="card-title">' + esc(note.topic) + "</span>" +
               (note.summary ? '<span class="card-sub">' + esc(note.summary) + "</span>" : "") +
               '<span class="card-foot"><span class="mono-label">' + esc(t("readNote")) + "</span>" + ICONS.arrow + "</span>" +
@@ -451,7 +461,7 @@
       return '<a class="row" href="' + href("subject", subject) + '">' +
         '<span class="row-num">' + pad2(i + 1) + "</span>" +
         '<span class="row-main">' +
-          '<span class="row-title">' + esc(subject) + "</span>" +
+          '<span class="row-title">' + esc(subjectLabel(subject)) + "</span>" +
           '<span class="row-sub">' + counts + "</span>" +
         "</span>" +
         '<span class="row-end"><span class="row-arrow">' + ICONS.arrow + "</span></span>" +
@@ -474,9 +484,9 @@
     var quizzes = quizzesFor(subject);
     var papers = papersFor(subject);
     var body =
-      crumbsHtml([{ label: t("home"), href: "#/" }, { label: t("subjects"), href: href("subjects") }, { label: subject }]) +
+      crumbsHtml([{ label: t("home"), href: "#/" }, { label: t("subjects"), href: href("subjects") }, { label: subjectLabel(subject) }]) +
       '<div class="page-head">' +
-        '<h1 class="page-title page-title--sans">' + esc(subject) + "</h1>" +
+        '<h1 class="page-title page-title--sans">' + esc(subjectLabel(subject)) + "</h1>" +
       "</div>" +
       '<div class="stack">' +
         labelRow(esc(t("notes")), pad2(notes.length)) +
@@ -503,7 +513,7 @@
     var grouped = subjectList().map(function (subject) {
       var items = quizzesFor(subject);
       if (!items.length) return "";
-      return labelRow(esc(subject), pad2(items.length)) +
+      return labelRow(esc(subjectLabel(subject)), pad2(items.length)) +
         '<div class="index-rows">' + items.map(quizRow).join("") + "</div>";
     }).join("");
     return sectionPaper(body + '<div class="stack">' + grouped + "</div>");
@@ -517,7 +527,7 @@
     var grouped = subjectList().map(function (subject) {
       var items = papersFor(subject);
       if (!items.length) return "";
-      return labelRow(esc(subject), pad2(items.length)) +
+      return labelRow(esc(subjectLabel(subject)), pad2(items.length)) +
         '<div class="index-rows">' + items.map(paperRow).join("") + "</div>";
     }).join("");
     return sectionPaper(body + '<div class="stack">' + grouped + "</div>");
@@ -526,9 +536,9 @@
   function searchPageHtml(query) {
     var needle = String(query || "").trim().toLowerCase();
     function hit(value) { return String(value || "").toLowerCase().indexOf(needle) !== -1; }
-    var noteHits = needle ? manifest.notes.filter(function (n) { return hit(n.subject) || hit(n.topic) || hit(n.summary); }) : [];
-    var quizHits = needle ? manifest.quizzes.filter(function (q) { return hit(q.subject) || hit(q.title); }) : [];
-    var paperHits = needle ? manifest.papers.filter(function (p) { return hit(p.subject) || hit(p.title); }) : [];
+    var noteHits = needle ? manifest.notes.filter(function (n) { return hit(n.subject) || hit(subjectLabel(n.subject)) || hit(n.topic) || hit(n.summary); }) : [];
+    var quizHits = needle ? manifest.quizzes.filter(function (q) { return hit(q.subject) || hit(subjectLabel(q.subject)) || hit(q.title); }) : [];
+    var paperHits = needle ? manifest.papers.filter(function (p) { return hit(p.subject) || hit(subjectLabel(p.subject)) || hit(p.title); }) : [];
     var total = noteHits.length + quizHits.length + paperHits.length;
 
     var body = crumbsHtml([{ label: t("home"), href: "#/" }, { label: t("searchAction") }]) +
@@ -565,11 +575,11 @@
       paintView(sectionPaper(
         crumbsHtml([
           { label: t("home"), href: "#/" },
-          { label: subject, href: href("subject", subject) },
+          { label: subjectLabel(subject), href: href("subject", subject) },
           { label: t("note") }
         ]) +
         '<div class="page-head">' +
-          '<span class="mono-label page-meta">' + esc(subject) +
+          '<span class="mono-label page-meta">' + esc(subjectLabel(subject)) +
             (note.date ? " · " + esc(note.date) : "") + " · " + esc(t("note")) + "</span>" +
           '<h1 class="page-title">' + esc(note.topic) + "</h1>" +
           (note.summary ? '<p class="page-sub">' + esc(note.summary) + "</p>" : "") +
@@ -636,11 +646,11 @@
       paintView(sectionPaper(
         crumbsHtml([
           { label: t("home"), href: "#/" },
-          { label: subject, href: href("subject", subject) },
+          { label: subjectLabel(subject), href: href("subject", subject) },
           { label: t("quiz") }
         ]) +
         '<div class="page-head">' +
-          '<span class="mono-label page-meta">' + esc(subject) + " · " + esc(t("quiz")) +
+          '<span class="mono-label page-meta">' + esc(subjectLabel(subject)) + " · " + esc(t("quiz")) +
             " · " + pad2(questions.length) + " " + esc(t("questionsWord")) + "</span>" +
           '<h1 class="page-title">' + esc(data.title || meta.title) + "</h1>" +
           (relatedNote
@@ -743,11 +753,11 @@
       paintView(sectionPaper(
         crumbsHtml([
           { label: t("home"), href: "#/" },
-          { label: subject, href: href("subject", subject) },
+          { label: subjectLabel(subject), href: href("subject", subject) },
           { label: t("paper") }
         ]) +
         '<div class="page-head">' +
-          '<span class="mono-label page-meta">' + esc(subject) + " · " + esc(t("paper")) + "</span>" +
+          '<span class="mono-label page-meta">' + esc(subjectLabel(subject)) + " · " + esc(t("paper")) + "</span>" +
           '<h1 class="page-title">' + esc(paper.title) + "</h1>" +
           '<div class="page-actions"><button type="button" class="pill pill--acid no-print" data-action="print">' +
             ICONS.print + " " + esc(t("print")) + "</button></div>" +
