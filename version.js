@@ -11,4 +11,4 @@
    - Changed app.js, styles.css or config.js?  ->  bump this number.
    - Only added/edited files inside content/ ?  ->  do NOT touch this.
    ============================================================ */
-window.ASSET_V = "1";
+window.ASSET_V = "2";

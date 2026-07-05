@@ -1,4 +1,4 @@
-# cairn — how to publish your notes
+# NOVA — how to publish your notes
 
 This is your study-notes website. You never touch the website code.
 You publish by **dropping one file into one folder** on GitHub.

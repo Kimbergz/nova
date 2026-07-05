@@ -45,6 +45,7 @@
       noResultsHint: "Try a shorter word, or check the spelling.",
       settings: "Settings", language: "Language", textSize: "Text size",
       sizeS: "Small", sizeM: "Medium", sizeL: "Large", close: "Close",
+      theme: "Appearance", themeLight: "Light", themeDark: "Dark", themeAuto: "Auto",
       disclaimerLabel: "Disclaimer", questionsWord: "questions",
       moreSoon: "More options will live here as the site grows."
     },
@@ -78,14 +79,16 @@
       noResultsHint: "Cuba perkataan lebih pendek, atau semak ejaan.",
       settings: "Tetapan", language: "Bahasa", textSize: "Saiz teks",
       sizeS: "Kecil", sizeM: "Sedang", sizeL: "Besar", close: "Tutup",
+      theme: "Penampilan", themeLight: "Cerah", themeDark: "Gelap", themeAuto: "Auto",
       disclaimerLabel: "Penafian", questionsWord: "soalan",
       moreSoon: "Lebih banyak pilihan akan ditambah di sini."
     }
   };
 
   /* ---------------- preferences (Settings sheet) ---------------- */
-  var PREF_LANG = "cairn.lang";
-  var PREF_SIZE = "cairn.textsize";
+  var PREF_LANG = "nova.lang";
+  var PREF_SIZE = "nova.textsize";
+  var PREF_THEME = "nova.theme";
   function getPref(key, fallback) {
     try { return localStorage.getItem(key) || fallback; } catch (err) { return fallback; }
   }
@@ -99,6 +102,10 @@
   function textSize() {
     var s = getPref(PREF_SIZE, "m");
     return ["s", "m", "l"].indexOf(s) >= 0 ? s : "m";
+  }
+  function theme() {
+    var v = getPref(PREF_THEME, "auto");
+    return ["light", "dark", "auto"].indexOf(v) >= 0 ? v : "auto";
   }
   function t(key) {
     var table = STRINGS[lang()];
@@ -379,7 +386,7 @@
       '<div class="wrap">' +
         '<div class="hero-kicker">' +
           '<span class="mono-label">' + esc(pick(CFG.heroKicker)) + "</span>" +
-          '<span class="mono-label">Vol. 01 — ' + year + "</span>" +
+          '<span class="mono-label">Vol. 02 — ' + year + "</span>" +
         "</div>" +
         '<h1 class="wordmark">' + esc(CFG.siteName || "cairn") + '<span class="dot">.</span></h1>' +
         '<div class="statement">' +
@@ -785,6 +792,14 @@
           "</div>" +
         "</div>" +
         '<div class="setting">' +
+          '<span class="mono-label">' + esc(t("theme")) + "</span>" +
+          '<div class="opt-pills">' +
+            '<button type="button" class="opt-pill' + on(theme() === "light") + '" data-action="set-theme" data-value="light">' + esc(t("themeLight")) + "</button>" +
+            '<button type="button" class="opt-pill' + on(theme() === "dark") + '" data-action="set-theme" data-value="dark">' + esc(t("themeDark")) + "</button>" +
+            '<button type="button" class="opt-pill' + on(theme() === "auto") + '" data-action="set-theme" data-value="auto">' + esc(t("themeAuto")) + "</button>" +
+          "</div>" +
+        "</div>" +
+        '<div class="setting">' +
           '<span class="mono-label">' + esc(t("textSize")) + "</span>" +
           '<div class="opt-pills">' +
             '<button type="button" class="opt-pill' + on(currentSize === "s") + '" data-action="set-size" data-value="s">' + esc(t("sizeS")) + "</button>" +
@@ -812,6 +827,12 @@
   function applyPrefs() {
     document.documentElement.setAttribute("data-textsize", textSize());
     document.documentElement.setAttribute("lang", lang() === "ms" ? "ms" : "en");
+    document.documentElement.setAttribute("data-theme", theme());
+    var dark = theme() === "dark" ||
+      (theme() === "auto" && window.matchMedia &&
+       window.matchMedia("(prefers-color-scheme: dark)").matches);
+    var meta = document.getElementById("meta-theme");
+    if (meta) meta.setAttribute("content", dark ? "#1A1A1D" : "#F9F6F0");
   }
 
   /* ---------------- render dispatcher ---------------- */
@@ -846,6 +867,10 @@
     }
     else if (action === "set-size") {
       setPref(PREF_SIZE, target.getAttribute("data-value"));
+      applyPrefs(); renderSettings();
+    }
+    else if (action === "set-theme") {
+      setPref(PREF_THEME, target.getAttribute("data-value"));
       applyPrefs(); renderSettings();
     }
     else if (action === "quiz-option") handleQuizOption(target);

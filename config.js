@@ -20,7 +20,7 @@
    (see the note inside that file).
    ============================================================ */
 window.SITE_CONFIG = {
-  siteName: "cairn",
+  siteName: "NOVA",
 
   subjects: [
     "Industri Pertanian dan Makanan",
@@ -45,8 +45,8 @@ window.SITE_CONFIG = {
   },
 
   heroLines: {
-    en: ["Recorded in class.", "Rewritten as notes.", "Published for everyone."],
-    ms: ["Dirakam di kelas.", "Ditulis semula sebagai nota.", "Diterbit untuk semua."]
+    en: ["Student written notes.", "Transcribed for clarity.", "Published for everyone."],
+    ms: ["Nota tulisan pelajar.", "Ditranskrip untuk kejelasan.", "Diterbit untuk semua."]
   },
 
   disclaimer: {

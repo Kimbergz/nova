@@ -1,4 +1,4 @@
-# cairn — standing rules for Claude
+# NOVA — standing rules for Claude
 
 This repo is a static study-notes site (GitHub Pages, no build step).
 The owner is NOT technical: explain steps in plain language, one at a time.
@@ -40,22 +40,25 @@ The owner adds ALL study material by hand. Claude builds/maintains the ENGINE on
 - `config.js` is the owner-editable settings file (site name, subject order,
   hero text, disclaimer, default language).
 
-## Design system (hard requirements)
+## Design system (hard requirements — DOODLE, since v2)
 
-- Colors (flat only): ink #0B0B0B, paper #F4F2EC, accent acid #C8F04A (the ONLY accent),
-  greys #6B6B64 (on paper) / #9A9A90 (on ink).
-- Fonts: Bodoni Moda (wordmark/big headings), Archivo (body; 800–900 uppercase statements),
-  Space Mono (tiny uppercase metadata labels — used generously).
-- Hairline 1px borders instead of shadows. Cards near-square (radius 2–4px max).
-- Pills (fully rounded) are the ONLY big radius: acid fill + black text, or plain outline.
-- Glassmorphism for sticky header / settings sheet / quiz bar: translucent flat color +
-  backdrop-filter blur + hairline border.
-- Asymmetric editorial layouts; mobile-first.
+The full spec lives in `design-system/` (start with SKILL.md). Summary:
 
-BANNED (redo the work if any appear): gradients of ANY kind; purple/indigo/teal-pink/neon
-palettes; glowing drop-shadows; everything-rounded corners; emoji or clip-art (SVG icons only);
-blob shapes; dead-center hero with headline + two buttons.
-Gut check: "would this look at home in a printed fashion/sports magazine?"
+- Playful hand-drawn "doodle" look: warm cream #F9F6F0 light / #1A1A1D dark backgrounds,
+  dot-grid page texture, wavy hand-drawn divider lines.
+- Font: "Delius Swash Caps" (hand-lettered) for EVERYTHING. Headings weight 600.
+- Borders: 3px solid in the ink token (#111827 light / #F3F4F6 dark) with asymmetric
+  "sketch" border-radii (never uniform) — rotate the three radius variants across grids.
+- Shadows: SOLID OFFSET only (e.g. 4px 5px 0 0), zero blur, ink-colored. Hover = lift
+  (translate(-2px,-2px) rotate(-1.5deg), bigger shadow); active = press (reverse).
+- Accent: brand blush #EACDC2 / strong #C29A8A. Disclaimer uses the warning alert style.
+- Focus states: 3px dashed ink outline, 4px offset. SVG icons only (round caps), no emoji.
+- All colors via CSS custom properties in styles.css — light in :root, dark under
+  html[data-theme="dark"] AND the prefers-color-scheme media block ("auto"). The manual
+  Light/Dark/Auto switch in Settings (owner requirement) sets data-theme.
+
+BANNED since v2: uniform border-radius, 1px hairline borders, blurred/glowing shadows,
+raw hex values in component rules (use the tokens), removing the theme switch.
 
 ## Disclaimer (never remove or weaken)
 
