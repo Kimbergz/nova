@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bio Topic 1 — A View of Life</title>
+<style>
+  :root{
+    --ink:#1e2430; --soft:#5a6473; --line:#e4e7ec;
+    --accent:#2f7d4f; --accent-soft:#eaf4ee; --key:#1d6b3f;
+    --panel:#f7f9f8;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:#fbfcfb; color:var(--ink);
+    font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:56px 26px 90px}
+  .eyebrow{font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:700; margin:0 0 6px}
+  h1{font-size:34px; line-height:1.2; margin:0 0 10px; letter-spacing:-.01em}
+  .lede{color:var(--soft); font-size:18px; margin:0 0 8px}
+  .rule{height:3px; width:56px; background:var(--accent); border-radius:2px; margin:22px 0 40px}
+  h2{font-size:22px; margin:46px 0 4px; letter-spacing:-.01em}
+  h2 .num{color:var(--accent); font-weight:700}
+  h3{font-size:17px; margin:26px 0 6px; color:var(--key)}
+  p{margin:10px 0}
+  ul{margin:10px 0; padding-left:22px}
+  li{margin:7px 0}
+  li::marker{color:var(--accent)}
+  b,strong{color:var(--key)}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px 24px; margin:22px 0}
+  .card h3{margin-top:0}
+  .goals{background:var(--accent-soft); border:1px solid #cfe6d8; border-radius:14px; padding:18px 24px; margin:8px 0 0}
+  .goals p{margin:0 0 6px; font-weight:600; color:var(--key)}
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:20px 0}
+  .tile{background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 16px}
+  .tile b{display:block; margin-bottom:2px}
+  .tile span{color:var(--soft); font-size:15px}
+  @media (max-width:560px){ .grid{grid-template-columns:1fr} h1{font-size:28px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Biology I · ASB0204</p>
+  <h1>Topic 1 — A View of Life</h1>
+  <p class="lede">The characteristics of life and the levels of biological organisation.</p>
+  <div class="rule"></div>
+
+  <div class="goals">
+    <p>① Distinguish among the levels of biological organisation.</p>
+    <p>② Identify the basic characteristics of life.</p>
+  </div>
+
+  <h2><span class="num">1.1</span>&nbsp; The Characteristics of Life</h2>
+  <p><b>Biology</b> is the scientific study of life. Living things are hugely diverse, yet they are all built from the same chemical elements as non-living things and obey the same physical and chemical laws.</p>
+  <p>Six characteristics define a living organism:</p>
+
+  <div class="grid">
+    <div class="tile"><b>1 · Organised</b><span>Built in levels, atoms → biosphere.</span></div>
+    <div class="tile"><b>2 · Need materials &amp; energy</b><span>To stay alive and do work.</span></div>
+    <div class="tile"><b>3 · Maintain homeostasis</b><span>Keep internal conditions stable.</span></div>
+    <div class="tile"><b>4 · Respond to stimuli</b><span>React to the environment.</span></div>
+    <div class="tile"><b>5 · Reproduce &amp; develop</b><span>Make more of their own kind.</span></div>
+    <div class="tile"><b>6 · Have adaptations</b><span>Suited to their environment; evolve.</span></div>
+  </div>
+
+  <h3>1 · Living things are organised</h3>
+  <ul>
+    <li>The <b>cell</b> is the basic unit of structure and function of all living things — organisms may be <b>unicellular</b> or <b>multicellular</b>.</li>
+    <li>Each level is more complex than the one before it. As complexity increases, each level gains new <b>emergent properties</b> (new, unique characteristics).</li>
+  </ul>
+
+  <div class="card">
+    <h3>Levels of biological organisation (smallest → largest)</h3>
+    <ul>
+      <li><b>Atom</b> — smallest unit of an element (electrons, protons, neutrons).</li>
+      <li><b>Molecule</b> — two or more atoms joined.</li>
+      <li><b>Cell</b> — structural &amp; functional unit of life.</li>
+      <li><b>Tissue</b> — cells with a common structure and function.</li>
+      <li><b>Organ</b> — tissues working together for a task.</li>
+      <li><b>Organ system</b> — several organs working together.</li>
+      <li><b>Organism</b> — an individual living thing.</li>
+      <li><b>Population</b> — organisms of the same species in one area.</li>
+      <li><b>Community</b> — interacting populations in an area.</li>
+      <li><b>Ecosystem</b> — a community plus its physical environment.</li>
+      <li><b>Biosphere</b> — all regions of Earth inhabited by living things.</li>
+    </ul>
+  </div>
+
+  <h3>2 · Life requires materials and energy</h3>
+  <ul>
+    <li><b>Energy</b> is the capacity to do work — needed to maintain organisation and run life processes.</li>
+    <li><b>Metabolism</b> = all the chemical reactions in a cell.</li>
+    <li>The <b>Sun</b> is the ultimate energy source for nearly all life. Plants and algae capture solar energy through <b>photosynthesis</b>, converting it into the chemical energy of carbohydrates.</li>
+    <li>Ecosystems run on <b>chemical cycling</b> and <b>energy flow</b>:
+      <ul>
+        <li>Chemicals are <b>recycled</b> — they pass from producers → consumers → decomposers, then back to plants after death and decomposition.</li>
+        <li>Energy is <b>not</b> recycled — it flows one way through the food chain, so there must be constant input of solar energy.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>3 · Living things maintain homeostasis</h3>
+  <p><b>Homeostasis</b> is keeping internal conditions within certain limits. Organisms must maintain biological balance; <b>feedback systems</b> monitor conditions and make adjustments.</p>
+
+  <h3>4 · Living things respond to stimuli</h3>
+  <ul>
+    <li>Living things interact with and respond to changes in their environment — often producing <b>movement</b> (e.g. a plant bending toward the sun, a turtle withdrawing into its shell, birds migrating).</li>
+    <li>Responses help ensure survival and let the organism carry out its activities.</li>
+  </ul>
+
+  <h3>5 · Living things reproduce and develop</h3>
+  <ul>
+    <li>All organisms must reproduce to maintain a population. <b>Reproduction</b> = giving rise to another organism like itself.</li>
+    <li>The manner of reproduction varies between organisms.</li>
+    <li>Offspring receive copies of <b>genetic information (genes)</b>, which determine the organism's characteristics.</li>
+  </ul>
+
+  <h3>6 · Living things have adaptations</h3>
+  <ul>
+    <li>An <b>adaptation</b> is any modification that makes an organism better able to function in its environment.</li>
+    <li>Diversity exists because, over long periods, organisms respond to changing environments by developing new adaptations.</li>
+    <li><b>Evolution</b> = the change in a population of organisms over time to become better suited to the environment.</li>
+  </ul>
+
+</div>
+</body>
+</html>

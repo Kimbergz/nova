@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bio Topic 4 — Biology of the Plasma Membrane</title>
+<style>
+  :root{
+    --ink:#1e2430; --soft:#5a6473; --line:#e4e7ec;
+    --accent:#2f7d4f; --accent-soft:#eaf4ee; --key:#1d6b3f;
+    --panel:#f7f9f8;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:#fbfcfb; color:var(--ink);
+    font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:56px 26px 90px}
+  .eyebrow{font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:700; margin:0 0 6px}
+  h1{font-size:34px; line-height:1.2; margin:0 0 10px; letter-spacing:-.01em}
+  .lede{color:var(--soft); font-size:18px; margin:0 0 8px}
+  .rule{height:3px; width:56px; background:var(--accent); border-radius:2px; margin:22px 0 40px}
+  h2{font-size:23px; margin:52px 0 4px; letter-spacing:-.01em; padding-top:14px; border-top:1px solid var(--line)}
+  h2 .num{color:var(--accent); font-weight:700}
+  h3{font-size:17px; margin:26px 0 6px; color:var(--key)}
+  p{margin:10px 0}
+  ul{margin:10px 0; padding-left:22px}
+  li{margin:7px 0}
+  li::marker{color:var(--accent)}
+  b,strong{color:var(--key)}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px 24px; margin:22px 0}
+  .card h3{margin-top:0}
+  .goals{background:var(--accent-soft); border:1px solid #cfe6d8; border-radius:14px; padding:18px 24px; margin:8px 0 0}
+  .goals p{margin:0 0 6px; font-weight:600; color:var(--key)}
+  table{border-collapse:collapse; width:100%; margin:18px 0; font-size:15.5px}
+  th,td{border:1px solid var(--line); padding:9px 12px; text-align:left; vertical-align:top}
+  th{background:var(--accent-soft); color:var(--key); font-weight:700}
+  .note{background:#fff7e8; border:1px solid #f0dfb5; border-radius:12px; padding:14px 18px; margin:18px 0; font-size:16px}
+  @media (max-width:560px){ h1{font-size:28px} table{font-size:14px} th,td{padding:7px 8px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Biology I · ASB0204</p>
+  <h1>Topic 4 — Biology of the Plasma Membrane</h1>
+  <p class="lede">Membrane structure, passive &amp; active transport, and cell-surface modifications.</p>
+  <div class="rule"></div>
+
+  <div class="goals">
+    <p>① Explain the structure &amp; functions of the plasma membrane.</p>
+    <p>② Explain the mechanisms of passive transport.</p>
+    <p>③ Compare the types of active transport (pumps, endocytosis, exocytosis).</p>
+    <p>④ Explain the structural modifications of cell surfaces.</p>
+  </div>
+
+  <h2><span class="num">4.1</span>&nbsp; Structure &amp; Function</h2>
+  <p>The plasma membrane is a thin (about <b>7–10 nm</b>), flexible, <b>selectively permeable</b> boundary that surrounds every cell. It controls everything that enters and leaves — essential for cell survival.</p>
+
+  <h3>The Fluid Mosaic Model</h3>
+  <ul>
+    <li>The membrane is a <b>phospholipid bilayer</b> with proteins and other molecules embedded in it.</li>
+    <li><b>Fluid</b> — lipids and proteins can move sideways (laterally) within the membrane.</li>
+    <li><b>Mosaic</b> — many different types of molecules are embedded in the bilayer.</li>
+    <li>Held together by weak <b>hydrophobic interactions</b>. Lateral movement is frequent; <b>flip-flop</b> (a molecule flipping to the other layer) is rare, because the hydrophilic head would have to cross the hydrophobic core.</li>
+  </ul>
+
+  <div class="card">
+    <h3>Four core functions</h3>
+    <ul>
+      <li><b>Separation &amp; protection</b> — separates the cell from its surroundings; essential for the origin of life.</li>
+      <li><b>Transport &amp; communication</b> — membrane proteins transport materials, transmit information, and act as enzymes.</li>
+      <li><b>Cell adhesion</b> — adhesion molecules connect cells into tissues.</li>
+      <li><b>Homeostasis</b> — regulates what enters and leaves, keeping the internal environment stable.</li>
+    </ul>
+  </div>
+
+  <h3>The phospholipid bilayer</h3>
+  <p>Phospholipids are <b>amphipathic</b> (have both a water-loving and a water-avoiding part), so they naturally form a bilayer in water:</p>
+  <ul>
+    <li><b>Hydrophilic head</b> — a negatively-charged phosphate group; faces the watery environment (extracellular fluid and cytoplasm).</li>
+    <li><b>Hydrophobic tails</b> — two fatty acid chains; repel water and face inward.</li>
+    <li>Their cylindrical shape favours a flat <b>bilayer</b> (✓) rather than a spherical <b>micelle</b> (✗).</li>
+  </ul>
+  <p>The bilayer is <b>flexible</b> (changes shape without breaking), <b>self-sealing</b> (rounds up into closed vesicles), and can <b>fuse</b> with other bilayers to transfer materials or secrete products.</p>
+
+  <h3>Other lipids &amp; cholesterol — membrane fluidity</h3>
+  <ul>
+    <li>In cold temperatures, some organisms increase the proportion of <b>unsaturated fatty acids</b> in their membrane lipids.</li>
+    <li><b>Unsaturated</b> tails have kinks at their double bonds that prevent tight packing → keep the membrane <b>fluid</b>. <b>Saturated</b> tails pack closely → make the membrane more <b>viscous</b>.</li>
+  </ul>
+
+  <h3>Membrane proteins</h3>
+  <p>Two positions:</p>
+  <ul>
+    <li><b>Integral membrane proteins</b> — amphipathic proteins firmly bound to the membrane. <b>Transmembrane proteins</b> are integral proteins that extend all the way through.</li>
+    <li><b>Peripheral membrane proteins</b> — sit on the inner or outer surface, bound to exposed parts of integral proteins (do not penetrate the bilayer).</li>
+    <li><b>Lipid-anchored proteins</b> — covalently attached to a lipid in one layer; do not span the membrane.</li>
+  </ul>
+
+  <div class="card">
+    <h3>Six functions of membrane proteins</h3>
+    <ul>
+      <li><b>Channel protein</b> — lets molecules/ions pass through a channel. <em>e.g. aquaporin, calcium channel.</em></li>
+      <li><b>Carrier protein</b> — binds the substance and helps it across, changing shape. <em>e.g. sodium–potassium pump.</em></li>
+      <li><b>Cell recognition protein</b> — glycoproteins/glycolipids on the outer surface act as ID tags (carbohydrate chains under 15 sugars) that help the body recognise foreign substances. <em>e.g. MHC glycoproteins.</em></li>
+      <li><b>Receptor protein</b> — binds specific signal molecules so the cell can respond. <em>e.g. hormone receptor.</em></li>
+      <li><b>Enzymatic protein</b> — carries out metabolic reactions directly. <em>e.g. ATP synthase.</em></li>
+      <li><b>Junction protein</b> — forms junctions that attach adjacent cells. <em>e.g. desmosome (animal), plasmodesmata (plant).</em></li>
+    </ul>
+  </div>
+
+  <h3>Selective permeability</h3>
+  <p>The membrane lets some substances through but not others:</p>
+  <ul>
+    <li><b>Small, non-charged molecules</b> (CO₂, O₂, glycerol, alcohol) pass freely, following the concentration gradient.</li>
+    <li><b>Water</b> crosses through a special protein called <b>aquaporin</b>, which speeds up water transport.</li>
+    <li><b>Polar molecules, charged molecules and ions</b> are blocked from passing directly.</li>
+  </ul>
+
+  <h2><span class="num">4.2</span>&nbsp; Passive Transport</h2>
+  <div class="note"><b>Passive transport</b> moves molecules <b>down</b> a concentration gradient (high → low) and <b>does not require energy (ATP)</b>. Three examples: simple diffusion, facilitated diffusion, and osmosis.</div>
+
+  <p><b>Diffusion</b> = movement of molecules down a concentration gradient. The rate depends on the particles' <b>size &amp; shape</b>, their <b>electric charge</b>, and the <b>temperature</b>.</p>
+
+  <table>
+    <tr><th>Simple diffusion</th><th>Facilitated diffusion</th></tr>
+    <tr>
+      <td>Small non-polar molecules move directly through the phospholipid bilayer. <em>e.g. O₂, CO₂.</em></td>
+      <td>Polar molecules and ions move through <b>channel or carrier proteins</b>. <em>e.g. glucose, amino acids, Na⁺, K⁺, Cl⁻.</em></td>
+    </tr>
+  </table>
+  <p><b>Facilitated diffusion</b> uses transport proteins that are <b>specific</b> (each carries only certain molecules). A carrier protein binds the molecule, undergoes a <b>conformational change</b> in shape to move it across, then resets — all without using ATP.</p>
+
+  <h3>Osmosis</h3>
+  <ul>
+    <li>A special case of diffusion focused on the movement of <b>water (the solvent)</b>, not the solute.</li>
+    <li>Diffusion of water across a selectively permeable membrane: water moves from where solute is <b>low</b> (high water) toward where solute is <b>high</b> (low water). Water can cross both ways, but the solute cannot.</li>
+    <li><b>Osmotic pressure</b> is the pressure that develops due to osmosis.</li>
+  </ul>
+
+  <h3>Tonicity — how solutions affect cells</h3>
+  <p><b>Tonicity</b> = the relative solute concentrations of two fluids separated by a membrane. It tells us whether a cell will swell, shrink, or stay the same.</p>
+  <table>
+    <tr><th>Solution</th><th>Meaning</th><th>Animal cell</th><th>Plant cell</th></tr>
+    <tr><td><b>Isotonic</b></td><td>Equal solute inside &amp; out; no net water movement.</td><td>Normal shape.</td><td>Flaccid (normal).</td></tr>
+    <tr><td><b>Hypotonic</b></td><td>Lower solute outside → water enters, cell swells.</td><td>Swells, may burst (<b>lysis</b>).</td><td>Becomes <b>turgid</b> (firm) from turgor pressure.</td></tr>
+    <tr><td><b>Hypertonic</b></td><td>Higher solute outside → water leaves, cell shrinks.</td><td>Shrinks (<b>crenation</b>).</td><td><b>Plasmolysis</b> (shrinks away from wall).</td></tr>
+  </table>
+  <p style="color:var(--soft); font-size:15px">Protozoans in fresh water (hypotonic) use <b>contractile vacuoles</b> to pump out excess water.</p>
+
+  <div class="card">
+    <h3>Real-life examples</h3>
+    <ul>
+      <li><b>Hypotonic:</b> drinking too much pure water can swell/burst red blood cells; medical IV fluids (e.g. 0.45% saline) gently hydrate cells; soaking dried beans/fruit plumps them up; celery/carrots in fresh water become crisp again.</li>
+      <li><b>Isotonic:</b> IV fluids (e.g. 0.9% saline) match blood's tonicity to avoid damaging cells.</li>
+      <li><b>Hypertonic:</b> salting/curing meat &amp; fish preserves food by drawing water out of bacteria; drinking sea water worsens dehydration; soy sauce shrinks red blood cells; gargling warm salt water reduces throat swelling; heavy sweating removes water from cells.</li>
+    </ul>
+  </div>
+
+  <h2><span class="num">4.3</span>&nbsp; Active Transport</h2>
+  <div class="note"><b>Active transport</b> moves molecules/ions <b>against</b> the concentration gradient (low → high) using <b>energy (ATP)</b> and specific carrier proteins. It is vital for maintaining gradients, cell signalling and homeostasis.</div>
+
+  <h3>1 · Sodium–Potassium Pump</h3>
+  <ul>
+    <li>Uses ATP to pump <b>Na⁺ out</b> of the cell and <b>K⁺ in</b>, against their gradients.</li>
+    <li>For every <b>3 Na⁺</b> pumped out, <b>2 K⁺</b> are pumped in.</li>
+    <li>This creates membrane polarisation, a membrane potential, and electrochemical gradients that <b>store energy</b> to drive other transport systems.</li>
+  </ul>
+
+  <h3>Bulk transport (via vesicles)</h3>
+  <p>Large materials move in or out of the cell packaged inside <b>vesicles</b>.</p>
+
+  <h3>2 · Exocytosis — release OUT of the cell</h3>
+  <ul>
+    <li>An intracellular <b>vesicle fuses</b> with the plasma membrane to <b>release</b> its contents outside. Used to secrete hormones, neurotransmitters, digestive enzymes, and to remove waste.</li>
+    <li>The vesicle membrane becomes part of the plasma membrane (both are nonpolar). Vesicles are produced by the <b>Golgi body</b>.</li>
+    <li><b>Steps:</b> vesicle moves to the membrane → docks and fuses → contents released outside → vesicle membrane becomes part of the plasma membrane.</li>
+  </ul>
+
+  <h3>3 · Endocytosis — bringing INTO the cell</h3>
+  <p>The membrane engulfs substances into a pouch that pinches off to form a vesicle inside the cell. Three ways:</p>
+  <table>
+    <tr><th>Type</th><th>What it takes in</th></tr>
+    <tr><td><b>Phagocytosis</b> ("cell eating")</td><td>Large, solid particles (e.g. bacteria, debris). White blood cells engulf debris or viruses this way.</td></tr>
+    <tr><td><b>Pinocytosis</b> ("cell drinking")</td><td>Liquid or very small particles.</td></tr>
+    <tr><td><b>Receptor-mediated endocytosis</b></td><td>A specific form of pinocytosis using <b>receptor proteins</b> and <b>coated pits</b> to selectively take in specific substances.</td></tr>
+  </table>
+  <p style="color:var(--soft); font-size:15px"><b>General steps:</b> substance binds the membrane/receptor → membrane folds in to form a pouch → pouch pinches off into a vesicle → vesicle moves into the cell → a lysosome fuses with it and releases digestive enzymes.</p>
+
+  <h2><span class="num">4.4</span>&nbsp; Modification of Cell Surfaces</h2>
+
+  <h3>Extracellular Matrix (ECM) — animal cells</h3>
+  <p>The ECM is a meshwork of proteins and polysaccharides just outside the cell that produced it. It provides structural support, cell adhesion, communication and tissue integrity. Components:</p>
+  <ul>
+    <li><b>Collagen</b> — provides tensile strength and structural support.</li>
+    <li><b>Elastin</b> — provides elasticity; lets tissues stretch and recoil.</li>
+    <li><b>Fibronectin</b> — glycoprotein that helps cells stick to the ECM and to each other.</li>
+    <li><b>Integrin</b> — transmembrane receptor proteins that connect the ECM to the cytoskeleton inside the cell.</li>
+    <li><b>Proteoglycans</b> — core protein with attached carbohydrate chains; provide hydration and resistance to compression.</li>
+  </ul>
+
+  <h3>Cell junctions — animal cells</h3>
+  <p>Specialised connections between adjacent cells that let them behave in a coordinated way.</p>
+  <table>
+    <tr><th></th><th>Gap junction</th><th>Tight junction</th><th>Adhesion junction (desmosome)</th></tr>
+    <tr><td><b>Function</b></td><td>Communication between cells</td><td>Barrier/seal to prevent leakage</td><td>Strong adhesion between cells</td></tr>
+    <tr><td><b>Structure</b></td><td>Protein channels (connexons) link cytoplasm</td><td>Membranes tightly pressed with sealing proteins</td><td>Dense plaques + filament proteins (cadherins)</td></tr>
+    <tr><td><b>Allows passage of</b></td><td>Ions, small molecules</td><td>Nothing (forms a seal)</td><td>No exchange; gives mechanical strength</td></tr>
+    <tr><td><b>Found in</b></td><td>Heart &amp; smooth muscle, some epithelia</td><td>Intestinal lining, kidney tubules, blood vessels</td><td>Skin, uterus, heart (high-stress areas)</td></tr>
+  </table>
+
+  <h3>Plant cell surfaces</h3>
+  <ul>
+    <li><b>Plasmodesmata</b> — cytoplasmic channels through the cell walls for cell-to-cell communication and transport. Allow water, ions, small solutes, RNA and proteins to pass (passive for small molecules; regulated for large/polar ones). Found in plant cells only.</li>
+    <li><b>Cuticle</b> — waxy, non-living layer covering the epidermis, made of <b>cutin</b>; reduces water loss and protects against pathogens.</li>
+    <li><b>Cell wall</b> — rigid layer outside the plasma membrane, made mainly of <b>cellulose</b> (plus hemicellulose and pectin); provides shape, support and protection.</li>
+    <li><b>Middle lamella</b> — thin layer between adjacent cell walls, made mainly of <b>pectin</b>; acts as a "cement" holding cells together.</li>
+  </ul>
+
+  <h2 style="border-top:none">Whole-Topic Summary</h2>
+  <table>
+    <tr><th>Theme</th><th>Key idea</th></tr>
+    <tr><td><b>Structure</b></td><td>Phospholipid bilayer + membrane proteins (integral &amp; peripheral) + cholesterol (fluid mosaic model).</td></tr>
+    <tr><td><b>Selective permeability</b></td><td>Small non-polar molecules pass directly; polar molecules/ions need transport proteins.</td></tr>
+    <tr><td><b>Passive transport</b></td><td>Diffusion, osmosis, facilitated diffusion — high → low, no ATP.</td></tr>
+    <tr><td><b>Active transport</b></td><td>Na⁺–K⁺ pump, endocytosis, exocytosis — low → high, needs ATP.</td></tr>
+    <tr><td><b>Cell-surface modifications</b></td><td>Animal: ECM &amp; cell junctions. Plant: cell wall, cuticle, plasmodesmata, middle lamella.</td></tr>
+  </table>
+
+</div>
+</body>
+</html>
