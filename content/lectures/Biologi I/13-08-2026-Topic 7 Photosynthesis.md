@@ -1,6 +1,6 @@
 ---
 subject: Biology
-topic: Photosynthesis
+topic: 	Topic 7: Photosynthesis
 date: 13-08-2026
 summary: How plants convert light into chemical energy — light reactions, the Calvin cycle, and C3/C4/CAM adaptations.
 ---
