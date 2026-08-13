@@ -89,10 +89,8 @@ Pigments absorb certain wavelengths of visible light and reflect/transmit the re
 NADP⁺/NADPH is the redox coenzyme linking the two stages of photosynthesis.
 
 - **In the light reactions:** NADP⁺ acts as an electron acceptor — it accepts 2 electrons and 1 H⁺ to become NADPH.
-  $$NADP^+ + 2e^- + H^+ \rightarrow NADPH$$
 - **In the Calvin cycle:** NADPH acts as an electron carrier — it donates its electrons (is oxidized) to help build glucose.
-  $$NADPH \rightarrow NADP^+ + H^+ + 2e^-$$
-
+  
 ### Non-cyclic photophosphorylation (step by step)
 
 1. Pigments in **PSII** capture light energy.
