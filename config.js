@@ -1,5 +1,5 @@
 /* ============================================================
-   cairn — site settings  (THIS FILE IS SAFE FOR YOU TO EDIT)
+   NOVA — site settings  (THIS FILE IS SAFE FOR YOU TO EDIT)
 
    Plain-English guide:
    - siteName ......... the name shown in the header and footer.
