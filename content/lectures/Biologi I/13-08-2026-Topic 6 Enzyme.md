@@ -1,6 +1,6 @@
 ---
 subject: Biology
-topic: "Topic 7: Photosynthesis"
+topic: "Topic 6: Enzymes"
 date: 13-08-2026
 summary: How enzymes speed up metabolic reactions — structure, activation energy, factors affecting rate, activation/inhibition, and real-world uses.
 ---
