@@ -1,0 +1,305 @@
+{
+  "title": "Chapter 2: Atomic Mass, Mole Concept and Concentration of Solutions — ASC0304 Chemistry I",
+  "questions": [
+    {
+      "no": 1,
+      "marks": 4,
+      "q": "Aluminium has a proton (atomic) number of 13. A naturally occurring isotope of aluminium has a nucleon (mass) number of 27.\n\n(a) Determine the number of protons, electrons and neutrons present in a neutral atom of this aluminium isotope.\n\n(b) Determine the number of protons, electrons and neutrons present in the Al³⁺ ion formed from this isotope.",
+      "answer": "(a)\n\nFor a neutral atom, number of protons = proton number, number of electrons = number of protons, and number of neutrons = nucleon number − proton number.\n\nprotons = Z = 13 electrons = 13\n\nneutrons = A - Z = 27 - 13 = 14\n\nNeutral Al atom: 13 protons, 13 electrons, 14 neutrons.\n\n(b)\n\nForming a 3+ ion removes 3 electrons; the number of protons and neutrons in the nucleus is unchanged.\n\nprotons = 13 neutrons = 14\n\nelectrons = 13 - 3 = 10\n\nAl³⁺ ion: 13 protons, 10 electrons, 14 neutrons."
+    },
+    {
+      "no": 2,
+      "marks": 4,
+      "q": "Sulfur has a proton number of 16. A sulfur isotope has a nucleon number of 32.\n\n(a) Determine the number of protons, electrons and neutrons present in a neutral atom of this sulfur isotope.\n\n(b) Determine the number of protons, electrons and neutrons present in the sulfide ion, S²⁻, formed from this isotope.",
+      "answer": "(a)\n\nprotons = Z = 16 electrons = 16\n\nneutrons = A - Z = 32 - 16 = 16\n\nNeutral S atom: 16 protons, 16 electrons, 16 neutrons.\n\n(b)\n\nForming a 2− ion adds 2 electrons; protons and neutrons are unchanged.\n\nelectrons = 16 + 2 = 18\n\nS²⁻ ion: 16 protons, 18 electrons, 16 neutrons."
+    },
+    {
+      "no": 3,
+      "marks": 4,
+      "q": "Bromine has a proton number of 35. A bromine isotope has a nucleon number of 79.\n\n(a) Determine the number of protons, electrons and neutrons present in a neutral atom of this bromine isotope.\n\n(b) Determine the number of protons, electrons and neutrons present in the bromide ion, Br⁻, formed from this isotope.",
+      "answer": "(a)\n\nprotons = Z = 35 electrons = 35\n\nneutrons = A - Z = 79 - 35 = 44\n\nNeutral Br atom: 35 protons, 35 electrons, 44 neutrons.\n\n(b)\n\nelectrons = 35 + 1 = 36\n\nBr⁻ ion: 35 protons, 36 electrons, 44 neutrons."
+    },
+    {
+      "no": 4,
+      "marks": 5,
+      "q": "Iron has a proton number of 26. One naturally occurring isotope of iron has a nucleon number of 56. Iron commonly forms both Fe²⁺ and Fe³⁺ ions.\n\n(a) Determine the number of protons, electrons and neutrons in Fe²⁺.\n\n(b) Determine the number of protons, electrons and neutrons in Fe³⁺.\n\n(c) State which of the two ions has more electrons, and explain why.",
+      "answer": "For both ions, protons = 26 (fixed by the element) and neutrons = 56 − 26 = 30 (fixed by the isotope). Only the number of electrons removed differs.\n\n(a)\n\nelectrons = 26 - 2 = 24\n\nFe²⁺: 26 protons, 24 electrons, 30 neutrons.\n\n(b)\n\nelectrons = 26 - 3 = 23\n\nFe³⁺: 26 protons, 23 electrons, 30 neutrons.\n\n(c)\n\nFe²⁺ has more electrons (24 compared with 23). It formed by losing only 2 electrons, whereas Fe³⁺ lost 3 electrons, so fewer electrons remain on Fe³⁺."
+    },
+    {
+      "no": 5,
+      "marks": 4,
+      "q": "Potassium has a proton number of 19. Three isotopes of potassium contain 20, 21 and 22 neutrons respectively.\n\n(a) Determine the nucleon number of each isotope.\n\n(b) Write the full isotopic notation (mass number and proton number shown explicitly) for each isotope.",
+      "answer": "(a)\n\nNucleon number A = proton number Z + number of neutrons.\n\nA₁ = 19 + 20 = 39\n\nA₂ = 19 + 21 = 40\n\nA₃ = 19 + 22 = 41\n\n(b)\n\nIsotope notation is typeset here as Symbol with the mass number (superscript) and proton number (subscript) attached immediately after the symbol.\n\nK₁₉³⁹ K₁₉⁴⁰ K₁₉⁴¹"
+    },
+    {
+      "no": 6,
+      "marks": 5,
+      "q": "Magnesium has a proton number of 12. Three isotopes of magnesium contain 12, 13 and 14 neutrons respectively.\n\n(a) Determine the nucleon number of each isotope.\n\n(b) Write the isotopic notation for each isotope.\n\n(c) State the approximate mass, in amu, of each isotope.",
+      "answer": "(a)\n\nA₁ = 12 + 12 = 24\n\nA₂ = 12 + 13 = 25\n\nA₃ = 12 + 14 = 26\n\n(b)\n\nMg₁₂²⁴ Mg₁₂²⁵ Mg₁₂²⁶\n\n(c)\n\nThe mass of an isotope, in amu, is approximately equal to its nucleon number (protons and neutrons each contribute close to 1 amu; electrons contribute negligibly).\n\nmass ≈ 24 amu, 25 amu, 26 amu respectively"
+    },
+    {
+      "no": 7,
+      "marks": 4,
+      "q": "Distinguish between isotopes and isobars. Choose your own proton and nucleon numbers to construct one example pair of isotopes and one example pair of isobars, and present each pair using isotope notation.",
+      "answer": "Isotopes are atoms of the same element (same proton number, Z) that have different nucleon numbers, A, because they contain different numbers of neutrons.\n\nIsobars are atoms of different elements (different proton number, Z) that happen to share the same nucleon number, A.\n\n(Example — isotopes (same Z, different A))\n\nCl₁₇³⁵ and Cl₁₇³⁷\n\nBoth are chlorine (Z = 17) but have 18 and 20 neutrons respectively.\n\n(Example — isobars (different Z, same A))\n\nAr₁₈⁴⁰ and Ca₂₀⁴⁰\n\nArgon-40 and calcium-40 are different elements (Z = 18 and Z = 20) but both have nucleon number A = 40."
+    },
+    {
+      "no": 8,
+      "marks": 5,
+      "q": "Magnesium has three naturally occurring isotopes with the isotopic masses and relative (%) abundances given below. Calculate the average atomic mass of magnesium to two decimal places.\n\nMg-24 : isotopic mass 23.985 amu, relative abundance 78.99%\n\nMg-25 : isotopic mass 24.986 amu, relative abundance 10.00%\n\nMg-26 : isotopic mass 25.983 amu, relative abundance 11.01%",
+      "answer": "The average atomic mass is the sum of each isotopic mass multiplied by its fractional abundance.\n\naverage atomic mass = Sigma (massᵢ × fractional abundanceᵢ)\n\n= (23.985 × 0.7899) + (24.986 × 0.1000) + (25.983 × 0.1101)\n\n= 18.945 + 2.499 + 2.861\n\naverage atomic mass = 24.31 amu"
+    },
+    {
+      "no": 9,
+      "marks": 5,
+      "q": "Silicon has three naturally occurring isotopes with the isotopic masses and relative (%) abundances given below. Calculate the average atomic mass of silicon to two decimal places.\n\nSi-28 : isotopic mass 27.977 amu, relative abundance 92.23%\n\nSi-29 : isotopic mass 28.976 amu, relative abundance 4.68%\n\nSi-30 : isotopic mass 29.974 amu, relative abundance 3.09%",
+      "answer": "average atomic mass = Sigma (massᵢ × fractional abundanceᵢ)\n\n= (27.977 × 0.9223) + (28.976 × 0.0468) + (29.974 × 0.0309)\n\n= 25.805 + 1.356 + 0.926\n\naverage atomic mass = 28.09 amu"
+    },
+    {
+      "no": 10,
+      "marks": 5,
+      "q": "Neon has three naturally occurring isotopes with the isotopic masses and relative (%) abundances given below. Calculate the average atomic mass of neon to two decimal places.\n\nNe-20 : isotopic mass 19.992 amu, relative abundance 90.48%\n\nNe-21 : isotopic mass 20.994 amu, relative abundance 0.27%\n\nNe-22 : isotopic mass 21.991 amu, relative abundance 9.25%",
+      "answer": "average atomic mass = Sigma (massᵢ × fractional abundanceᵢ)\n\n= (19.992 × 0.9048) + (20.994 × 0.0027) + (21.991 × 0.0925)\n\n= 18.086 + 0.057 + 2.034\n\naverage atomic mass = 20.18 amu"
+    },
+    {
+      "no": 11,
+      "marks": 6,
+      "q": "Boron consists of two naturally occurring isotopes with isotopic masses 10.01 amu and 11.01 amu. The average atomic mass of boron is 10.81 amu. Let x be the fractional abundance of the 10.01 amu isotope.\n\n(a) Set up an algebraic equation for the average atomic mass in terms of x.\n\n(b) Solve the equation for x.\n\n(c) State the percentage abundance of each isotope.",
+      "answer": "(a)\n\nSince there are only two isotopes, the fractional abundance of the second isotope is (1 − x).\n\n10.81 = x(10.01) + (1 - x)(11.01)\n\n(b)\n\n10.81 = 11.01 - x(11.01 - 10.01)\n\n10.81 = 11.01 - x\n\nx = 11.01 - 10.81 = 0.20\n\n(c)\n\n10.01 amu isotope: x × 100% = 20.0%\n\n11.01 amu isotope: (1 - x) × 100% = 80.0%"
+    },
+    {
+      "no": 12,
+      "marks": 6,
+      "q": "Copper consists of two naturally occurring isotopes, copper-63 and copper-65, with isotopic masses 62.93 amu and 64.93 amu respectively. The average atomic mass of copper is 63.55 amu.\n\n(a) Letting x be the fractional abundance of copper-63, set up and solve the algebraic equation for x.\n\n(b) State the percentage abundance of each isotope.",
+      "answer": "(a)\n\n63.55 = x(62.93) + (1 - x)(64.93)\n\n63.55 = 64.93 - x(64.93 - 62.93)\n\n63.55 = 64.93 - 2.00x\n\nx = (64.93 - 63.55)/2.00 = 0.69\n\n(b)\n\ncopper - 63: x × 100% = 69.0%\n\ncopper - 65: (1 - x) × 100% = 31.0%"
+    },
+    {
+      "no": 13,
+      "marks": 6,
+      "q": "Lithium consists of two naturally occurring isotopes, lithium-6 and lithium-7, with isotopic masses 6.02 amu and 7.02 amu respectively. The average atomic mass of lithium is 6.94 amu.\n\n(a) Letting x be the fractional abundance of lithium-6, set up and solve the algebraic equation for x.\n\n(b) State the percentage abundance of each isotope.",
+      "answer": "(a)\n\n6.94 = x(6.02) + (1 - x)(7.02)\n\n6.94 = 7.02 - x(7.02 - 6.02)\n\n6.94 = 7.02 - x\n\nx = 7.02 - 6.94 = 0.08\n\n(b)\n\nlithium - 6: x × 100% = 8.00%\n\nlithium - 7: (1 - x) × 100% = 92.0%"
+    },
+    {
+      "no": 14,
+      "marks": 6,
+      "q": "A sample of sodium hydroxide, NaOH, has a mass of 15.0 g. [Molar mass of NaOH = 40.00 g/mol; Avogadro's number, N_A = 6.022 × 10²³ mol⁻¹]\n\n(a) Determine the number of moles of NaOH in the sample.\n\n(b) Determine the number of formula units of NaOH present.\n\n(c) Determine the number of Na⁺ ions present in the sample.",
+      "answer": "(a)\n\nn = mass/(molar mass) = (15.0 g)/(40.00 g mol) = 0.375 mol\n\n(b)\n\nN = n × N_A = 0.375 mol × 6.022 × 10²³ mol⁻¹\n\nN = 2.258 × 10²³ formula units\n\n(c)\n\nEach formula unit of NaOH contains exactly one Na+ ion, so the number of Na+ ions equals the number of formula units.\n\nnumber of Na⁺ ions = 2.258 × 10²³"
+    },
+    {
+      "no": 15,
+      "marks": 6,
+      "q": "A chemist has 3.50 mol of carbon dioxide gas, CO₂. [Molar mass CO₂ = 44.01 g/mol; at STP, molar volume = 22.4 dm³ mol⁻¹; N_A = 6.022 × 10²³ mol⁻¹]\n\n(a) Determine the mass of CO₂ present.\n\n(b) Determine the number of CO₂ molecules present.\n\n(c) Determine the volume this gas occupies at STP.",
+      "answer": "(a)\n\nmass = n × molar mass = 3.50 mol × 44.01 g mol⁻¹\n\nmass = 154 g\n\n(b)\n\nN = n × N_A = 3.50 mol × 6.022 × 10²³ mol⁻¹\n\nN = 2.108 × 10²⁴ molecules\n\n(c)\n\nV = n × molar volume = 3.50 mol × 22.4 dm³ mol⁻¹\n\nV = 78.4 dm³"
+    },
+    {
+      "no": 16,
+      "marks": 6,
+      "q": "A sample of oxygen gas, O₂, of mass 8.00 g is collected at room temperature (25°C). [Molar mass O₂ = 32.00 g/mol; at room temperature, molar volume = 24.0 dm³ mol⁻¹; N_A = 6.022 × 10²³ mol⁻¹]\n\n(a) Determine the number of moles of O₂ present.\n\n(b) Determine the volume this gas occupies at room temperature.\n\n(c) Determine the number of oxygen atoms present (not molecules).",
+      "answer": "(a)\n\nn = mass/(molar mass) = (8.00 g)/(32.00 g mol) = 0.250 mol\n\n(b)\n\nV = n × molar volume = 0.250 mol × 24.0 dm³ mol⁻¹\n\nV = 6.00 dm³\n\n(c)\n\nmolecules of O₂ = n × N_A = 0.250 mol × 6.022 × 10²³ mol⁻¹\n\n= 1.506 × 10²³ molecules\n\nEach O2 molecule contains 2 oxygen atoms.\n\nO atoms = 2 × 1.506 × 10²³ = 3.011 × 10²³"
+    },
+    {
+      "no": 17,
+      "marks": 6,
+      "q": "A sample of water, H₂O, contains 2.408 × 10²⁴ molecules. [Molar mass H₂O = 18.02 g/mol; N_A = 6.022 × 10²³ mol⁻¹]\n\n(a) Determine the number of moles of water present.\n\n(b) Determine the mass of the water sample.\n\n(c) Determine the number of hydrogen atoms present.",
+      "answer": "(a)\n\nn = N/N_A = (2.408 × 10²⁴)/(6.022 × 10²³)\n\nn = 4.00 mol\n\n(b)\n\nmass = n × molar mass = 4.00 mol × 18.02 g mol⁻¹\n\nmass = 72.1 g\n\n(c)\n\nEach water molecule contains 2 hydrogen atoms.\n\nH atoms = 2 × 2.408 × 10²⁴ = 4.816 × 10²⁴"
+    },
+    {
+      "no": 18,
+      "marks": 6,
+      "q": "A container holds 5.60 dm³ of methane gas, CH₄, measured at STP. [Molar mass CH₄ = 16.05 g/mol; at STP, molar volume = 22.4 dm³ mol⁻¹; N_A = 6.022 × 10²³ mol⁻¹]\n\n(a) Determine the number of moles of CH₄ present.\n\n(b) Determine the mass of CH₄ present.\n\n(c) Determine the number of CH₄ molecules present.",
+      "answer": "(a)\n\nn = V/(molar volume) = (5.60 dm³)/(22.4 dm³ mol) = 0.250 mol\n\n(b)\n\nmass = n × molar mass = 0.250 mol × 16.05 g mol⁻¹\n\nmass = 4.01 g\n\n(c)\n\nN = n × N_A = 0.250 mol × 6.022 × 10²³ mol⁻¹\n\nN = 1.506 × 10²³ molecules"
+    },
+    {
+      "no": 19,
+      "marks": 6,
+      "q": "A sample of calcium carbonate, CaCO₃, has a mass of 12.0 g. [Molar mass CaCO₃ = 100.09 g/mol; N_A = 6.022 × 10²³ mol⁻¹]\n\n(a) Determine the number of moles of CaCO₃ present.\n\n(b) Determine the number of Ca²⁺ ions present.\n\n(c) Determine the number of oxygen atoms present.",
+      "answer": "(a)\n\nn = mass/(molar mass) = (12.0 g)/(100.09 g mol) = 0.120 mol\n\n(b)\n\nCaCO₃ contains one Ca2+ ion per formula unit.\n\nN(Ca²⁺) = n × N_A = 0.120 mol × 6.022 × 10²³ mol⁻¹\n\n= 7.220 × 10²² ions\n\n(c)\n\nCaCO₃ contains 3 oxygen atoms per formula unit.\n\nO atoms = 3 × n × N_A = 3 × 0.120 mol × 6.022 × 10²³ mol⁻¹\n\n= 2.166 × 10²³"
+    },
+    {
+      "no": 20,
+      "marks": 3,
+      "q": "Determine the molar mass of aluminium sulfate, Al₂(SO₄)₃. [Molar mass: Al = 26.98 g/mol, S = 32.07 g/mol, O = 16.00 g/mol]",
+      "answer": "M = 2(26.98) + 3(32.07) + 12(16.00)\n\nM = 53.96 + 96.21 + 192.00\n\nM = 342.17 g mol⁻¹"
+    },
+    {
+      "no": 21,
+      "marks": 3,
+      "q": "Determine the molar mass of calcium nitrate, Ca(NO₃)₂. [Molar mass: Ca = 40.08 g/mol, N = 14.01 g/mol, O = 16.00 g/mol]",
+      "answer": "M = 40.08 + 2(14.01) + 6(16.00)\n\nM = 40.08 + 28.02 + 96.00\n\nM = 164.10 g mol⁻¹"
+    },
+    {
+      "no": 22,
+      "marks": 8,
+      "q": "Compound Y is found by analysis to contain 40.00% carbon, 6.71% hydrogen and 53.29% oxygen by mass. The molar mass of Y is 180.16 g/mol. [Molar mass: C = 12.01 g/mol, H = 1.01 g/mol, O = 16.00 g/mol]\n\n(a) Determine the empirical formula of Y.\n\n(b) Determine the molecular formula of Y.",
+      "answer": "(a)\n\nAssume a 100.00 g sample, so the mass percentages become masses directly. Convert each mass to moles.\n\nn(C) = (40.00 g)/(12.01 g mol) = 3.331 mol\n\nn(H) = (6.71 g)/(1.01 g mol) = 6.644 mol\n\nn(O) = (53.29 g)/(16.00 g mol) = 3.331 mol\n\nDivide each by the smallest value (3.331 mol) to obtain the simplest whole-number ratio.\n\nC : H : O = 3.331/3.331 : 6.644/3.331 : 3.331/3.331 = 1 : 2 : 1\n\nEmpirical formula = CH₂O\n\n(b)\n\nempirical formula mass = 12.01 + 2(1.01) + 16.00 = 30.03 g mol⁻¹\n\nn = (molar mass of Y)/(empirical formula mass) = 180.16/30.03 = 6\n\nMolecular formula = (CH₂O) × 6 = C₆H₁₂O₆ (glucose)."
+    },
+    {
+      "no": 23,
+      "marks": 8,
+      "q": "Compound W is found by analysis to contain 43.64% phosphorus and 56.36% oxygen by mass. The molar mass of W is 283.88 g/mol. [Molar mass: P = 30.97 g/mol, O = 16.00 g/mol]\n\n(a) Determine the empirical formula of W.\n\n(b) Determine the molecular formula of W.",
+      "answer": "(a)\n\nn(P) = (43.64 g)/(30.97 g mol) = 1.409 mol\n\nn(O) = (56.36 g)/(16.00 g mol) = 3.523 mol\n\nP : O = 1.409/1.409 : 3.523/1.409 = 1 : 2.5 = 2 : 5\n\nEmpirical formula = P₂O₅\n\n(b)\n\nempirical formula mass = 2(30.97) + 5(16.00) = 141.94 g mol⁻¹\n\nn = 283.88/141.94 = 2\n\nMolecular formula = (P₂O₅) × 2 = P₄O₁₀ (phosphorus(V) oxide)."
+    },
+    {
+      "no": 24,
+      "marks": 6,
+      "q": "A 14.21 g sample of a compound containing sodium, sulfur and oxygen was analysed and found to contain 4.60 g of sodium, 3.21 g of sulfur and 6.40 g of oxygen. [Molar mass: Na = 22.99 g/mol, S = 32.07 g/mol, O = 16.00 g/mol] Determine the empirical formula of the compound and name it.",
+      "answer": "n(Na) = (4.60 g)/(22.99 g mol) = 0.2000 mol\n\nn(S) = (3.21 g)/(32.07 g mol) = 0.1001 mol\n\nn(O) = (6.40 g)/(16.00 g mol) = 0.4000 mol\n\nDivide each by the smallest value, 0.1001 mol:\n\nNa : S : O = 0.2000/0.1001 : 0.1001/0.1001 : 0.4000/0.1001 = 2 : 1 : 4\n\nEmpirical formula = Na₂SO₄ — this is sodium sulfate."
+    },
+    {
+      "no": 25,
+      "marks": 6,
+      "q": "An oxide of iron is found by analysis to contain 69.94% iron and 30.06% oxygen by mass. [Molar mass: Fe = 55.85 g/mol, O = 16.00 g/mol] Determine the empirical formula of this oxide and name the compound.",
+      "answer": "n(Fe) = (69.94 g)/(55.85 g mol) = 1.252 mol\n\nn(O) = (30.06 g)/(16.00 g mol) = 1.879 mol\n\nFe : O = 1.252/1.252 : 1.879/1.252 = 1 : 1.5 = 2 : 3\n\nEmpirical formula = Fe₂O₃ — this is iron(III) oxide."
+    },
+    {
+      "no": 26,
+      "marks": 4,
+      "q": "Distinguish between empirical formula and molecular formula. Construct your own example of a compound whose molecular formula is a whole-number multiple of its empirical formula, and show both formulas explicitly.",
+      "answer": "The empirical formula shows the simplest whole-number ratio of atoms of each element in a compound. The molecular formula shows the actual number of atoms of each element present in one molecule, and is always a whole-number multiple, n, of the empirical formula.\n\nmolecular formula = (empirical formula) × n, n = 1, 2, 3, ...\n\nExample: hydrogen peroxide has empirical formula HO but molecular formula H₂O₂ (n = 2). Another example: benzene has empirical formula CH but molecular formula C₆H₆ (n = 6)."
+    },
+    {
+      "no": 27,
+      "marks": 3,
+      "q": "0.500 mol of sodium chloride, NaCl, is dissolved in enough water to make 2.50 dm³ of solution. Determine the molarity of the solution.",
+      "answer": "M = n/V = (0.500 mol)/(2.50 dm³)\n\nM = 0.200 mol dm⁻³"
+    },
+    {
+      "no": 28,
+      "marks": 5,
+      "q": "A student dissolves 4.90 g of sulfuric acid, H₂SO₄, in water to make 250 mL of solution. [Molar mass H₂SO₄ = 98.08 g/mol] Determine the molarity of the solution.",
+      "answer": "n = mass/(molar mass) = (4.90 g)/(98.08 g mol) = 0.0500 mol\n\nV = 250 mL = 0.250 dm³\n\nM = n/V = (0.0500 mol)/(0.250 dm³) = 0.200 mol dm⁻³"
+    },
+    {
+      "no": 29,
+      "marks": 5,
+      "q": "Determine the number of moles and the mass of potassium permanganate, KMnO₄, present in 150 mL of a 0.0200 mol dm⁻³ solution. [Molar mass KMnO₄ = 158.03 g/mol]",
+      "answer": "n = M × V = 0.0200 mol dm⁻³ × 0.150 dm³\n\nn = 3.00 × 10⁻³ mol\n\nmass = n × molar mass = 3.00 × 10⁻³ mol × 158.03 g mol⁻¹\n\nmass = 0.474 g"
+    },
+    {
+      "no": 30,
+      "marks": 4,
+      "q": "5.85 g of sodium chloride, NaCl, is dissolved in 200 g of water. [Molar mass NaCl = 58.44 g/mol] Determine the molality of the solution.",
+      "answer": "n = mass/(molar mass) = (5.85 g)/(58.44 g mol) = 0.1001 mol\n\nmass of solvent = 200 g = 0.200 kg\n\nmolality = n/(mass of solvent (kg)) = (0.1001 mol)/(0.200 kg)\n\nmolality = 0.501 mol kg⁻¹"
+    },
+    {
+      "no": 31,
+      "marks": 4,
+      "q": "25.0 g of glucose, C₆H₁₂O₆, is dissolved in 500 g of water. [Molar mass glucose = 180.16 g/mol] Determine the molality of the solution.",
+      "answer": "n = mass/(molar mass) = (25.0 g)/(180.16 g mol) = 0.1388 mol\n\nmass of solvent = 500 g = 0.500 kg\n\nmolality = (0.1388 mol)/(0.500 kg) = 0.278 mol kg⁻¹"
+    },
+    {
+      "no": 32,
+      "marks": 3,
+      "q": "Explain, referring to the definitions of molarity and molality, why molality is preferred over molarity for solutions that will be used or stored across a range of temperatures.",
+      "answer": "molarity, M = (mol solute)/(dm³ of solution)\n\nmolality, m = (mol solute)/(kg of solvent)\n\nMolarity is defined using the volume of the solution. Liquid volumes expand and contract with changes in temperature, so the molarity of a given solution changes slightly with temperature even though the amount of solute and solvent present has not changed. Molality is defined using the mass of the solvent, and mass does not change with temperature. Molality is therefore a temperature-independent quantity, which makes it the more reliable concentration measure for solutions used or stored across a range of temperatures."
+    },
+    {
+      "no": 33,
+      "marks": 6,
+      "q": "A solution is prepared by mixing 36.0 g of water, H₂O, with 46.0 g of ethanol, C₂H₅OH. [Molar mass H₂O = 18.02 g/mol; C₂H₅OH = 46.07 g/mol]\n\n(a) Determine the mole fraction of water in the solution.\n\n(b) Determine the mole fraction of ethanol in the solution.",
+      "answer": "n(water) = (36.0 g)/(18.02 g mol) = 1.998 mol\n\nn(ethanol) = (46.0 g)/(46.07 g mol) = 0.998 mol\n\ntotal moles = 1.998 + 0.998 = 2.996 mol\n\n(a)\n\nX_water = n_water/(total n) = 1.998/2.996 = 0.667\n\n(b)\n\nXₑₜₕₐₙₒₗ = 0.998/2.996 = 0.333\n\nCheck: 0.667 + 0.333 = 1.000, as required."
+    },
+    {
+      "no": 34,
+      "marks": 5,
+      "q": "A solution contains 0.250 mol of glucose dissolved in 750 g of water. [Molar mass H₂O = 18.02 g/mol]\n\n(a) Determine the number of moles of water present.\n\n(b) Determine the mole fraction of glucose in the solution.",
+      "answer": "(a)\n\nn(water) = (750 g)/(18.02 g mol) = 41.62 mol\n\n(b)\n\ntotal moles = 0.250 + 41.62 = 41.87 mol\n\nX_glucose = 0.250/41.87 = 5.97 × 10⁻³"
+    },
+    {
+      "no": 35,
+      "marks": 3,
+      "q": "15.0 g of sodium chloride, NaCl, is dissolved in 135 g of water. Determine the mass percentage of NaCl in the resulting solution.",
+      "answer": "mass % = (mass of solute)/(mass of solution) × 100%\n\nmass % = (15.0 g)/(15.0 g + 135 g) × 100%\n\nmass % = 10.0%"
+    },
+    {
+      "no": 36,
+      "marks": 4,
+      "q": "A solution is 12.0% sodium hydroxide, NaOH, by mass. Determine the mass of NaOH and the mass of water present in 250 g of this solution.",
+      "answer": "mass of NaOH = mass % × mass of solution = 0.120 × 250 g\n\nmass of NaOH = 30.0 g\n\nmass of water = mass of solution - mass of NaOH = 250 g - 30.0 g\n\nmass of water = 220.0 g"
+    },
+    {
+      "no": 37,
+      "marks": 3,
+      "q": "A solution is prepared by mixing 40.0 mL of ethanol with water to give a final solution volume of 250 mL. Determine the volume percentage of ethanol in the solution.",
+      "answer": "volume % = (volume of solute)/(volume of solution) × 100%\n\nvolume % = (40.0 mL)/(250 mL) × 100%\n\nvolume % = 16.0%"
+    },
+    {
+      "no": 38,
+      "marks": 6,
+      "q": "A concentrated hydrochloric acid solution is 36.5% HCl by mass and has a density of 1.19 g cm⁻³. [Molar mass HCl = 36.46 g/mol] Determine the molarity of this solution. (Consider 1 dm³ (1000 cm³) of solution.)",
+      "answer": "Consider exactly 1 dm3 (1000 cm3) of solution.\n\nmass of solution = 1000 cm³ × 1.19 g cm⁻³ = 1190 g\n\nmass of HCl = 36.5% × 1190 g = 434 g\n\nn(HCl) = (434 g)/(36.46 g mol) = 11.9 mol\n\nM = n/V = (11.9 mol)/(1 dm³) = 11.9 mol dm⁻³"
+    },
+    {
+      "no": 39,
+      "marks": 6,
+      "q": "A sodium hydroxide, NaOH, solution has a molarity of 2.50 mol dm⁻³ and a density of 1.10 g cm⁻³. [Molar mass NaOH = 40.00 g/mol] Determine the mass percentage of NaOH in this solution.",
+      "answer": "Consider exactly 1 dm3 (1000 cm3) of solution.\n\nn(NaOH) = M × V = 2.50 mol dm⁻³ × 1 dm³ = 2.50 mol\n\nmass of NaOH = n × molar mass = 2.50 mol × 40.00 g mol⁻¹ = 100 g\n\nmass of solution = 1000 cm³ × 1.10 g cm⁻³ = 1100 g\n\nmass % = (100 g)/(1100 g) × 100% = 9.09%"
+    },
+    {
+      "no": 40,
+      "marks": 6,
+      "q": "Concentrated sulfuric acid is 98.0% H₂SO₄ by mass with a density of 1.84 g cm⁻³. [Molar mass H₂SO₄ = 98.08 g/mol] Determine the molarity of concentrated sulfuric acid.",
+      "answer": "Consider exactly 1 dm3 (1000 cm3) of solution.\n\nmass of solution = 1000 cm³ × 1.84 g cm⁻³ = 1840 g\n\nmass of H₂SO₄ = 98.0% × 1840 g = 1803 g\n\nn = (1803 g)/(98.08 g mol) = 18.4 mol\n\nM = (18.4 mol)/(1 dm³) = 18.4 mol dm⁻³"
+    },
+    {
+      "no": 41,
+      "marks": 4,
+      "q": "Determine the volume of 12.0 mol dm⁻³ hydrochloric acid stock solution required to prepare 500 mL of 0.500 mol dm⁻³ HCl solution.",
+      "answer": "M_concV_conc = M_dilV_dil\n\nV_conc = M_dilV_dil/M_conc = (0.500 mol dm⁻³ × 500 mL)/(12.0 mol dm⁻³)\n\nV_conc = 20.8 mL"
+    },
+    {
+      "no": 42,
+      "marks": 4,
+      "q": "25.0 mL of 6.00 mol dm⁻³ sodium hydroxide solution is diluted with water to a final volume of 250 mL. Determine the molarity of the diluted solution.",
+      "answer": "M_concV_conc = M_dilV_dil\n\nM_dil = M_concV_conc/V_dil = (6.00 mol dm⁻³ × 25.0 mL)/(250 mL)\n\nM_dil = 0.600 mol dm⁻³"
+    },
+    {
+      "no": 43,
+      "marks": 5,
+      "q": "A stock solution of copper(II) sulfate, CuSO₄, has a concentration of 2.00 mol dm⁻³.\n\n(a) Determine the volume of this stock solution required to prepare 1.00 dm³ of 0.150 mol dm⁻³ CuSO₄ solution.\n\n(b) Determine the volume of water that must be added.",
+      "answer": "(a)\n\nM_concV_conc = M_dilV_dil\n\nV_conc = (0.150 mol dm⁻³ × 1000 mL)/(2.00 mol dm⁻³)\n\nV_conc = 75.0 mL\n\n(b)\n\nvolume of water = 1000 mL - 75.0 mL = 925 mL"
+    },
+    {
+      "no": 44,
+      "marks": 4,
+      "q": "A stock solution of sulfuric acid is 18.0 mol dm⁻³. Determine the volume of stock acid required to prepare 2.00 dm³ of 0.250 mol dm⁻³ H₂SO₄ solution for a titration experiment.",
+      "answer": "M_concV_conc = M_dilV_dil\n\nV_conc = (0.250 mol dm⁻³ × 2.00 dm³)/(18.0 mol dm⁻³)\n\nV_conc = 0.0278 dm³ = 27.8 mL"
+    },
+    {
+      "no": 45,
+      "marks": 4,
+      "q": "Determine the mass of potassium dichromate, K₂Cr₂O₇, required to prepare 250 mL of a 0.100 mol dm⁻³ standard solution. [Molar mass K₂Cr₂O₇ = 294.18 g/mol]",
+      "answer": "n = M × V = 0.100 mol dm⁻³ × 0.250 dm³\n\nn = 0.0250 mol\n\nmass = n × molar mass = 0.0250 mol × 294.18 g mol⁻¹\n\nmass = 7.35 g"
+    },
+    {
+      "no": 46,
+      "marks": 4,
+      "q": "Determine the mass of anhydrous sodium carbonate, Na₂CO₃, required to prepare 1.00 dm³ of a 0.0500 mol dm⁻³ standard solution used to standardize a hydrochloric acid solution. [Molar mass Na₂CO₃ = 105.99 g/mol]",
+      "answer": "n = M × V = 0.0500 mol dm⁻³ × 1.00 dm³\n\nn = 0.0500 mol\n\nmass = n × molar mass = 0.0500 mol × 105.99 g mol⁻¹\n\nmass = 5.30 g"
+    },
+    {
+      "no": 47,
+      "marks": 3,
+      "q": "The relative atomic mass of chlorine listed on the periodic table is 35.45, which is not a whole number. Explain why, referring to the isotopic composition of chlorine.",
+      "answer": "Chlorine exists in nature as a fixed mixture of isotopes, chiefly chlorine-35 (about 75.77%) and chlorine-37 (about 24.23%), each with its own whole-number-ish isotopic mass.\n\naverage atomic mass = Sigma (massᵢ × fractional abundanceᵢ)\n\nBecause the listed relative atomic mass is this weighted average of the two isotopic masses — not the mass of a single isotope — and the isotopes are present in different (non-whole-number) proportions, the resulting average does not come out to a whole number."
+    },
+    {
+      "no": 48,
+      "marks": 3,
+      "q": "Explain the difference between proton (atomic) number and nucleon (mass) number, and explain why isotopes of the same element show identical chemical properties despite having different nucleon numbers.",
+      "answer": "Proton number (Z) is the number of protons in the nucleus of an atom; it defines the identity of the element and equals the number of electrons in a neutral atom. Nucleon number (A) is the total number of protons and neutrons in the nucleus.\n\nIsotopes of an element all have the same proton number Z (and therefore the same number of electrons and the same electron configuration in the neutral atom), but different numbers of neutrons and hence different nucleon numbers A. Chemical properties are governed almost entirely by the arrangement of electrons, especially the valence electrons, not by the number of neutrons in the nucleus. Since isotopes of the same element have identical electron configurations, they behave essentially identically in chemical reactions even though their masses differ."
+    },
+    {
+      "no": 49,
+      "marks": 3,
+      "q": "Explain why one mole of an ideal gas occupies a larger volume at room temperature (molar volume = 24.0 dm³ mol⁻¹) than at STP (molar volume = 22.4 dm³ mol⁻¹).",
+      "answer": "PV = nRT Rightarrow V propto T (at constant n, P)\n\nAt constant pressure and amount of gas, the volume of a gas is directly proportional to its absolute temperature. STP is defined at 0°C (273 K), which is a lower temperature than room temperature, 25°C (298 K). At the higher room temperature, the gas molecules have more kinetic energy and spread further apart at essentially the same pressure, so the same one mole of gas occupies a larger volume (24.0 dm3) at room temperature than it does at STP (22.4 dm3)."
+    },
+    {
+      "no": 50,
+      "marks": 3,
+      "q": "A student adds water directly into a beaker of concentrated sulfuric acid while preparing a diluted solution. Explain, referring to the dilution relationship M_concV_conc = M_dilV_dil and the properties of concentrated acid, why this is a dangerous laboratory practice, and state the correct procedure.",
+      "answer": "M_concV_conc = M_dilV_dil\n\nThis relationship only tells us the volumes/concentrations needed for a correct dilution — it says nothing about the very large, exothermic heat of hydration released when concentrated sulfuric acid mixes with water.\n\nIf water is added directly into the concentrated acid, the small amount of water added first is heated so strongly by the concentrated acid that it can flash-boil almost instantly, causing violent spattering of hot, corrosive acid out of the container.\n\nThe correct and safe procedure is to add the concentrated acid slowly, with stirring, into a much larger volume of water (\"add acid to water\"). This keeps the heat released spread through a large mass of water and keeps the local acid concentration low throughout the mixing process, avoiding sudden boiling and spattering."
+    }
+  ]
+}
