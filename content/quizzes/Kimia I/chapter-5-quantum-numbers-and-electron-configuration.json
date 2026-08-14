@@ -1,0 +1,305 @@
+{
+  "title": "Chapter 5: Quantum Numbers and Electron Configuration — ASC0304 Chemistry I",
+  "questions": [
+    {
+      "no": 1,
+      "marks": 2,
+      "q": "A student proposes the following set of four quantum numbers for an electron: n = 3, ℓ = 2, m_ℓ = -2, mₛ = +½. Determine whether this set is VALID or INVALID. If it is invalid, state clearly which rule is broken and correct the erroneous value.",
+      "answer": "VALID.\n\nell ≤ n - 1: 2 ≤ 2 ✓ - ell ≤ mell ≤ + ell: - 2 ≤ - 2 ≤ + 2 ✓\n\nms = +½, which is one of the two permitted values (+½ or −½). All four quantum numbers obey the rules, so this is a physically allowed description of an electron."
+    },
+    {
+      "no": 2,
+      "marks": 2,
+      "q": "A student proposes the following set of four quantum numbers for an electron: n = 2, ℓ = 2, m_ℓ = 0, mₛ = -½. Determine whether this set is VALID or INVALID. If it is invalid, state clearly which rule is broken and correct the erroneous value.",
+      "answer": "INVALID — the rule ℓ ≤ n − 1 is broken.\n\nRule: ell ≤ n - 1. Given n = 2: ell ≤ 1. But ell = 2 > 1 → INVALID\n\nCorrection: the largest permissible ℓ for n = 2 is ℓ = 1 (giving mℓ values from −1 to +1)."
+    },
+    {
+      "no": 3,
+      "marks": 2,
+      "q": "A student proposes the following set of four quantum numbers for an electron: n = 4, ℓ = 3, m_ℓ = 4, mₛ = +½. Determine whether this set is VALID or INVALID. If it is invalid, state clearly which rule is broken and correct the erroneous value.",
+      "answer": "INVALID — the rule −ℓ ≤ mℓ ≤ +ℓ is broken.\n\nRule: - ell ≤ mell ≤ + ell. Given ell = 3: - 3 ≤ mell ≤ + 3. But mell = 4 → INVALID\n\nCorrection: mℓ must be one of −3, ..., 0, ..., +3 (e.g. mℓ = +3)."
+    },
+    {
+      "no": 4,
+      "marks": 2,
+      "q": "A student proposes the following set of four quantum numbers for an electron: n = 5, ℓ = 1, m_ℓ = -1, mₛ = +1. Determine whether this set is VALID or INVALID. If it is invalid, state clearly which rule is broken and correct the erroneous value.",
+      "answer": "INVALID — the spin quantum number can only take the value +½ or −½.\n\nms = + 1 → not a permitted value → INVALID\n\nCorrection: ms must be changed to +½ or −½ (the two spin states of an electron)."
+    },
+    {
+      "no": 5,
+      "marks": 2,
+      "q": "A student proposes the following set of four quantum numbers for an electron: n = 1, ℓ = 0, m_ℓ = 0, mₛ = -½. Determine whether this set is VALID or INVALID. If it is invalid, state clearly which rule is broken and correct the erroneous value.",
+      "answer": "VALID.\n\nell ≤ n - 1: 0 ≤ 0 ✓ - ell ≤ mell ≤ + ell: - 0 ≤ 0 ≤ + 0 ✓\n\nms = -½, which is one of the two permitted values (+½ or −½). All four quantum numbers obey the rules, so this is a physically allowed description of an electron."
+    },
+    {
+      "no": 6,
+      "marks": 2,
+      "q": "A student proposes the following set of four quantum numbers for an electron: n = 6, ℓ = 4, m_ℓ = -3, mₛ = +½. Determine whether this set is VALID or INVALID. If it is invalid, state clearly which rule is broken and correct the erroneous value.",
+      "answer": "VALID.\n\nell ≤ n - 1: 4 ≤ 5 ✓ - ell ≤ mell ≤ + ell: - 4 ≤ - 3 ≤ + 4 ✓\n\nms = +½, which is one of the two permitted values (+½ or −½). All four quantum numbers obey the rules, so this is a physically allowed description of an electron."
+    },
+    {
+      "no": 7,
+      "marks": 2,
+      "q": "A student proposes the following set of four quantum numbers for an electron: n = 0, ℓ = 0, m_ℓ = 0, mₛ = +½. Determine whether this set is VALID or INVALID. If it is invalid, state clearly which rule is broken and correct the erroneous value.",
+      "answer": "INVALID — n must be a positive, non-zero integer (n = 1, 2, 3, ...).\n\nn = 0 → not permitted → INVALID\n\nCorrection: the smallest allowed value is n = 1 (with ℓ = 0, mℓ = 0)."
+    },
+    {
+      "no": 8,
+      "marks": 2,
+      "q": "A student proposes the following set of four quantum numbers for an electron: n = 4, ℓ = 2, m_ℓ = -1, mₛ = -½. Determine whether this set is VALID or INVALID. If it is invalid, state clearly which rule is broken and correct the erroneous value.",
+      "answer": "VALID.\n\nell ≤ n - 1: 2 ≤ 3 ✓ - ell ≤ mell ≤ + ell: - 2 ≤ - 1 ≤ + 2 ✓\n\nms = -½, which is one of the two permitted values (+½ or −½). All four quantum numbers obey the rules, so this is a physically allowed description of an electron."
+    },
+    {
+      "no": 9,
+      "marks": 2,
+      "q": "Calculate (i) the number of orbitals and (ii) the maximum number of electrons that can be accommodated in the shell with principal quantum number n = 2.",
+      "answer": "n² = 2² = 4 orbitals | 2n² = 2( 2 )² = 8 electrons\n\nSo the n = 2 shell has 4 orbitals and can hold a maximum of 8 electrons."
+    },
+    {
+      "no": 10,
+      "marks": 2,
+      "q": "Calculate (i) the number of orbitals and (ii) the maximum number of electrons that can be accommodated in the shell with principal quantum number n = 5.",
+      "answer": "n² = 5² = 25 orbitals | 2n² = 2( 5 )² = 50 electrons\n\nSo the n = 5 shell has 25 orbitals and can hold a maximum of 50 electrons."
+    },
+    {
+      "no": 11,
+      "marks": 2,
+      "q": "Calculate (i) the number of orbitals and (ii) the maximum number of electrons that can be accommodated in the shell with principal quantum number n = 6.",
+      "answer": "n² = 6² = 36 orbitals | 2n² = 2( 6 )² = 72 electrons\n\nSo the n = 6 shell has 36 orbitals and can hold a maximum of 72 electrons."
+    },
+    {
+      "no": 12,
+      "marks": 4,
+      "q": "For the n = 4 shell, ℓ can take the values 0, 1, 2 and 3 (s, p, d, f). By calculating the number of orbitals contributed by each subshell (2ℓ + 1) and summing them, show that the total number of orbitals in the n = 4 shell is indeed equal to n².",
+      "answer": "Using 2ℓ + 1 for each subshell: ℓ = 0 (s) gives 1 orbital, ℓ = 1 (p) gives 3, ℓ = 2 (d) gives 5, and ℓ = 3 (f) gives 7 orbitals.\n\n1 + 3 + 5 + 7 = 16 | n² = 4² = 16\n\nSince both methods give 16, this confirms that the total number of orbitals in a shell equals n²."
+    },
+    {
+      "no": 13,
+      "marks": 3,
+      "q": "A certain shell can hold a maximum of 98 electrons. Determine the principal quantum number, n, of this shell.",
+      "answer": "2n² = 98 → n² = 49 → n = √(49) = 7"
+    },
+    {
+      "no": 14,
+      "marks": 3,
+      "q": "A shell is found to contain a total of 64 orbitals. Determine the principal quantum number, n, of this shell.",
+      "answer": "n² = 64 → n = √(64) = 8"
+    },
+    {
+      "no": 15,
+      "marks": 3,
+      "q": "Identify the shell (state its principal quantum number, n) whose maximum electron capacity is 18 electrons, and name the subshells (s, p, d, ...) that this shell contains.",
+      "answer": "2n² = 18 → n² = 9 → n = 3\n\nFor n = 3, ℓ = 0, 1, 2 → the shell contains the 3s, 3p and 3d subshells."
+    },
+    {
+      "no": 16,
+      "marks": 3,
+      "q": "Calculate the maximum number of electrons that the n = 3 shell and the n = 4 shell can each hold, and hence determine how many more electrons the n = 4 shell can accommodate compared to the n = 3 shell.",
+      "answer": "2( 3 )² = 18 | 2( 4 )² = 32 | 32 - 18 = 14\n\nThe n = 4 shell can hold 14 more electrons than the n = 3 shell."
+    },
+    {
+      "no": 17,
+      "marks": 3,
+      "q": "A shell contains 100 orbitals in total. Determine its principal quantum number, n, and calculate the maximum number of electrons it can hold.",
+      "answer": "n² = 100 → n = √(100) = 10 | 2( 10 )² = 200"
+    },
+    {
+      "no": 18,
+      "marks": 4,
+      "q": "The difference in the maximum electron capacity between two consecutive shells, n and (n + 1), is found to be 22 electrons. Identify the two values of n, showing your working.",
+      "answer": "Let the maximum capacities be 2n² and 2(n + 1)². By trial using consecutive integers:\n\n2( 5 )² = 50 | 2( 6 )² = 72 | 72 - 50 = 22\n\nTherefore the two shells are n = 5 and n = 6."
+    },
+    {
+      "no": 19,
+      "marks": 7,
+      "q": "Write the complete set of four quantum numbers (n, ℓ, mℓ, ms) for every electron in a 3p⁵ configuration. Present your answer as a table (applying Hund's rule and the Pauli exclusion principle), and state how many of these electrons are unpaired.",
+      "answer": "Electron 1: n=3, ℓ=1, mℓ=-1, ms=+½\nElectron 2: n=3, ℓ=1, mℓ=0, ms=+½\nElectron 3: n=3, ℓ=1, mℓ=1, ms=+½\nElectron 4: n=3, ℓ=1, mℓ=-1, ms=-½\nElectron 5: n=3, ℓ=1, mℓ=0, ms=-½\n\nNumber of unpaired electrons = 1."
+    },
+    {
+      "no": 20,
+      "marks": 5,
+      "q": "Write the complete set of four quantum numbers (n, ℓ, mℓ, ms) for every electron in a 4d³ configuration. Present your answer as a table (applying Hund's rule and the Pauli exclusion principle), and state how many of these electrons are unpaired.",
+      "answer": "Electron 1: n=4, ℓ=2, mℓ=-2, ms=+½\nElectron 2: n=4, ℓ=2, mℓ=-1, ms=+½\nElectron 3: n=4, ℓ=2, mℓ=0, ms=+½\n\nNumber of unpaired electrons = 3."
+    },
+    {
+      "no": 21,
+      "marks": 6,
+      "q": "Write the complete set of four quantum numbers (n, ℓ, mℓ, ms) for every electron in a 5p⁴ configuration. Present your answer as a table (applying Hund's rule and the Pauli exclusion principle), and state how many of these electrons are unpaired.",
+      "answer": "Electron 1: n=5, ℓ=1, mℓ=-1, ms=+½\nElectron 2: n=5, ℓ=1, mℓ=0, ms=+½\nElectron 3: n=5, ℓ=1, mℓ=1, ms=+½\nElectron 4: n=5, ℓ=1, mℓ=-1, ms=-½\n\nNumber of unpaired electrons = 2."
+    },
+    {
+      "no": 22,
+      "marks": 8,
+      "q": "Write the complete set of four quantum numbers (n, ℓ, mℓ, ms) for every electron in a 3d⁷ configuration. Present your answer as a table (applying Hund's rule and the Pauli exclusion principle), and state how many of these electrons are unpaired.",
+      "answer": "Electron 1: n=3, ℓ=2, mℓ=-2, ms=+½\nElectron 2: n=3, ℓ=2, mℓ=-1, ms=+½\nElectron 3: n=3, ℓ=2, mℓ=0, ms=+½\nElectron 4: n=3, ℓ=2, mℓ=1, ms=+½\nElectron 5: n=3, ℓ=2, mℓ=2, ms=+½\nElectron 6: n=3, ℓ=2, mℓ=-2, ms=-½\nElectron 7: n=3, ℓ=2, mℓ=-1, ms=-½\n\nNumber of unpaired electrons = 3."
+    },
+    {
+      "no": 23,
+      "marks": 5,
+      "q": "Write the complete set of four quantum numbers (n, ℓ, mℓ, ms) for every electron in a 4f³ configuration. Present your answer as a table (applying Hund's rule and the Pauli exclusion principle), and state how many of these electrons are unpaired.",
+      "answer": "Electron 1: n=4, ℓ=3, mℓ=-3, ms=+½\nElectron 2: n=4, ℓ=3, mℓ=-2, ms=+½\nElectron 3: n=4, ℓ=3, mℓ=-1, ms=+½\n\nNumber of unpaired electrons = 3."
+    },
+    {
+      "no": 24,
+      "marks": 5,
+      "q": "Write the complete set of four quantum numbers (n, ℓ, mℓ, ms) for every electron in a 4p³ configuration. Present your answer as a table (applying Hund's rule and the Pauli exclusion principle), and state how many of these electrons are unpaired.",
+      "answer": "Electron 1: n=4, ℓ=1, mℓ=-1, ms=+½\nElectron 2: n=4, ℓ=1, mℓ=0, ms=+½\nElectron 3: n=4, ℓ=1, mℓ=1, ms=+½\n\nNumber of unpaired electrons = 3."
+    },
+    {
+      "no": 25,
+      "marks": 4,
+      "q": "Write the complete set of four quantum numbers (n, ℓ, mℓ, ms) for every electron in a 3s² configuration. Present your answer as a table (applying Hund's rule and the Pauli exclusion principle), and state how many of these electrons are unpaired.",
+      "answer": "Electron 1: n=3, ℓ=0, mℓ=0, ms=+½\nElectron 2: n=3, ℓ=0, mℓ=0, ms=-½\n\nNumber of unpaired electrons = 0."
+    },
+    {
+      "no": 26,
+      "marks": 3,
+      "q": "Write the complete set of four quantum numbers (n, ℓ, mℓ, ms) for every electron in a 6s¹ configuration. Present your answer as a table (applying Hund's rule and the Pauli exclusion principle), and state how many of these electrons are unpaired.",
+      "answer": "Electron 1: n=6, ℓ=0, mℓ=0, ms=+½\n\nNumber of unpaired electrons = 1."
+    },
+    {
+      "no": 27,
+      "marks": 3,
+      "q": "Write the full ground-state electron configuration (spdf notation) of a nitrogen atom, N (Z = 7).",
+      "answer": "1s² 2s² 2p³"
+    },
+    {
+      "no": 28,
+      "marks": 4,
+      "q": "Write the ground-state electron configuration of a silicon atom, Si (Z = 14), in (i) full spdf notation and (ii) noble-gas-core notation.",
+      "answer": "1s² 2s² 2p⁶ 3s² 3p²\n\n[Ne] 3s² 3p²"
+    },
+    {
+      "no": 29,
+      "marks": 4,
+      "q": "Write the noble-gas-core electron configuration of a potassium atom, K (Z = 19), and explain why the 19th electron enters the 4s orbital rather than the 3d orbital.",
+      "answer": "[Ar] 4s¹\n\nThe 4s orbital, although belonging to a higher principal quantum number, has a lower energy than the 3d orbital for K. By the Aufbau principle, electrons occupy the lowest-energy available orbital first; since 4s \\< 3d in energy at this point, the 19th electron fills the 4s orbital before any electron enters 3d."
+    },
+    {
+      "no": 30,
+      "marks": 4,
+      "q": "Write the ground-state electron configuration of an iron atom, Fe (Z = 26), in (i) full spdf notation and (ii) noble-gas-core notation.",
+      "answer": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d⁶\n\n[Ar] 4s² 3d⁶"
+    },
+    {
+      "no": 31,
+      "marks": 4,
+      "q": "Write the ground-state electron configuration of a zinc atom, Zn (Z = 30), in (i) full spdf notation and (ii) noble-gas-core notation.",
+      "answer": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰\n\n[Ar] 4s² 3d¹⁰"
+    },
+    {
+      "no": 32,
+      "marks": 3,
+      "q": "Write the noble-gas-core electron configuration of a bromine atom, Br (Z = 35).",
+      "answer": "[Ar] 4s² 3d¹⁰ 4p⁵"
+    },
+    {
+      "no": 33,
+      "marks": 4,
+      "q": "Write the ground-state electron configuration of a strontium atom, Sr (Z = 38), in (i) full spdf notation and (ii) noble-gas-core notation.",
+      "answer": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 3d¹⁰ 4p⁶ 5s²\n\n[Kr] 5s²"
+    },
+    {
+      "no": 34,
+      "marks": 3,
+      "q": "Write the noble-gas-core electron configuration of a zirconium atom, Zr (Z = 40).",
+      "answer": "[Kr] 5s² 4d²"
+    },
+    {
+      "no": 35,
+      "marks": 4,
+      "q": "Write the noble-gas-core electron configuration of the Fe²⁺ ion (Fe, Z = 26). Explain which sub-shell loses electrons first when a neutral transition-metal atom is ionised to form a cation.",
+      "answer": "[Ar] 3d⁶\n\nFor transition metals, electrons are removed from the outermost s subshell before the inner d subshell, because once the 3d subshell begins to fill, it becomes lower in energy than 4s in the ion. Fe is [Ar] 4s² 3d⁶; removing 2 electrons therefore empties the 4s orbital first, leaving [Ar] 3d⁶."
+    },
+    {
+      "no": 36,
+      "marks": 4,
+      "q": "Write the noble-gas-core electron configuration of the Fe³⁺ ion (Fe, Z = 26), and explain why the Fe³⁺ ion is particularly stable.",
+      "answer": "[Ar] 3d⁵\n\nBoth 4s electrons are removed first, followed by one 3d electron, giving [Ar] 3d⁵. This configuration is especially stable because the 3d subshell is exactly half-filled (one electron in each of the five 3d orbitals with parallel spin), which is a lower-energy, more stable arrangement by the rule of stability."
+    },
+    {
+      "no": 37,
+      "marks": 3,
+      "q": "Write the noble-gas-core electron configuration of the Ti²⁺ ion (Ti, Z = 22).",
+      "answer": "[Ar] 3d²"
+    },
+    {
+      "no": 38,
+      "marks": 4,
+      "q": "Write the electron configuration of the S²⁻ ion (S, Z = 16) in (i) full spdf notation and (ii) noble-gas-core notation, and state which noble gas it is isoelectronic with.",
+      "answer": "1s² 2s² 2p⁶ 3s² 3p⁶\n\n[Ne] 3s² 3p⁶\n\nS²⁻ has 18 electrons, the same configuration and electron count as a neutral argon (Ar) atom — the two species are isoelectronic."
+    },
+    {
+      "no": 39,
+      "marks": 4,
+      "q": "Write the electron configuration of the O²⁻ ion (O, Z = 8) in full spdf notation, and state which noble gas it is isoelectronic with.",
+      "answer": "1s² 2s² 2p⁶\n\nO²⁻ has 10 electrons, the same configuration and electron count as a neutral neon (Ne) atom — the two species are isoelectronic."
+    },
+    {
+      "no": 40,
+      "marks": 5,
+      "q": "Write the electron configurations of the Na⁺ ion (Na, Z = 11) and the F⁻ ion (F, Z = 9). Explain, using the term 'isoelectronic', why these two ions have identical electron configurations even though they come from different elements.",
+      "answer": "Na⁺: 1s² 2s² 2p⁶\n\nF⁻: 1s² 2s² 2p⁶\n\nNa (Z = 11) loses 1 electron to form Na⁺ (10 electrons); F (Z = 9) gains 1 electron to form F⁻ (10 electrons). Both ions therefore have exactly 10 electrons arranged as 1s² 2s² 2p⁶ — the same configuration as neutral neon. Species with identical electron configurations (the same number and arrangement of electrons), regardless of their nuclear charge, are described as isoelectronic."
+    },
+    {
+      "no": 41,
+      "marks": 4,
+      "q": "Draw (describe using ↑ / ↓ notation) the orbital box diagram for the 2p subshell of a nitrogen atom, N (Z = 7), and state whether the atom is paramagnetic or diamagnetic. Justify your answer.",
+      "answer": "Full configuration: 1s² 2s² 2p³. Orbital box diagram for 2p³ (applying Hund's rule — one electron enters each degenerate orbital before pairing begins):\n\nmℓ = -1: [↑] mℓ = 0: [↑] mℓ = +1: [↑]\n\nAll three 2p electrons are unpaired (parallel spins in separate orbitals). Since the atom contains unpaired electrons, nitrogen is PARAMAGNETIC."
+    },
+    {
+      "no": 42,
+      "marks": 3,
+      "q": "A magnesium atom, Mg (Z = 12), has the configuration 1s² 2s² 2p⁶ 3s². Draw the orbital box diagram for the 3s subshell and state whether Mg is paramagnetic or diamagnetic.",
+      "answer": "mℓ = 0: [↑↓]\n\nEvery subshell in Mg (1s, 2s, 2p, 3s) is completely filled, so all electrons are paired. Since there are no unpaired electrons, magnesium is DIAMAGNETIC."
+    },
+    {
+      "no": 43,
+      "marks": 4,
+      "q": "The O²⁻ ion (O, Z = 8) has the configuration 1s² 2s² 2p⁶. Draw the orbital box diagram for the 2p subshell of O²⁻ and determine whether this ion is paramagnetic or diamagnetic.",
+      "answer": "mℓ = -1: [↑↓] mℓ = 0: [↑↓] mℓ = +1: [↑↓]\n\nAll three 2p orbitals are completely filled (2 electrons each, paired). With no unpaired electrons, the O²⁻ ion is DIAMAGNETIC."
+    },
+    {
+      "no": 44,
+      "marks": 5,
+      "q": "The Fe²⁺ ion (Fe, Z = 26) has the noble-gas-core configuration [Ar] 3d⁶. Draw the orbital box diagram for the 3d subshell and determine whether Fe²⁺ is paramagnetic or diamagnetic.",
+      "answer": "mℓ = -2: [↑↓] mℓ = -1: [↑] mℓ = 0: [↑] mℓ = +1: [↑] mℓ = +2: [↑]\n\nApplying Hund's rule, the first 5 electrons singly occupy all five 3d orbitals with parallel spin; the 6th electron must then pair up in the mℓ = −2 orbital. This leaves 4 unpaired electrons (in the mℓ = −1, 0, +1, +2 orbitals). Since unpaired electrons are present, Fe²⁺ is PARAMAGNETIC."
+    },
+    {
+      "no": 45,
+      "marks": 4,
+      "q": "A zinc atom, Zn (Z = 30), has the noble-gas-core configuration [Ar] 4s² 3d¹⁰. Draw the orbital box diagrams for the 4s and 3d subshells and determine whether Zn is paramagnetic or diamagnetic.",
+      "answer": "4s: mℓ = 0: [↑↓]\n\n3d: mℓ = -2: [↑↓] mℓ = -1: [↑↓] mℓ = 0: [↑↓] mℓ = +1: [↑↓] mℓ = +2: [↑↓]\n\nBoth the 4s and 3d subshells are completely filled, so every electron is paired. With no unpaired electrons, zinc is DIAMAGNETIC."
+    },
+    {
+      "no": 46,
+      "marks": 5,
+      "q": "The transition element chromium, Cr (Z = 24) does not follow the Aufbau-predicted electron configuration. (a) Write the expected (Aufbau-predicted) noble-gas-core configuration. (b) Write the actual (experimentally observed) configuration. (c) Explain this discrepancy using the rule of stability.",
+      "answer": "Expected (Aufbau-predicted):\n\n[Ar] 4s² 3d⁴\n\nActual (observed):\n\n[Ar] 4s¹ 3d⁵\n\nCr gains extra stability by having a half-filled 3d subshell (one electron in each of the five 3d orbitals) together with a half-filled (single-electron) 4s orbital. One 4s electron is promoted into the empty 3d orbital to achieve this more stable, lower-energy half-filled arrangement."
+    },
+    {
+      "no": 47,
+      "marks": 5,
+      "q": "The transition element copper, Cu (Z = 29) does not follow the Aufbau-predicted electron configuration. (a) Write the expected (Aufbau-predicted) noble-gas-core configuration. (b) Write the actual (experimentally observed) configuration. (c) Explain this discrepancy using the rule of stability.",
+      "answer": "Expected (Aufbau-predicted):\n\n[Ar] 4s² 3d⁹\n\nActual (observed):\n\n[Ar] 4s¹ 3d¹⁰\n\nCu gains extra stability by having a completely filled 3d subshell (all five 3d orbitals doubly occupied). One 4s electron is promoted into the 3d subshell so that it becomes fully filled, which is a more stable, lower-energy arrangement than a partially filled 3d⁹ subshell."
+    },
+    {
+      "no": 48,
+      "marks": 5,
+      "q": "The transition element molybdenum, Mo (Z = 42) does not follow the Aufbau-predicted electron configuration. (a) Write the expected (Aufbau-predicted) noble-gas-core configuration. (b) Write the actual (experimentally observed) configuration. (c) Explain this discrepancy using the rule of stability.",
+      "answer": "Expected (Aufbau-predicted):\n\n[Kr] 5s² 4d⁴\n\nActual (observed):\n\n[Kr] 5s¹ 4d⁵\n\nMo behaves like Cr (same group): one 5s electron is promoted into the 4d subshell so that 4d becomes exactly half-filled (4d⁵), which — together with the half-filled 5s¹ — is more stable than the predicted 4d⁴ 5s² arrangement."
+    },
+    {
+      "no": 49,
+      "marks": 5,
+      "q": "The transition element silver, Ag (Z = 47) does not follow the Aufbau-predicted electron configuration. (a) Write the expected (Aufbau-predicted) noble-gas-core configuration. (b) Write the actual (experimentally observed) configuration. (c) Explain this discrepancy using the rule of stability.",
+      "answer": "Expected (Aufbau-predicted):\n\n[Kr] 5s² 4d⁹\n\nActual (observed):\n\n[Kr] 5s¹ 4d¹⁰\n\nAg behaves like Cu (same group): one 5s electron is promoted into the 4d subshell so that 4d becomes completely filled (4d¹⁰), which is more stable than the predicted partially filled 4d⁹ arrangement."
+    },
+    {
+      "no": 50,
+      "marks": 5,
+      "q": "The transition element palladium, Pd (Z = 46) does not follow the Aufbau-predicted electron configuration. (a) Write the expected (Aufbau-predicted) noble-gas-core configuration. (b) Write the actual (experimentally observed) configuration. (c) Explain this discrepancy using the rule of stability.",
+      "answer": "Expected (Aufbau-predicted):\n\n[Kr] 5s² 4d⁸\n\nActual (observed):\n\n[Kr] 4d¹⁰\n\nPd is an even more extreme exception: BOTH 5s electrons are promoted into the 4d subshell, emptying 5s completely (5s⁰) and completely filling 4d (4d¹⁰). A fully filled 4d subshell together with an empty 5s subshell is more stable overall than the predicted partially-filled 4d⁸ 5s² arrangement."
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "title": "Chapter 3: Chemical Reaction Equations and Stoichiometry — ASC0304 Chemistry I",
+  "questions": [
+    {
+      "no": 1,
+      "marks": 5,
+      "q": "Determine the oxidation number of the specified atom in each of the following neutral compounds. Show your working for each part.",
+      "answer": "(a) N in HNO₃:\n\n( + 1) + N + 3( - 2) = 0 Longrightarrow N = + 5\n\n(b) S in H₂SO₄:\n\n2( + 1) + S + 4( - 2) = 0 Longrightarrow S = + 6\n\n(c) Cr in K₂Cr₂O₇:\n\n2( + 1) + 2Cr + 7( - 2) = 0 Longrightarrow 2Cr = 12 Longrightarrow Cr = + 6\n\n(d) P in H₃PO₄:\n\n3( + 1) + P + 4( - 2) = 0 Longrightarrow P = + 5\n\n(e) Cl in HClO₄:\n\n( + 1) + Cl + 4( - 2) = 0 Longrightarrow Cl = + 7"
+    },
+    {
+      "no": 2,
+      "marks": 5,
+      "q": "Determine the oxidation number of the specified atom in each of the following polyatomic ions.",
+      "answer": "(a) Cr in Cr₂O₇²⁻:\n\n2Cr + 7( - 2) = - 2 Longrightarrow 2Cr = 12 Longrightarrow Cr = + 6\n\n(b) Mn in MnO₄⁻:\n\nMn + 4( - 2) = - 1 Longrightarrow Mn = + 7\n\n(c) S in S₂O₃²⁻ (average oxidation state):\n\n2S + 3( - 2) = - 2 Longrightarrow 2S = 4 Longrightarrow S = + 2\n\n(d) N in NH₄⁺:\n\nN + 4( + 1) = + 1 Longrightarrow N = - 3\n\n(e) Cl in ClO₃⁻:\n\nCl + 3( - 2) = - 1 Longrightarrow Cl = + 5"
+    },
+    {
+      "no": 3,
+      "marks": 4,
+      "q": "Determine the oxidation number of the specified atom in each compound below, paying attention to the exceptions to the general rules for oxygen and hydrogen.",
+      "answer": "(a) O in Na₂O₂ (a peroxide):\n\n2( + 1) + 2O = 0 Longrightarrow O = - 1 (not - 2, since this is a peroxide)\n\n(b) H in CaH₂ (a metal hydride):\n\n( + 2) + 2H = 0 Longrightarrow H = - 1 (not + 1, since this is a hydride)\n\n(c) O in BaO₂ (a peroxide):\n\n( + 2) + 2O = 0 Longrightarrow O = - 1\n\n(d) H in NaH (a hydride):\n\n( + 1) + H = 0 Longrightarrow H = - 1"
+    },
+    {
+      "no": 4,
+      "marks": 5,
+      "q": "For the reaction Zn(s) + 2AgNO₃(aq) → Zn(NO₃)₂(aq) + 2Ag(s), identify: (a) the species oxidised, (b) the species reduced, (c) the oxidising agent, (d) the reducing agent, (e) the spectator ion.",
+      "answer": "(a) Species oxidised: Zn (oxidation number 0 → +2)\n\n(b) Species reduced: Ag⁺ (oxidation number +1 → 0)\n\n(c) Oxidising agent: AgNO₃ (the Ag⁺ ion)\n\n(d) Reducing agent: Zn\n\n(e) Spectator ion: NO₃⁻ (oxidation number unchanged, +5, on both sides)"
+    },
+    {
+      "no": 5,
+      "marks": 5,
+      "q": "For the reaction 2Al(s) + 3CuSO₄(aq) → Al₂(SO₄)₃(aq) + 3Cu(s), identify: (a) the species oxidised, (b) the species reduced, (c) the oxidising agent, (d) the reducing agent, (e) the spectator ion.",
+      "answer": "(a) Species oxidised: Al (0 → +3)\n\n(b) Species reduced: Cu²⁺ (+2 → 0)\n\n(c) Oxidising agent: CuSO₄\n\n(d) Reducing agent: Al\n\n(e) Spectator ion: SO₄²⁻"
+    },
+    {
+      "no": 6,
+      "marks": 4,
+      "q": "Given the ionic equation Sn²⁺(aq) + 2Ce⁴⁺(aq) → Sn⁴⁺(aq) + 2Ce³⁺(aq), write the oxidation half-equation and the reduction half-equation, then state the oxidising agent and reducing agent.",
+      "answer": "Oxidation half-equation:\n\nSn²⁺(aq) → Sn⁴⁺(aq) + 2e⁻\n\nReduction half-equation:\n\n2Ce⁴⁺(aq) + 2e⁻ → 2Ce³⁺(aq)\n\nOxidising agent: Ce⁴⁺\n\nReducing agent: Sn²⁺"
+    },
+    {
+      "no": 7,
+      "marks": 5,
+      "q": "For the reaction Pb(NO₃)₂(aq) + Zn(s) → Zn(NO₃)₂(aq) + Pb(s), identify the spectator ion, the species oxidised and reduced, and the oxidising and reducing agents.",
+      "answer": "Spectator ion: NO₃⁻ (oxidation number +5 unchanged on both sides)\n\nSpecies oxidised: Zn (0 → +2)\n\nSpecies reduced: Pb²⁺ (+2 → 0)\n\nOxidising agent: Pb(NO₃)₂\n\nReducing agent: Zn"
+    },
+    {
+      "no": 8,
+      "marks": 4,
+      "q": "In the reaction Cl₂(g) + 2NaBr(aq) → 2NaCl(aq) + Br₂(l), determine the oxidation number change of Cl and Br, then state the oxidising agent and reducing agent.",
+      "answer": "Cl: 0 (in Cl₂) → −1 (in NaCl); Cl is reduced.\n\nBr: −1 (in NaBr) → 0 (in Br₂); Br is oxidised.\n\nOxidising agent: Cl₂\n\nReducing agent: NaBr (the Br⁻ ion)"
+    },
+    {
+      "no": 9,
+      "marks": 5,
+      "q": "For the reaction MnO₂(s) + 4HCl(aq) → MnCl₂(aq) + Cl₂(g) + 2H₂O(l), (a) determine the oxidation number change of Mn, (b) explain why only two of the four Cl atoms undergo a change in oxidation number, (c) state the oxidising agent and reducing agent.",
+      "answer": "(a) Mn: +4 (in MnO₂) → +2 (in MnCl₂); Mn is reduced (gains 2 electrons).\n\n(b) Of the 4 Cl atoms in 4HCl, 2 are oxidised from −1 to 0 (forming Cl₂), while the other 2 remain as Cl⁻ (−1 → −1, unchanged) and simply become the chloride ions in MnCl₂. Only the oxidised pair are the reducing agent; the other pair does not participate in electron transfer.\n\n(c) Oxidising agent: MnO₂. Reducing agent: HCl (specifically the 2 Cl⁻ ions that are oxidised)."
+    },
+    {
+      "no": 10,
+      "marks": 3,
+      "q": "Balance the following equation by inspection: C₃H₈(g) + O₂(g) → CO₂(g) + H₂O(g)",
+      "answer": "C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(g)"
+    },
+    {
+      "no": 11,
+      "marks": 2,
+      "q": "Balance the following equation by inspection: Al(s) + Cl₂(g) → AlCl₃(s)",
+      "answer": "2Al(s) + 3Cl₂(g) → 2AlCl₃(s)"
+    },
+    {
+      "no": 12,
+      "marks": 3,
+      "q": "Balance the following equation by inspection: Ca(OH)₂(aq) + H₃PO₄(aq) → Ca₃(PO₄)₂(s) + H₂O(l)",
+      "answer": "3Ca(OH)₂(aq) + 2H₃PO₄(aq) → Ca₃(PO₄)₂(s) + 6H₂O(l)"
+    },
+    {
+      "no": 13,
+      "marks": 2,
+      "q": "Balance the following decomposition equation by inspection: KClO₃(s) → KCl(s) + O₂(g)",
+      "answer": "2KClO₃(s) → 2KCl(s) + 3O₂(g)"
+    },
+    {
+      "no": 14,
+      "marks": 3,
+      "q": "Balance the following equation by inspection: Fe₂O₃(s) + CO(g) → Fe(s) + CO₂(g)",
+      "answer": "Fe₂O₃(s) + 3CO(g) → 2Fe(s) + 3CO₂(g)"
+    },
+    {
+      "no": 15,
+      "marks": 5,
+      "q": "Balance the following redox reaction in neutral solution using the ion-electron method: Al(s) + Sn²⁺(aq) → Al³⁺(aq) + Sn(s)",
+      "answer": "Oxidation:\n\nAl(s) → Al³⁺(aq) + 3e⁻\n\nReduction:\n\nSn²⁺(aq) + 2e⁻ → Sn(s)\n\nEqualise electrons transferred (LCM of 3 and 2 is 6): multiply oxidation by 2, reduction by 3.\n\n2Al(s) → 2Al³⁺(aq) + 6e⁻\n\n3Sn²⁺(aq) + 6e⁻ → 3Sn(s)\n\nAdding and cancelling the 6e⁻ gives the overall equation:\n\n2Al(s) + 3Sn²⁺(aq) → 2Al³⁺(aq) + 3Sn(s)"
+    },
+    {
+      "no": 16,
+      "marks": 4,
+      "q": "Balance the following redox reaction in neutral solution using the ion-electron method: Mg(s) + Ag⁺(aq) → Mg²⁺(aq) + Ag(s)",
+      "answer": "Oxidation: Mg(s) → Mg²⁺(aq) + 2e⁻\n\nReduction: Ag⁺(aq) + e⁻ → Ag(s)\n\nMultiply the reduction half-equation by 2 so both involve 2 electrons:\n\n2Ag⁺(aq) + 2e⁻ → 2Ag(s)\n\nOverall equation:\n\nMg(s) + 2Ag⁺(aq) → Mg²⁺(aq) + 2Ag(s)"
+    },
+    {
+      "no": 17,
+      "marks": 6,
+      "q": "Balance the following redox reaction in acidic solution using the ion-electron method: Cr₂O₇²⁻(aq) + Fe²⁺(aq) → Cr³⁺(aq) + Fe³⁺(aq)",
+      "answer": "Reduction half-equation — balance Cr, then O with H₂O, then H with H⁺:\n\nCr₂O₇²⁻(aq) → 2Cr³⁺(aq) + 7H₂O(l)\n\n14H⁺(aq) + Cr₂O₇²⁻(aq) → 2Cr³⁺(aq) + 7H₂O(l)\n\nBalance charge (left = +12, right = +6) by adding 6 electrons to the left:\n\n14H⁺(aq) + Cr₂O₇²⁻(aq) + 6e⁻ → 2Cr³⁺(aq) + 7H₂O(l)\n\nOxidation half-equation:\n\nFe²⁺(aq) → Fe³⁺(aq) + e⁻\n\nMultiply by 6 to equalise electrons:\n\n6Fe²⁺(aq) → 6Fe³⁺(aq) + 6e⁻\n\nOverall equation:\n\n14H⁺(aq) + Cr₂O₇²⁻(aq) + 6Fe²⁺(aq) → 2Cr³⁺(aq) + 6Fe³⁺(aq) + 7H₂O(l)"
+    },
+    {
+      "no": 18,
+      "marks": 6,
+      "q": "Balance the following redox reaction in acidic solution using the ion-electron method: MnO₄⁻(aq) + C₂O₄²⁻(aq) → Mn²⁺(aq) + CO₂(g)",
+      "answer": "Reduction half-equation:\n\n8H⁺(aq) + MnO₄⁻(aq) + 5e⁻ → Mn²⁺(aq) + 4H₂O(l)\n\nOxidation half-equation:\n\nC₂O₄²⁻(aq) → 2CO₂(g) + 2e⁻\n\nEqualise electrons (LCM of 5 and 2 is 10): multiply reduction by 2, oxidation by 5.\n\n16H⁺(aq) + 2MnO₄⁻(aq) + 10e⁻ → 2Mn²⁺(aq) + 8H₂O(l)\n\n5C₂O₄²⁻(aq) → 10CO₂(g) + 10e⁻\n\nOverall equation:\n\n16H⁺(aq) + 2MnO₄⁻(aq) + 5C₂O₄²⁻(aq) → 2Mn²⁺(aq) + 10CO₂(g) + 8H₂O(l)"
+    },
+    {
+      "no": 19,
+      "marks": 7,
+      "q": "Balance the following redox reaction in basic solution using the ion-electron method: MnO₄⁻(aq) + I⁻(aq) → MnO₂(s) + I₂(s)",
+      "answer": "Step 1 — balance as if in acidic solution.\n\nReduction: 4H⁺(aq) + MnO₄⁻(aq) + 3e⁻ → MnO₂(s) + 2H₂O(l)\n\nOxidation: 2I⁻(aq) → I₂(s) + 2e⁻\n\nEqualise electrons (LCM of 3 and 2 is 6): multiply reduction by 2, oxidation by 3, then add:\n\n8H⁺(aq) + 2MnO₄⁻(aq) + 6I⁻(aq) → 2MnO₂(s) + 3I₂(s) + 4H₂O(l)\n\nStep 2 — add 8OH⁻ to both sides to neutralise H⁺, forming H₂O, then cancel water common to both sides (8H₂O on the left, 4H₂O on the right → 4H₂O remains on the left):\n\nOverall equation (basic solution):\n\n4H₂O(l) + 2MnO₄⁻(aq) + 6I⁻(aq) → 2MnO₂(s) + 3I₂(s) + 8OH⁻(aq)"
+    },
+    {
+      "no": 20,
+      "marks": 7,
+      "q": "Balance the following redox reaction in basic solution using the ion-electron method: MnO₄⁻(aq) + Br⁻(aq) → MnO₂(s) + BrO₃⁻(aq)",
+      "answer": "Step 1 — balance as if in acidic solution.\n\nReduction: 4H⁺(aq) + MnO₄⁻(aq) + 3e⁻ → MnO₂(s) + 2H₂O(l)\n\nOxidation (O balanced with H₂O, H balanced with H⁺):\n\nBr⁻(aq) + 3H₂O(l) → BrO₃⁻(aq) + 6H⁺(aq) + 6e⁻\n\nEqualise electrons (LCM of 3 and 6 is 6): multiply reduction by 2, add to oxidation (×1):\n\n8H⁺(aq) + 2MnO₄⁻(aq) + Br⁻(aq) + 3H₂O(l) → 2MnO₂(s) + 4H₂O(l) + BrO₃⁻(aq) + 6H⁺(aq)\n\nCancel 6H⁺ and 3H₂O common to both sides, giving the acidic overall equation:\n\n2H⁺(aq) + 2MnO₄⁻(aq) + Br⁻(aq) → 2MnO₂(s) + BrO₃⁻(aq) + H₂O(l)\n\nStep 2 — add 2OH⁻ to both sides and cancel water:\n\nOverall equation (basic solution):\n\nH₂O(l) + 2MnO₄⁻(aq) + Br⁻(aq) → 2MnO₂(s) + BrO₃⁻(aq) + 2OH⁻(aq)"
+    },
+    {
+      "no": 21,
+      "marks": 4,
+      "q": "6.00 g of magnesium ribbon is burned completely in oxygen gas. Write the balanced equation and calculate the mass of magnesium oxide formed. (Molar mass: Mg = 24.31 g mol⁻¹, MgO = 40.31 g mol⁻¹)",
+      "answer": "2Mg(s) + O₂(g) → 2MgO(s)\n\nn(Mg) = 6.00/24.31 = 0.247 mol\n\nMole ratio Mg : MgO = 2 : 2 = 1 : 1, so n(MgO) = 0.247 mol.\n\nmass(MgO) = 0.247 × 40.31 = 9.95 g"
+    },
+    {
+      "no": 22,
+      "marks": 4,
+      "q": "25.0 g of calcium carbonate is heated strongly until it fully decomposes. Write the balanced equation and calculate the mass of calcium oxide produced. (Molar mass: CaCO₃ = 100.09 g mol⁻¹, CaO = 56.08 g mol⁻¹)",
+      "answer": "CaCO₃(s) → CaO(s) + CO₂(g)\n\nn(CaCO₃) = 25.0/100.09 = 0.250 mol\n\nMole ratio CaCO₃ : CaO = 1 : 1, so n(CaO) = 0.250 mol.\n\nmass(CaO) = 0.250 × 56.08 = 14.0 g"
+    },
+    {
+      "no": 23,
+      "marks": 4,
+      "q": "10.0 g of aluminium reacts completely with excess hydrochloric acid. Write the balanced equation and calculate the mass of aluminium chloride formed. (Molar mass: Al = 26.98 g mol⁻¹, AlCl₃ = 133.33 g mol⁻¹)",
+      "answer": "2Al(s) + 6HCl(aq) → 2AlCl₃(aq) + 3H₂(g)\n\nn(Al) = 10.0/26.98 = 0.371 mol\n\nMole ratio Al : AlCl₃ = 2 : 2 = 1 : 1, so n(AlCl₃) = 0.371 mol.\n\nmass(AlCl₃) = 0.371 × 133.33 = 49.4 g"
+    },
+    {
+      "no": 24,
+      "marks": 4,
+      "q": "15.0 g of potassium iodide is added to excess aqueous lead(II) nitrate. Write the balanced equation and calculate the mass of lead(II) iodide precipitate formed. (Molar mass: KI = 166.0 g mol⁻¹, PbI₂ = 461.0 g mol⁻¹)",
+      "answer": "Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s) + 2KNO₃(aq)\n\nn(KI) = 15.0/166.0 = 0.0904 mol\n\nMole ratio KI : PbI₂ = 2 : 1, so n(PbI₂) = 0.0904 ÷ 2 = 0.0452 mol.\n\nmass(PbI₂) = 0.0452 × 461.0 = 20.8 g"
+    },
+    {
+      "no": 25,
+      "marks": 4,
+      "q": "9.20 g of ethanol, C₂H₅OH, is burned completely in excess oxygen. Write the balanced equation and calculate the mass of carbon dioxide produced. (Molar mass: C₂H₅OH = 46.07 g mol⁻¹, CO₂ = 44.01 g mol⁻¹)",
+      "answer": "C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(l)\n\nn(C₂H₅OH) = 9.20/46.07 = 0.200 mol\n\nMole ratio ethanol : CO₂ = 1 : 2, so n(CO₂) = 0.200 × 2 = 0.399 mol.\n\nmass(CO₂) = 0.399 × 44.01 = 17.6 g"
+    },
+    {
+      "no": 26,
+      "marks": 4,
+      "q": "13.0 g of zinc granules react completely with excess dilute hydrochloric acid. Write the balanced equation and calculate the volume of hydrogen gas liberated at STP (molar volume = 22.4 dm³ mol⁻¹ at STP). (Molar mass: Zn = 65.38 g mol⁻¹)",
+      "answer": "Zn(s) + 2HCl(aq) → ZnCl₂(aq) + H₂(g)\n\nn(Zn) = 13.0/65.38 = 0.199 mol\n\nMole ratio Zn : H₂ = 1 : 1, so n(H₂) = 0.199 mol.\n\nV(H₂) = 0.199 × 22.4 = 4.45 dm³"
+    },
+    {
+      "no": 27,
+      "marks": 4,
+      "q": "20.0 g of calcium carbonate reacts completely with excess dilute hydrochloric acid at room temperature. Write the balanced equation and calculate the volume of carbon dioxide gas liberated at room temperature (molar volume = 24.0 dm³ mol⁻¹ at room temperature). (Molar mass: CaCO₃ = 100.09 g mol⁻¹)",
+      "answer": "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\n\nn(CaCO₃) = 20.0/100.09 = 0.200 mol\n\nMole ratio CaCO₃ : CO₂ = 1 : 1, so n(CO₂) = 0.200 mol.\n\nV(CO₂) = 0.200 × 24.0 = 4.80 dm³"
+    },
+    {
+      "no": 28,
+      "marks": 4,
+      "q": "30.0 g of potassium chlorate is heated strongly until it fully decomposes. Write the balanced equation and calculate the volume of oxygen gas produced at STP (molar volume = 22.4 dm³ mol⁻¹ at STP). (Molar mass: KClO₃ = 122.55 g mol⁻¹)",
+      "answer": "2KClO₃(s) → 2KCl(s) + 3O₂(g)\n\nn(KClO₃) = 30.0/122.55 = 0.245 mol\n\nMole ratio KClO₃ : O₂ = 2 : 3, so n(O₂) = 0.245 × 3/2 = 0.367 mol.\n\nV(O₂) = 0.367 × 22.4 = 8.23 dm³"
+    },
+    {
+      "no": 29,
+      "marks": 4,
+      "q": "Solid sodium carbonate is added to excess dilute hydrochloric acid at room temperature, liberating 6.00 dm³ of carbon dioxide gas measured at room temperature (molar volume = 24.0 dm³ mol⁻¹). Write the balanced equation and calculate the mass of sodium carbonate that reacted. (Molar mass: Na₂CO₃ = 105.99 g mol⁻¹)",
+      "answer": "Na₂CO₃(s) + 2HCl(aq) → 2NaCl(aq) + H₂O(l) + CO₂(g)\n\nn(CO₂) = 6.00/24.0 = 0.250 mol\n\nMole ratio Na₂CO₃ : CO₂ = 1 : 1, so n(Na₂CO₃) = 0.250 mol.\n\nmass(Na₂CO₃) = 0.250 × 105.99 = 26.5 g"
+    },
+    {
+      "no": 30,
+      "marks": 4,
+      "q": "16.0 g of solid ammonium nitrate is heated and decomposes fully according to the equation below. Calculate the volume of N₂O gas produced at STP (molar volume = 22.4 dm³ mol⁻¹ at STP). (Molar mass: NH₄NO₃ = 80.05 g mol⁻¹)",
+      "answer": "NH₄NO₃(s) → N₂O(g) + 2H₂O(g)\n\nn(NH₄NO₃) = 16.0/80.05 = 0.200 mol\n\nMole ratio NH₄NO₃ : N₂O = 1 : 1, so n(N₂O) = 0.200 mol.\n\nV(N₂O) = 0.200 × 22.4 = 4.48 dm³"
+    },
+    {
+      "no": 31,
+      "marks": 3,
+      "q": "2.50 dm³ of propane gas, C₃H₈, is burned completely in excess oxygen at constant temperature and pressure. Write the balanced equation and calculate the volume of carbon dioxide gas produced, measured at the same temperature and pressure.",
+      "answer": "C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(g)\n\nAt the same temperature and pressure, gas volumes are directly proportional to moles (Avogadro's law), so the volume ratio equals the mole ratio.\n\nV(CO₂) = 2.50 × 3 = 7.50 dm³"
+    },
+    {
+      "no": 32,
+      "marks": 4,
+      "q": "25.0 cm³ of 0.100 mol dm⁻³ sodium hydroxide solution is exactly neutralised by hydrochloric acid of concentration 0.125 mol dm⁻³. Write the balanced equation and calculate the volume of hydrochloric acid used.",
+      "answer": "HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)\n\nn(NaOH) = 0.0250 dm³ × 0.100 mol dm⁻³ = 2.50 × 10⁻³ mol\n\nMole ratio HCl : NaOH = 1 : 1, so n(HCl) = 2.50 × 10⁻³ mol.\n\nV(HCl) = (2.50 × 10⁻³)/0.125 = 0.0200 dm³ = 20.0 cm³"
+    },
+    {
+      "no": 33,
+      "marks": 4,
+      "q": "20.0 cm³ of 0.150 mol dm⁻³ sulfuric acid is exactly neutralised by sodium hydroxide solution of concentration 0.200 mol dm⁻³. Write the balanced equation and calculate the volume of sodium hydroxide solution used.",
+      "answer": "H₂SO₄(aq) + 2NaOH(aq) → Na₂SO₄(aq) + 2H₂O(l)\n\nn(H₂SO₄) = 0.0200 dm³ × 0.150 mol dm⁻³ = 3.00 × 10⁻³ mol\n\nMole ratio H₂SO₄ : NaOH = 1 : 2, so n(NaOH) = 6.00 × 10⁻³ mol.\n\nV(NaOH) = (6.00 × 10⁻³)/0.200 = 0.0300 dm³ = 30.0 cm³"
+    },
+    {
+      "no": 34,
+      "marks": 6,
+      "q": "40.0 cm³ of 0.0500 mol dm⁻³ silver nitrate solution reacts completely with aqueous calcium chloride of concentration 0.0250 mol dm⁻³. Write the balanced equation and calculate (a) the volume of calcium chloride solution required, (b) the mass of silver chloride precipitate formed. (Molar mass: AgCl = 143.32 g mol⁻¹)",
+      "answer": "2AgNO₃(aq) + CaCl₂(aq) → 2AgCl(s) + Ca(NO₃)₂(aq)\n\nn(AgNO₃) = 0.0400 dm³ × 0.0500 mol dm⁻³ = 2.00 × 10⁻³ mol\n\n(a) Mole ratio AgNO₃ : CaCl₂ = 2 : 1, so n(CaCl₂) = 1.00 × 10⁻³ mol.\n\nV(CaCl₂) = (1.00 × 10⁻³)/0.0250 = 0.0400 dm³ = 40.0 cm³\n\n(b) Mole ratio AgNO₃ : AgCl = 2 : 2 = 1 : 1, so n(AgCl) = 2.00 × 10⁻³ mol.\n\nmass(AgCl) = 2.00 × 10⁻³ × 143.32 = 0.287 g"
+    },
+    {
+      "no": 35,
+      "marks": 5,
+      "q": "25.0 cm³ of 0.200 mol dm⁻³ iron(II) sulfate solution, acidified with excess dilute sulfuric acid, is titrated against potassium manganate(VII) solution of concentration 0.0400 mol dm⁻³ using the balanced equation below. Calculate the volume of potassium manganate(VII) solution required for complete reaction.",
+      "answer": "5Fe²⁺(aq) + MnO₄⁻(aq) + 8H⁺(aq) → 5Fe³⁺(aq) + Mn²⁺(aq) + 4H₂O(l)\n\nn(Fe²⁺) = 0.0250 dm³ × 0.200 mol dm⁻³ = 5.00 × 10⁻³ mol\n\nMole ratio Fe²⁺ : MnO₄⁻ = 5 : 1, so n(MnO₄⁻) = 1.00 × 10⁻³ mol.\n\nV(KMnO₄) = (1.00 × 10⁻³)/0.0400 = 0.0250 dm³ = 25.0 cm³"
+    },
+    {
+      "no": 36,
+      "marks": 6,
+      "q": "50.0 cm³ of 0.0800 mol dm⁻³ barium hydroxide solution is exactly neutralised by nitric acid of concentration 0.100 mol dm⁻³. Write the balanced equation and calculate (a) the volume of nitric acid required, (b) the mass of barium nitrate formed. (Molar mass: Ba(NO₃)₂ = 261.35 g mol⁻¹)",
+      "answer": "Ba(OH)₂(aq) + 2HNO₃(aq) → Ba(NO₃)₂(aq) + 2H₂O(l)\n\nn(Ba(OH)₂) = 0.0500 dm³ × 0.0800 mol dm⁻³ = 4.00 × 10⁻³ mol\n\n(a) Mole ratio Ba(OH)₂ : HNO₃ = 1 : 2, so n(HNO₃) = 8.00 × 10⁻³ mol.\n\nV(HNO₃) = (8.00 × 10⁻³)/0.100 = 0.0800 dm³ = 80.0 cm³\n\n(b) Mole ratio Ba(OH)₂ : Ba(NO₃)₂ = 1 : 1, so n(Ba(NO₃)₂) = 4.00 × 10⁻³ mol.\n\nmass(Ba(NO₃)₂) = 4.00 × 10⁻³ × 261.35 = 1.05 g"
+    },
+    {
+      "no": 37,
+      "marks": 6,
+      "q": "14.0 g of nitrogen gas is reacted with 6.00 g of hydrogen gas to form ammonia. Write the balanced equation and (a) determine the limiting reagent, (b) calculate the mass of ammonia formed, (c) calculate the mass of the excess reagent remaining unreacted. (Molar mass: N₂ = 28.02 g mol⁻¹, H₂ = 2.016 g mol⁻¹, NH₃ = 17.03 g mol⁻¹)",
+      "answer": "N₂(g) + 3H₂(g) → 2NH₃(g)\n\nn(N₂) = 14.0/28.02 = 0.500 mol\n\nn(H₂) = 6.00/2.016 = 2.98 mol\n\n(a) Moles of H₂ required to react with all the N₂ = 3 × 0.500 = 1.50 mol, which is less than the 2.98 mol available. Therefore N₂ is the limiting reagent and H₂ is in excess.\n\n(b) Mole ratio N₂ : NH₃ = 1 : 2, so n(NH₃) = 1.00 mol.\n\nmass(NH₃) = 1.00 × 17.03 = 17.0 g\n\n(c) H₂ used = 1.50 mol, so H₂ remaining = 2.98 − 1.50 = 1.48 mol.\n\nmass(H₂ excess) = 1.48 × 2.016 = 2.98 g"
+    },
+    {
+      "no": 38,
+      "marks": 6,
+      "q": "10.0 g of aluminium is reacted with 20.0 g of chlorine gas. Write the balanced equation and (a) determine the limiting reagent, (b) calculate the mass of aluminium chloride formed, (c) calculate the mass of the excess reagent remaining unreacted. (Molar mass: Al = 26.98 g mol⁻¹, Cl₂ = 70.90 g mol⁻¹, AlCl₃ = 133.33 g mol⁻¹)",
+      "answer": "2Al(s) + 3Cl₂(g) → 2AlCl₃(s)\n\nn(Al) = 10.0/26.98 = 0.371 mol\n\nn(Cl₂) = 20.0/70.90 = 0.282 mol\n\n(a) Moles of Cl₂ required to react with all the Al = 1.5 × 0.371 = 0.556 mol, which is more than the 0.282 mol available. Therefore Cl₂ is the limiting reagent and Al is in excess.\n\n(b) Mole ratio Cl₂ : AlCl₃ = 3 : 2, so n(AlCl₃) = (2/3) × 0.282 = 0.188 mol.\n\nmass(AlCl₃) = 0.188 × 133.33 = 25.1 g\n\n(c) Al used = (2/3) × 0.282 = 0.188 mol, so Al remaining = 0.371 − 0.188 = 0.183 mol.\n\nmass(Al excess) = 0.183 × 26.98 = 4.93 g"
+    },
+    {
+      "no": 39,
+      "marks": 6,
+      "q": "15.0 g of barium chloride solution reacts with 15.0 g of sodium sulfate solution. Write the balanced equation and (a) determine the limiting reagent, (b) calculate the mass of barium sulfate precipitate formed, (c) calculate the mass of the excess reagent remaining unreacted. (Molar mass: BaCl₂ = 208.23 g mol⁻¹, Na₂SO₄ = 142.05 g mol⁻¹, BaSO₄ = 233.40 g mol⁻¹)",
+      "answer": "BaCl₂(aq) + Na₂SO₄(aq) → BaSO₄(s) + 2NaCl(aq)\n\nn(BaCl₂) = 15.0/208.23 = 0.0720 mol\n\nn(Na₂SO₄) = 15.0/142.05 = 0.106 mol\n\n(a) The mole ratio BaCl₂ : Na₂SO₄ is 1 : 1, and 0.0720 mol \\< 0.106 mol, so BaCl₂ is the limiting reagent and Na₂SO₄ is in excess.\n\n(b) n(BaSO₄) = n(BaCl₂) = 0.0720 mol.\n\nmass(BaSO₄) = 0.0720 × 233.40 = 16.8 g\n\n(c) Na₂SO₄ used = 0.0720 mol, so remaining = 0.106 − 0.0720 = 0.0336 mol.\n\nmass(Na₂SO₄ excess) = 0.0336 × 142.05 = 4.77 g"
+    },
+    {
+      "no": 40,
+      "marks": 6,
+      "q": "2.00 g of hydrogen gas is reacted with 40.0 g of oxygen gas. Write the balanced equation and (a) determine the limiting reagent, (b) calculate the mass of water formed, (c) calculate the volume of the excess reagent remaining unreacted, measured at STP (molar volume = 22.4 dm³ mol⁻¹ at STP). (Molar mass: H₂ = 2.016 g mol⁻¹, O₂ = 32.00 g mol⁻¹, H₂O = 18.02 g mol⁻¹)",
+      "answer": "2H₂(g) + O₂(g) → 2H₂O(l)\n\nn(H₂) = 2.00/2.016 = 0.992 mol\n\nn(O₂) = 40.0/32.00 = 1.25 mol\n\n(a) Moles of O₂ required to react with all the H₂ = 0.5 × 0.992 = 0.496 mol, which is less than the 1.25 mol available. Therefore H₂ is the limiting reagent and O₂ is in excess.\n\n(b) Mole ratio H₂ : H₂O = 1 : 1, so n(H₂O) = 0.992 mol.\n\nmass(H₂O) = 0.992 × 18.02 = 17.9 g\n\n(c) O₂ used = 0.496 mol, so O₂ remaining = 1.25 − 0.496 = 0.754 mol.\n\nV(O₂ excess) = 0.754 × 22.4 = 16.9 dm³"
+    },
+    {
+      "no": 41,
+      "marks": 6,
+      "q": "In the thermite reaction, 40.0 g of iron(III) oxide is reacted with 15.0 g of aluminium powder. Write the balanced equation and (a) determine the limiting reagent, (b) calculate the mass of molten iron produced, (c) calculate the mass of the excess reagent remaining unreacted. (Molar mass: Fe₂O₃ = 159.70 g mol⁻¹, Al = 26.98 g mol⁻¹, Fe = 55.85 g mol⁻¹)",
+      "answer": "Fe₂O₃(s) + 2Al(s) → Al₂O₃(s) + 2Fe(l)\n\nn(Fe₂O₃) = 40.0/159.70 = 0.250 mol\n\nn(Al) = 15.0/26.98 = 0.556 mol\n\n(a) Moles of Al required to react with all the Fe₂O₃ = 2 × 0.250 = 0.500 mol, which is less than the 0.556 mol available. Therefore Fe₂O₃ is the limiting reagent and Al is in excess.\n\n(b) Mole ratio Fe₂O₃ : Fe = 1 : 2, so n(Fe) = 0.500 mol.\n\nmass(Fe) = 0.500 × 55.85 = 28.0 g\n\n(c) Al used = 0.500 mol, so Al remaining = 0.556 − 0.500 = 0.0550 mol.\n\nmass(Al excess) = 0.0550 × 26.98 = 1.48 g"
+    },
+    {
+      "no": 42,
+      "marks": 6,
+      "q": "8.00 g of calcium carbonate is reacted with 30.0 cm³ of 2.00 mol dm⁻³ hydrochloric acid. Write the balanced equation and (a) determine the limiting reagent, (b) calculate the mass of calcium chloride formed, (c) calculate the mass of the excess reagent remaining unreacted. (Molar mass: CaCO₃ = 100.09 g mol⁻¹, CaCl₂ = 110.98 g mol⁻¹)",
+      "answer": "CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\n\nn(CaCO₃) = 8.00/100.09 = 0.0799 mol\n\nn(HCl) = 0.0300 dm³ × 2.00 mol dm⁻³ = 0.0600 mol\n\n(a) Moles of HCl required to react with all the CaCO₃ = 2 × 0.0799 = 0.160 mol, which is more than the 0.0600 mol available. Therefore HCl is the limiting reagent and CaCO₃ is in excess.\n\n(b) Mole ratio HCl : CaCl₂ = 2 : 1, so n(CaCl₂) = 0.0300 mol.\n\nmass(CaCl₂) = 0.0300 × 110.98 = 3.33 g\n\n(c) CaCO₃ used = 0.0300 mol, so CaCO₃ remaining = 0.0799 − 0.0300 = 0.0499 mol.\n\nmass(CaCO₃ excess) = 0.0499 × 100.09 = 5.00 g"
+    },
+    {
+      "no": 43,
+      "marks": 5,
+      "q": "40.0 cm³ of 0.500 mol dm⁻³ sodium hydroxide solution is reacted with 10.0 cm³ of 0.400 mol dm⁻³ phosphoric acid. Write the balanced equation and (a) determine the limiting reagent, (b) calculate the mass of sodium phosphate formed. (Molar mass: Na₃PO₄ = 163.94 g mol⁻¹)",
+      "answer": "3NaOH(aq) + H₃PO₄(aq) → Na₃PO₄(aq) + 3H₂O(l)\n\nn(NaOH) = 0.0400 dm³ × 0.500 mol dm⁻³ = 0.0200 mol\n\nn(H₃PO₄) = 0.0100 dm³ × 0.400 mol dm⁻³ = 4.00 × 10⁻³ mol\n\n(a) Moles of NaOH required to react with all the H₃PO₄ = 3 × 4.00 × 10⁻³ = 0.0120 mol, which is less than the 0.0200 mol available. Therefore H₃PO₄ is the limiting reagent and NaOH is in excess.\n\n(b) Mole ratio H₃PO₄ : Na₃PO₄ = 1 : 1, so n(Na₃PO₄) = 4.00 × 10⁻³ mol.\n\nmass(Na₃PO₄) = 4.00 × 10⁻³ × 163.94 = 0.656 g"
+    },
+    {
+      "no": 44,
+      "marks": 6,
+      "q": "12.0 g of silver nitrate is reacted with 5.00 g of sodium chloride. Write the balanced equation and (a) determine the limiting reagent, (b) calculate the theoretical yield of silver chloride, (c) calculate the mass of the excess reagent remaining unreacted. (Molar mass: AgNO₃ = 169.88 g mol⁻¹, NaCl = 58.44 g mol⁻¹, AgCl = 143.32 g mol⁻¹)",
+      "answer": "AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq)\n\nn(AgNO₃) = 12.0/169.88 = 0.0706 mol\n\nn(NaCl) = 5.00/58.44 = 0.0856 mol\n\n(a) The mole ratio AgNO₃ : NaCl is 1 : 1, and 0.0706 mol \\< 0.0856 mol, so AgNO₃ is the limiting reagent and NaCl is in excess.\n\n(b) n(AgCl) = n(AgNO₃) = 0.0706 mol.\n\nmass(AgCl) = 0.0706 × 143.32 = 10.1 g\n\n(c) NaCl used = 0.0706 mol, so remaining = 0.0856 − 0.0706 = 0.0149 mol.\n\nmass(NaCl excess) = 0.0149 × 58.44 = 0.872 g"
+    },
+    {
+      "no": 45,
+      "marks": 4,
+      "q": "5.00 mol of butane gas, C₄H₁₀, is reacted with 40.0 mol of oxygen gas. Write the balanced equation and (a) determine the limiting reagent, (b) calculate the volume of carbon dioxide gas produced, measured at STP (molar volume = 22.4 dm³ mol⁻¹ at STP).",
+      "answer": "2C₄H₁₀(g) + 13O₂(g) → 8CO₂(g) + 10H₂O(g)\n\n(a) Moles of O₂ required to react with all the C₄H₁₀ = 6.5 × 5.00 = 32.5 mol, which is less than the 40.0 mol available. Therefore C₄H₁₀ is the limiting reagent and O₂ is in excess.\n\n(b) Mole ratio C₄H₁₀ : CO₂ = 2 : 8 = 1 : 4, so n(CO₂) = 4 × 5.00 = 20.0 mol.\n\nV(CO₂) = 20.0 × 22.4 = 448 dm³"
+    },
+    {
+      "no": 46,
+      "marks": 4,
+      "q": "50.0 g of calcium carbonate is heated strongly until it fully decomposes, according to the equation below. If 24.5 g of calcium oxide is actually obtained, calculate the percentage yield of the reaction. (Molar mass: CaCO₃ = 100.09 g mol⁻¹, CaO = 56.08 g mol⁻¹)",
+      "answer": "CaCO₃(s) → CaO(s) + CO₂(g)\n\nn(CaCO₃) = 50.0/100.09 = 0.500 mol\n\nTheoretical yield: n(CaO) = 0.500 mol.\n\ntheoretical mass(CaO) = 0.500 × 56.08 = 28.0 g\n\n% yield = 24.5/28.0 × 100% = 87.5%"
+    },
+    {
+      "no": 47,
+      "marks": 4,
+      "q": "8.00 g of magnesium ribbon is burned completely in excess oxygen, according to the equation below. If the reaction proceeds with a percentage yield of 92.0%, calculate the actual mass of magnesium oxide obtained. (Molar mass: Mg = 24.31 g mol⁻¹, MgO = 40.31 g mol⁻¹)",
+      "answer": "2Mg(s) + O₂(g) → 2MgO(s)\n\nn(Mg) = 8.00/24.31 = 0.329 mol\n\nTheoretical yield: n(MgO) = 0.329 mol.\n\ntheoretical mass(MgO) = 0.329 × 40.31 = 13.3 g\n\nactual mass(MgO) = 92.0/100 × 13.3 = 12.2 g"
+    },
+    {
+      "no": 48,
+      "marks": 5,
+      "q": "Zinc metal reacts with copper(II) sulfate solution according to the equation below. A student obtained 3.60 g of copper at a percentage yield of 80.0%. Calculate (a) the theoretical yield of copper, (b) the minimum mass of zinc that must have been used. (Molar mass: Zn = 65.38 g mol⁻¹, Cu = 63.55 g mol⁻¹)",
+      "answer": "Zn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s)\n\n(a)\n\ntheoretical mass(Cu) = 3.60/80.0 × 100% = 4.50 g\n\n(b)\n\nn(Cu) = 4.50/63.55 = 0.0708 mol\n\nMole ratio Zn : Cu = 1 : 1, so n(Zn) required = 0.0708 mol.\n\nmass(Zn) = 0.0708 × 65.38 = 4.63 g"
+    },
+    {
+      "no": 49,
+      "marks": 6,
+      "q": "4.60 g of sodium metal is reacted with 8.00 g of chlorine gas, according to the equation below. (a) Determine the limiting reagent, (b) calculate the theoretical yield of sodium chloride, (c) if the actual yield obtained is 10.5 g, calculate the percentage yield. (Molar mass: Na = 22.99 g mol⁻¹, Cl₂ = 70.90 g mol⁻¹, NaCl = 58.44 g mol⁻¹)",
+      "answer": "2Na(s) + Cl₂(g) → 2NaCl(s)\n\nn(Na) = 4.60/22.99 = 0.200 mol\n\nn(Cl₂) = 8.00/70.90 = 0.113 mol\n\n(a) Moles of Cl₂ required to react with all the Na = 0.5 × 0.200 = 0.100 mol, which is less than the 0.113 mol available. Therefore Na is the limiting reagent and Cl₂ is in excess.\n\n(b) Mole ratio Na : NaCl = 2 : 2 = 1 : 1, so n(NaCl) = 0.200 mol.\n\ntheoretical mass(NaCl) = 0.200 × 58.44 = 11.7 g\n\n(c)\n\n% yield = 10.5/11.7 × 100% = 89.8%"
+    },
+    {
+      "no": 50,
+      "marks": 8,
+      "q": "30.0 cm³ of 0.250 mol dm⁻³ lead(II) nitrate solution is reacted with 25.0 cm³ of 0.500 mol dm⁻³ potassium iodide solution, according to the equation below. (a) Determine the limiting reagent, (b) calculate the theoretical yield of lead(II) iodide, (c) given the percentage yield is 76.0%, calculate the actual mass of lead(II) iodide obtained, (d) calculate the number of moles of the excess reagent remaining unreacted. (Molar mass: PbI₂ = 461.0 g mol⁻¹)",
+      "answer": "Pb(NO₃)₂(aq) + 2KI(aq) → PbI₂(s) + 2KNO₃(aq)\n\nn(Pb(NO₃)₂) = 0.0300 dm³ × 0.250 mol dm⁻³ = 7.50 × 10⁻³ mol\n\nn(KI) = 0.0250 dm³ × 0.500 mol dm⁻³ = 1.25 × 10⁻² mol\n\n(a) Moles of KI required to react with all the Pb(NO₃)₂ = 2 × 7.50 × 10⁻³ = 1.50 × 10⁻² mol, which is more than the 1.25 × 10⁻² mol available. Therefore KI is the limiting reagent and Pb(NO₃)₂ is in excess.\n\n(b) Mole ratio KI : PbI₂ = 2 : 1, so n(PbI₂) = 6.25 × 10⁻³ mol.\n\ntheoretical mass(PbI₂) = 6.25 × 10⁻³ × 461.0 = 2.88 g\n\n(c)\n\nactual mass(PbI₂) = 76.0/100 × 2.88 = 2.19 g\n\n(d) Pb(NO₃)₂ used = 0.5 × 1.25 × 10⁻² = 6.25 × 10⁻³ mol, so Pb(NO₃)₂ remaining = 7.50 × 10⁻³ − 6.25 × 10⁻³ = 1.25 × 10⁻³ mol."
+    }
+  ]
+}

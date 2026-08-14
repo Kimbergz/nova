@@ -1,0 +1,305 @@
+{
+  "title": "Chapter 4: Atomic Structure — ASC0304 Chemistry I",
+  "questions": [
+    {
+      "no": 1,
+      "marks": 2,
+      "q": "Calculate the energy of an electron in a hydrogen atom when it occupies the energy level n = 3.",
+      "answer": "Eₙ = (- R_H)/n²\n\nE₃ = (- 2.18 × 10⁻¹⁸)/3²\n\nE₃ = - 2.42 × 10⁻¹⁹ J"
+    },
+    {
+      "no": 2,
+      "marks": 2,
+      "q": "Calculate the energy of an electron in a hydrogen atom when it occupies the energy level n = 4.",
+      "answer": "Eₙ = (- R_H)/n²\n\nE₄ = (- 2.18 × 10⁻¹⁸)/4²\n\nE₄ = - 1.36 × 10⁻¹⁹ J"
+    },
+    {
+      "no": 3,
+      "marks": 2,
+      "q": "Calculate the energy of an electron in a hydrogen atom when it occupies the energy level n = 6.",
+      "answer": "Eₙ = (- R_H)/n²\n\nE₆ = (- 2.18 × 10⁻¹⁸)/6²\n\nE₆ = - 6.06 × 10⁻²⁰ J"
+    },
+    {
+      "no": 4,
+      "marks": 2,
+      "q": "Calculate the energy of an electron in a hydrogen atom when it occupies the energy level n = 7.",
+      "answer": "Eₙ = (- R_H)/n²\n\nE₇ = (- 2.18 × 10⁻¹⁸)/7²\n\nE₇ = - 4.45 × 10⁻²⁰ J"
+    },
+    {
+      "no": 5,
+      "marks": 3,
+      "q": "An electron in a hydrogen atom is excited from the ground state (n = 1) to the energy level n = 4. Calculate the energy change, ΔE, that occurs during this transition.",
+      "answer": "ΔE = - R_H( 1/n_f² - 1/nᵢ² )\n\nΔE = - 2.18 × 10⁻¹⁸( 1/4² - 1/1² )\n\nΔE = 2.04 × 10⁻¹⁸ J\n\nSince ΔE is positive, the electron absorbs energy — this is an absorption transition (electron promoted from n = 1 to n = 4)."
+    },
+    {
+      "no": 6,
+      "marks": 3,
+      "q": "Calculate the energy change, ΔE, when an electron in a hydrogen atom is promoted from n = 2 to n = 6.",
+      "answer": "ΔE = - R_H( 1/n_f² - 1/nᵢ² )\n\nΔE = - 2.18 × 10⁻¹⁸( 1/6² - 1/2² )\n\nΔE = 4.84 × 10⁻¹⁹ J\n\nSince ΔE is positive, the electron absorbs energy — this is an absorption transition (electron promoted from n = 2 to n = 6)."
+    },
+    {
+      "no": 7,
+      "marks": 3,
+      "q": "Calculate the energy change, ΔE, that occurs when an electron in a hydrogen atom falls from n = 5 to n = 3.",
+      "answer": "ΔE = - R_H( 1/n_f² - 1/nᵢ² )\n\nΔE = - 2.18 × 10⁻¹⁸( 1/3² - 1/5² )\n\nΔE = - 1.55 × 10⁻¹⁹ J\n\nSince ΔE is negative, energy is released as light — this is an emission transition (electron falls from n = 5 to n = 3)."
+    },
+    {
+      "no": 8,
+      "marks": 3,
+      "q": "Calculate the energy change, ΔE, when an electron falls from energy level n = 6 to n = 4 in a hydrogen atom.",
+      "answer": "ΔE = - R_H( 1/n_f² - 1/nᵢ² )\n\nΔE = - 2.18 × 10⁻¹⁸( 1/4² - 1/6² )\n\nΔE = - 7.57 × 10⁻²⁰ J\n\nSince ΔE is negative, energy is released as light — this is an emission transition (electron falls from n = 6 to n = 4)."
+    },
+    {
+      "no": 9,
+      "marks": 6,
+      "q": "(a) Calculate the energy of an electron at n = 3. (b) Calculate the energy of an electron at n = 6. (c) Hence, calculate the energy change, ΔE, when the electron is excited from n = 3 to n = 6, and show that your answer is consistent with ΔE = E6 − E3.",
+      "answer": "(a) Energy at n = 3:\n\nEₙ = (- R_H)/n²\n\nE₃ = (- 2.18 × 10⁻¹⁸)/3²\n\nE₃ = - 2.42 × 10⁻¹⁹ J\n\n(b) Energy at n = 6:\n\nEₙ = (- R_H)/n²\n\nE₆ = (- 2.18 × 10⁻¹⁸)/6²\n\nE₆ = - 6.06 × 10⁻²⁰ J\n\n(c) Energy change from n = 3 to n = 6:\n\nΔE = - R_H( 1/n_f² - 1/nᵢ² )\n\nΔE = - 2.18 × 10⁻¹⁸( 1/6² - 1/3² )\n\nΔE = 1.82 × 10⁻¹⁹ J\n\nSince ΔE is positive, the electron absorbs energy — this is an absorption transition (electron promoted from n = 3 to n = 6).\n\nCheck: E₆ - E₃ = ( - 6.06 × 10⁻²⁰) - ( - 2.42 × 10⁻¹⁹) = 1.82 × 10⁻¹⁹ J (consistent)"
+    },
+    {
+      "no": 10,
+      "marks": 4,
+      "q": "An electron in a hydrogen atom falls from n = 7 to n = 2. (a) Calculate the energy change, ΔE, for this transition. (b) State, with a reason, whether energy is absorbed or released during this transition.",
+      "answer": "(a) Energy change:\n\nΔE = - R_H( 1/n_f² - 1/nᵢ² )\n\nΔE = - 2.18 × 10⁻¹⁸( 1/2² - 1/7² )\n\nΔE = - 5.01 × 10⁻¹⁹ J\n\nSince ΔE is negative, energy is released as light — this is an emission transition (electron falls from n = 7 to n = 2).\n\n(b) Since the electron falls from a higher level (n = 7) to a lower level (n = 2), ΔE is negative, meaning energy is released in the form of a photon of light (emission)."
+    },
+    {
+      "no": 11,
+      "marks": 2,
+      "q": "Calculate the energy of a photon of monochromatic light with a wavelength of 450 nm.",
+      "answer": "E = hc/λ\n\nE = ((6.63 × 10⁻³⁴)(3.00 × 10⁸))/(4.50 × 10⁻⁷)\n\nE = 4.42 × 10⁻¹⁹ J"
+    },
+    {
+      "no": 12,
+      "marks": 2,
+      "q": "Calculate the energy of a photon of radiation with a frequency of 6.00 × 10¹⁴ Hz.",
+      "answer": "E = hν\n\nE = (6.63 × 10⁻³⁴)(6.00 × 10¹⁴)\n\nE = 3.98 × 10⁻¹⁹ J"
+    },
+    {
+      "no": 13,
+      "marks": 3,
+      "q": "A photon has an energy of 5.00 × 10⁻¹⁹ J. Calculate its wavelength in nm.",
+      "answer": "λ = hc/E\n\nλ = ((6.63 × 10⁻³⁴)(3.00 × 10⁸))/(5.00 × 10⁻¹⁹)\n\nλ = 3.98 × 10⁻⁷ m = 398 nm"
+    },
+    {
+      "no": 14,
+      "marks": 2,
+      "q": "A photon has an energy of 3.60 × 10⁻¹⁹ J. Calculate its frequency.",
+      "answer": "ν = E/h\n\nν = (3.60 × 10⁻¹⁹)/(6.63 × 10⁻³⁴)\n\nν = 5.43 × 10¹⁴ Hz"
+    },
+    {
+      "no": 15,
+      "marks": 4,
+      "q": "Light of wavelength 620 nm is emitted from a sodium lamp. (a) Calculate the frequency of this light. (b) Calculate the energy of one photon of this light.",
+      "answer": "(a) Frequency:\n\nν = c/λ\n\nν = (3.00 × 10⁸)/(6.20 × 10⁻⁷)\n\nν = 4.84 × 10¹⁴ Hz\n\n(b) Energy:\n\nE = hν\n\nE = (6.63 × 10⁻³⁴)(4.84 × 10¹⁴)\n\nE = 3.21 × 10⁻¹⁹ J"
+    },
+    {
+      "no": 16,
+      "marks": 4,
+      "q": "A photon carries an energy of 3.37 × 10⁻¹⁹ J. (a) Calculate the frequency of this radiation. (b) Hence calculate its wavelength in nm.",
+      "answer": "(a) Frequency:\n\nν = E/h\n\nν = (3.37 × 10⁻¹⁹)/(6.63 × 10⁻³⁴)\n\nν = 5.08 × 10¹⁴ Hz\n\n(b) Wavelength:\n\nλ = c/ν\n\nλ = (3.00 × 10⁸)/(5.08 × 10¹⁴)\n\nλ = 5.90 × 10⁻⁷ m = 590 nm"
+    },
+    {
+      "no": 17,
+      "marks": 4,
+      "q": "Infrared radiation has a frequency of 1.00 × 10¹³ Hz. (a) Calculate its wavelength in nm. (b) Calculate the energy of one photon of this radiation.",
+      "answer": "(a) Wavelength:\n\nλ = c/ν\n\nλ = (3.00 × 10⁸)/(1.00 × 10¹³)\n\nλ = 3.00 × 10⁻⁵ m = 3.00 × 10⁴ nm\n\n(b) Energy:\n\nE = hν\n\nE = (6.63 × 10⁻³⁴)(1.00 × 10¹³)\n\nE = 6.63 × 10⁻²¹ J"
+    },
+    {
+      "no": 18,
+      "marks": 2,
+      "q": "Calculate the energy of an X-ray photon of wavelength 1.00 × 10⁻¹⁰ m (0.100 nm).",
+      "answer": "E = hc/λ\n\nE = ((6.63 × 10⁻³⁴)(3.00 × 10⁸))/(1.00 × 10⁻¹⁰)\n\nE = 1.99 × 10⁻¹⁵ J"
+    },
+    {
+      "no": 19,
+      "marks": 4,
+      "q": "A photon of light has an energy of 3.11 × 10⁻¹⁹ J. (a) Calculate its wavelength in nm. (b) State, giving a reason, whether this photon lies in the visible region of the electromagnetic spectrum.",
+      "answer": "(a) Wavelength:\n\nλ = hc/E\n\nλ = ((6.63 × 10⁻³⁴)(3.00 × 10⁸))/(3.11 × 10⁻¹⁹)\n\nλ = 6.40 × 10⁻⁷ m = 640 nm\n\n(b) Yes — 640 nm falls within the visible range (approximately 400–700 nm), so this photon corresponds to visible (red-orange) light."
+    },
+    {
+      "no": 20,
+      "marks": 5,
+      "q": "Photon A has a wavelength of 200 nm. Photon B has a frequency of 5.00 × 10¹⁴ Hz. (a) Calculate the energy of photon A. (b) Calculate the energy of photon B. (c) State, with reasoning, which photon carries more energy.",
+      "answer": "(a) Energy of photon A (λ = 200 nm):\n\nE_A = hc/λ\n\nE_A = ((6.63 × 10⁻³⁴)(3.00 × 10⁸))/(2.00 × 10⁻⁷)\n\nE_A = 9.95 × 10⁻¹⁹ J\n\n(b) Energy of photon B (ν = 5.00 × 10¹⁴ Hz):\n\nE_B = hν\n\nE_B = (6.63 × 10⁻³⁴)(5.00 × 10¹⁴)\n\nE_B = 3.31 × 10⁻¹⁹ J\n\n(c) Since E_A (9.95 × 10⁻¹⁹ J) \\> E_B (3.31 × 10⁻¹⁹ J), photon A carries more energy. This is consistent with photon A having a much shorter wavelength, and energy is inversely proportional to wavelength."
+    },
+    {
+      "no": 21,
+      "marks": 3,
+      "q": "Calculate the wavelength, in nm, of the third line of the Lyman series.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/1² - 1/4² )\n\nλ = 9.72 × 10⁻⁸ m = 97.2 nm"
+    },
+    {
+      "no": 22,
+      "marks": 4,
+      "q": "Calculate the wavelength and frequency of the fourth line of the Lyman series.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/1² - 1/5² )\n\nλ = 9.50 × 10⁻⁸ m = 95.0 nm\n\nν = c/λ\n\nν = (3.00 × 10⁸)/(9.50 × 10⁻⁸) = 3.16 × 10¹⁵ Hz"
+    },
+    {
+      "no": 23,
+      "marks": 4,
+      "q": "An electron in a hydrogen atom falls from n = 6 to n = 1. (a) Calculate the wavelength of the emitted radiation, in nm. (b) State the series and region of the electromagnetic spectrum in which this line lies.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/1² - 1/6² )\n\nλ = 9.38 × 10⁻⁸ m = 93.8 nm\n\nThis transition (nf = 1) belongs to the Lyman series, which lies in the ultraviolet region of the electromagnetic spectrum."
+    },
+    {
+      "no": 24,
+      "marks": 4,
+      "q": "Calculate the wavelength and frequency of the spectral line produced when an electron falls from n = 7 to n = 1 in a hydrogen atom.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/1² - 1/7² )\n\nλ = 9.31 × 10⁻⁸ m = 93.1 nm\n\nν = c/λ\n\nν = (3.00 × 10⁸)/(9.31 × 10⁻⁸) = 3.22 × 10¹⁵ Hz"
+    },
+    {
+      "no": 25,
+      "marks": 3,
+      "q": "Calculate the wavelength, in nm, of the third line of the Balmer series.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/2² - 1/5² )\n\nλ = 4.34 × 10⁻⁷ m = 434 nm"
+    },
+    {
+      "no": 26,
+      "marks": 4,
+      "q": "Calculate the wavelength and frequency of the fourth line of the Balmer series.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/2² - 1/6² )\n\nλ = 4.10 × 10⁻⁷ m = 410 nm\n\nν = c/λ\n\nν = (3.00 × 10⁸)/(4.10 × 10⁻⁷) = 7.31 × 10¹⁴ Hz"
+    },
+    {
+      "no": 27,
+      "marks": 3,
+      "q": "Calculate the wavelength, in nm, of the spectral line produced when an electron falls from n = 7 to n = 2 in a hydrogen atom.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/2² - 1/7² )\n\nλ = 3.97 × 10⁻⁷ m = 397 nm"
+    },
+    {
+      "no": 28,
+      "marks": 4,
+      "q": "An electron falls from n = 8 to n = 2 in a hydrogen atom. (a) Calculate the wavelength of the emitted line, in nm. (b) State the region of the electromagnetic spectrum in which this line is found.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/2² - 1/8² )\n\nλ = 3.89 × 10⁻⁷ m = 389 nm\n\nThis transition (nf = 2) belongs to the Balmer series, which lies in the visible region of the electromagnetic spectrum."
+    },
+    {
+      "no": 29,
+      "marks": 3,
+      "q": "Calculate the wavelength, in nm, of the second line of the Paschen series.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/3² - 1/5² )\n\nλ = 1.28 × 10⁻⁶ m = 1280 nm"
+    },
+    {
+      "no": 30,
+      "marks": 4,
+      "q": "Calculate the wavelength and frequency of the third line of the Paschen series.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/3² - 1/6² )\n\nλ = 1.09 × 10⁻⁶ m = 1090 nm\n\nν = c/λ\n\nν = (3.00 × 10⁸)/(1.09 × 10⁻⁶) = 2.74 × 10¹⁴ Hz"
+    },
+    {
+      "no": 31,
+      "marks": 3,
+      "q": "Calculate the wavelength, in nm, of the spectral line produced when an electron falls from n = 7 to n = 3.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/3² - 1/7² )\n\nλ = 1.01 × 10⁻⁶ m = 1010 nm"
+    },
+    {
+      "no": 32,
+      "marks": 4,
+      "q": "Calculate the wavelength and frequency of the spectral line produced when an electron falls from n = 8 to n = 3.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/3² - 1/8² )\n\nλ = 9.55 × 10⁻⁷ m = 955 nm\n\nν = c/λ\n\nν = (3.00 × 10⁸)/(9.55 × 10⁻⁷) = 3.14 × 10¹⁴ Hz"
+    },
+    {
+      "no": 33,
+      "marks": 3,
+      "q": "Calculate the wavelength, in nm, of the first line of the Brackett series.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/4² - 1/5² )\n\nλ = 4.05 × 10⁻⁶ m = 4050 nm"
+    },
+    {
+      "no": 34,
+      "marks": 4,
+      "q": "Calculate the wavelength and frequency of the second line of the Brackett series.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/4² - 1/6² )\n\nλ = 2.63 × 10⁻⁶ m = 2630 nm\n\nν = c/λ\n\nν = (3.00 × 10⁸)/(2.63 × 10⁻⁶) = 1.14 × 10¹⁴ Hz"
+    },
+    {
+      "no": 35,
+      "marks": 3,
+      "q": "Calculate the wavelength, in nm, of the spectral line produced when an electron falls from n = 7 to n = 4.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/4² - 1/7² )\n\nλ = 2.17 × 10⁻⁶ m = 2170 nm"
+    },
+    {
+      "no": 36,
+      "marks": 4,
+      "q": "Calculate the wavelength and frequency of the spectral line produced when an electron falls from n = 8 to n = 4.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/4² - 1/8² )\n\nλ = 1.94 × 10⁻⁶ m = 1940 nm\n\nν = c/λ\n\nν = (3.00 × 10⁸)/(1.94 × 10⁻⁶) = 1.54 × 10¹⁴ Hz"
+    },
+    {
+      "no": 37,
+      "marks": 3,
+      "q": "Calculate the wavelength, in nm, of the first line of the Pfund series.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/5² - 1/6² )\n\nλ = 7.46 × 10⁻⁶ m = 7460 nm"
+    },
+    {
+      "no": 38,
+      "marks": 4,
+      "q": "Calculate the wavelength and frequency of the second line of the Pfund series.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/5² - 1/7² )\n\nλ = 4.65 × 10⁻⁶ m = 4650 nm\n\nν = c/λ\n\nν = (3.00 × 10⁸)/(4.65 × 10⁻⁶) = 6.45 × 10¹³ Hz"
+    },
+    {
+      "no": 39,
+      "marks": 3,
+      "q": "Calculate the wavelength, in nm, of the spectral line produced when an electron falls from n = 8 to n = 5.",
+      "answer": "1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/5² - 1/8² )\n\nλ = 3.74 × 10⁻⁶ m = 3740 nm"
+    },
+    {
+      "no": 40,
+      "marks": 5,
+      "q": "A line in the hydrogen emission spectrum has a wavelength of 656 nm. This is the first line of its series. (a) Identify the series and the region of the spectrum to which this line belongs. (b) Determine the value of ni for this transition.",
+      "answer": "(a) A wavelength of 656 nm lies in the visible region of the spectrum. Visible-region hydrogen lines belong to the Balmer series, for which nf = 2.\n\n(b) Using the Rydberg equation to find ni:\n\n1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/nᵢ² = 1/2² - 1/(Rλ)\n\n1/nᵢ² = 0.2500 - 0.1390 = 0.1110\n\nnᵢ² = 1/0.1110 = 9.01\n\nnᵢ ≈ 3"
+    },
+    {
+      "no": 41,
+      "marks": 5,
+      "q": "A line in the hydrogen emission spectrum has a wavelength of 121.5 nm. This is the first line of its series. (a) Identify the series and the region of the spectrum to which this line belongs. (b) Determine the value of ni for this transition.",
+      "answer": "(a) A wavelength of 121.5 nm lies in the ultraviolet region of the spectrum. Ultraviolet hydrogen lines belong to the Lyman series, for which nf = 1.\n\n(b) Using the Rydberg equation to find ni:\n\n1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/nᵢ² = 1/1² - 1/(Rλ)\n\n1/nᵢ² = 1.000 - 0.7503 = 0.2497\n\nnᵢ² = 1/0.2497 = 4.00\n\nnᵢ ≈ 2"
+    },
+    {
+      "no": 42,
+      "marks": 6,
+      "q": "In the Balmer series of hydrogen, consider the spectral lines produced by the transitions n = 3 → 2, n = 4 → 2 and n = 5 → 2. (a) Calculate the energy change, ΔE, for each transition. (b) Rank the three lines in order of increasing photon energy released, and explain the trend observed.",
+      "answer": "(a) Energy change for each transition:\n\nΔE( 3 → 2 ) = - R_H( 1/2² - 1/3² ) = - 3.03 × 10⁻¹⁹ J\n\nΔE( 4 → 2 ) = - R_H( 1/2² - 1/4² ) = - 4.09 × 10⁻¹⁹ J\n\nΔE( 5 → 2 ) = - R_H( 1/2² - 1/5² ) = - 4.58 × 10⁻¹⁹ J\n\n(b) In order of increasing photon energy released: n = 3 → 2 \\< n = 4 → 2 \\< n = 5 → 2 (i.e. 3.03 × 10⁻¹⁹ J \\< 4.09 × 10⁻¹⁹ J \\< 4.58 × 10⁻¹⁹ J). As ni increases, the electron falls from a level further from the nucleus, so a larger amount of energy is released. However, successive increases in energy become smaller as ni increases, since the lines converge towards the series limit (the ionisation energy from n = 2)."
+    },
+    {
+      "no": 43,
+      "marks": 4,
+      "q": "Consider four hydrogen spectral lines: the first line of the Lyman series (n = 2 → 1), the first line of the Balmer series (n = 3 → 2), the first line of the Paschen series (n = 4 → 3), and the first line of the Brackett series (n = 5 → 4). Without performing detailed calculations, state which of these four transitions releases the photon of highest energy, and explain your reasoning.",
+      "answer": "The Lyman line (n = 2 → 1) releases the photon of highest energy.\n\nReasoning: the energy levels of a hydrogen atom are much more widely spaced at small n and become closer together as n increases (since En = −RH/n²). A transition ending at nf = 1 (Lyman) therefore spans the largest energy gap, releasing the most energetic — and shortest wavelength — photon. Transitions ending at progressively higher nf (Balmer, Paschen, Brackett) occur between levels that are closer together, so they release progressively less energy.\n\nΔE( Lyman ) = - 1.63 × 10⁻¹⁸ J ΔE( Balmer ) = - 3.03 × 10⁻¹⁹ J\n\nΔE( Paschen ) = - 1.06 × 10⁻¹⁹ J ΔE( Brackett ) = - 4.91 × 10⁻²⁰ J"
+    },
+    {
+      "no": 44,
+      "marks": 7,
+      "q": "Line y in the Paschen series of the hydrogen spectrum corresponds to the transition n = 9 to n = 3. (a) State the region of the electromagnetic spectrum in which line y is found. (b) Calculate the energy corresponding to line y. (c) Calculate the wavelength and frequency of line y.",
+      "answer": "(a) The Paschen series (nf = 3) lies in the infrared region of the electromagnetic spectrum.\n\n(b) Energy of line y:\n\nΔE = - R_H( 1/n_f² - 1/nᵢ² )\n\nΔE = - 2.18 × 10⁻¹⁸( 1/3² - 1/9² )\n\nΔE = - 2.15 × 10⁻¹⁹ J\n\nSince ΔE is negative, energy is released as light — this is an emission transition (electron falls from n = 9 to n = 3).\n\n(c) Wavelength and frequency of line y:\n\n1/λ = R( 1/n_f² - 1/nᵢ² )\n\n1/λ = 1.097 × 10⁷( 1/3² - 1/9² )\n\nλ = 9.23 × 10⁻⁷ m = 923 nm\n\nν = c/λ\n\nν = (3.00 × 10⁸)/(9.23 × 10⁻⁷) = 3.25 × 10¹⁴ Hz"
+    },
+    {
+      "no": 45,
+      "marks": 5,
+      "q": "Three spectral lines in the Brackett series are produced by the transitions n = 5 → 4, n = 6 → 4 and n = 7 → 4. (a) State which line has the lowest energy of light. (b) State which line has the lowest frequency of light. (c) State which line has the shortest wavelength of light. Justify each answer.",
+      "answer": "Recall (from Q33–Q35): wavelengths are n=5→4: 4050 nm, n=6→4: 2630 nm, n=7→4: 2170 nm.\n\n(a) Lowest energy: n = 5 → 4. This line has the longest wavelength, and since E = hc/λ, energy is inversely proportional to wavelength — the longest wavelength corresponds to the lowest energy.\n\n(b) Lowest frequency: n = 5 → 4. Since E = hν, energy and frequency are directly proportional, so the line with the lowest energy also has the lowest frequency.\n\n(c) Shortest wavelength: n = 7 → 4. This transition spans the largest energy gap among the three, releasing the most energetic photon, which corresponds (by E = hc/λ) to the shortest wavelength."
+    },
+    {
+      "no": 46,
+      "marks": 3,
+      "q": "Using the Lyman series, calculate the ionisation energy of a hydrogen atom in its ground state, in J per atom.",
+      "answer": "Ionisation from the ground state is the transition n = 1 to n = ∞. As n → ∞, 1/n² → 0.\n\nIE = ΔE = - R_H( 1/∞² - 1/1² )\n\nIE = - R_H( 0 - 1 ) = R_H\n\nIE = 2.18 × 10⁻¹⁸ J per atom"
+    },
+    {
+      "no": 47,
+      "marks": 2,
+      "q": "Hence, calculate the ionisation energy of hydrogen in kJ per mole.",
+      "answer": "IEₘₒₗₐᵣ = IEₐₜₒₘ × N_A\n\nIEₘₒₗₐᵣ = (2.18 × 10⁻¹⁸)(6.022 × 10²³)\n\nIEₘₒₗₐᵣ = 1.31 × 10⁶ J mol- 1 = 1.31 × 10³ kJ mol- 1"
+    },
+    {
+      "no": 48,
+      "marks": 5,
+      "q": "Calculate the energy required to remove an electron from a hydrogen atom that is already in the n = 2 state to n = ∞. Give your answer (a) per atom, and (b) per mole, in kJ mol⁻¹.",
+      "answer": "(a) Energy per atom (n = 2 to n = ∞):\n\nIE = - R_H( 1/∞² - 1/2² ) = R_H / 4\n\nIE = 2.18 × 10⁻¹⁸ / 4 = 5.45 × 10⁻¹⁹ J per atom\n\n(b) Energy per mole:\n\nIEₘₒₗₐᵣ = (5.45 × 10⁻¹⁹)(6.022 × 10²³)\n\nIEₘₒₗₐᵣ = 3.28 × 10⁵ J mol- 1 = 3.28 × 10² kJ mol- 1"
+    },
+    {
+      "no": 49,
+      "marks": 4,
+      "q": "The experimentally measured first ionisation energy of hydrogen is 1312 kJ mol⁻¹. (a) Calculate the corresponding energy required to ionise a single hydrogen atom, in J. (b) Compare this value with RH and comment on any difference.",
+      "answer": "(a) Energy per atom:\n\nIEₐₜₒₘ = IEₘₒₗₐᵣ/N_A\n\nIEₐₜₒₘ = (1.312 × 10⁶)/(6.022 × 10²³)\n\nIEₐₜₒₘ = 2.18 × 10⁻¹⁸ J\n\n(b) This value is identical (to 3 significant figures) to RH = 2.18 × 10⁻¹⁸ J. This confirms that the theoretical ionisation energy predicted by Bohr's model, RH, matches the experimentally measured ionisation energy of hydrogen."
+    },
+    {
+      "no": 50,
+      "marks": 6,
+      "q": "A sample of gaseous hydrogen atoms in the ground state is to be ionised by absorption of photons. (a) Calculate the minimum energy, in J, required to ionise one hydrogen atom. (b) Calculate the minimum frequency of the photon required. (c) Calculate the total energy, in kJ, required to ionise 0.500 mol of hydrogen atoms.",
+      "answer": "(a) Minimum ionisation energy per atom (n = 1 to n = ∞):\n\nIE = R_H = 2.18 × 10⁻¹⁸ J\n\n(b) Minimum frequency:\n\nν = IE/h\n\nν = (2.18 × 10⁻¹⁸)/(6.63 × 10⁻³⁴)\n\nν = 3.29 × 10¹⁵ Hz\n\n(c) Energy required to ionise 0.500 mol of H atoms:\n\nE = IE × N_A × n\n\nE = (2.18 × 10⁻¹⁸)(6.022 × 10²³)(0.500)\n\nE = 6.56 × 10⁵ J = 6.56 × 10² kJ"
+    }
+  ]
+}
