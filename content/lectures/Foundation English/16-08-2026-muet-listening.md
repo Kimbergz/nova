@@ -96,7 +96,3 @@ This is the pattern to train your ear for: **first idea ≠ final idea**, and **
 - Comfortable identifying paraphrase, not just matching words.
 - Used timed, two-play-only practice sessions in the weeks before the exam.
 - Have a plan for "letting go" of a missed question instead of freezing.
-
----
-
-*See also: [[16-08-2026-muet-speaking]], [[16-08-2026-muet-reading]], [[16-08-2026-muet-writing]]*
