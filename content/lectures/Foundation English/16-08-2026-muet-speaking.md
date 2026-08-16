@@ -117,6 +117,3 @@ Notice this turn: restates the point chosen, gives a personal/concrete example (
 - Rehearsed a natural (not robotic) speaking pace using notes-as-keywords, not full scripts.
 - Comfortable politely disagreeing and summarising a discussion under time pressure.
 
----
-
-*See also: [[16-08-2026-muet-listening]], [[16-08-2026-muet-reading]], [[16-08-2026-muet-writing]]*
