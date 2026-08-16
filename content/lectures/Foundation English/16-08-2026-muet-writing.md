@@ -125,7 +125,3 @@ This opening does three things efficiently: sets context, acknowledges nuance (a
 - Practised ticking off every point in the Task 1 prompt before finishing.
 - Built and rehearsed a personal bank of linking phrases and topic vocabulary.
 - Practised writing a strong thesis statement and a matching conclusion under time pressure.
-
----
-
-*See also: [[16-08-2026-muet-listening]], [[16-08-2026-muet-speaking]], [[16-08-2026-muet-reading]]*
