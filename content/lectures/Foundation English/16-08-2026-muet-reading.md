@@ -113,6 +113,3 @@ This is the exact reasoning to apply at every gap: **read outward from the gap, 
 - Built a habit of skimming for gist before scanning for detail.
 - Never leaving a question blank, even under time pressure.
 
----
-
-*See also: [[16-08-2026-muet-listening]], [[16-08-2026-muet-speaking]], [[16-08-2026-muet-writing]]*
