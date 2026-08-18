@@ -36,7 +36,7 @@ A mitochondrion is bound by a **double membrane** (outer + inner) with an **inte
 
 ## 2. Overview of Cellular Respiration (8.1)
 
-**Cellular respiration**: the process by which cells acquire energy (as ATP) by breaking down nutrient molecules produced by photosynthesizers.
+**Cellular respiration**: the process by which cells acquire energy (as ATP) by breaking down organic molecules.
 
 **Aerobic respiration** — a form of cellular respiration that consumes O₂ and produces CO₂; occurs in the **mitochondria**. It involves the complete breakdown of glucose to CO₂ and H₂O:
 
