@@ -114,14 +114,14 @@ window.SITE_CONFIG = {
     academic: {
       cardTitle: { en: "Academic help", ms: "Bantuan akademik" },
       cardDesc: {
-        en: "Stuck on a topic, missing notes, exam stress — anything study-related.",
-        ms: "Tak faham sesuatu topik, nota tak lengkap, tertekan sebab peperiksaan — apa-apa berkaitan pelajaran."
+        en: "Stuck on a topic, too shy to ask in class, missing notes — anything study-related.",
+        ms: "Tak faham sesuatu topik, malu nak tanya dalam kelas, nota tak lengkap — apa-apa berkaitan pelajaran."
       },
       cardCta: { en: "Tell me", ms: "Beritahu saya" },
       formHeading: { en: "Academic help", ms: "Bantuan akademik" },
       formIntro: {
-        en: "Tell me what's tripping you up. If it's about one subject, pick it below — otherwise leave it general.",
-        ms: "Beritahu saya apa yang menyusahkan anda. Jika ia berkaitan satu subjek, pilih di bawah — jika tidak, biarkan sebagai umum."
+        en: "Tell me what's tripping you up. Too shy to ask in class, or can't catch a lecturer during their hours? Drop it here and I'll get the explanation and ask on your behalf. If it's about one subject, pick it below — otherwise leave it general.",
+        ms: "Beritahu saya apa yang menyusahkan anda. Malu nak tanya dalam kelas, atau tak sempat jumpa pensyarah? Letakkan di sini dan saya akan dapatkan penjelasan serta tanya bagi pihak anda. Jika ia berkaitan satu subjek, pilih di bawah — jika tidak, biarkan sebagai umum."
       },
       subjectLabel: { en: "Subject (optional)", ms: "Subjek (pilihan)" },
       subjectNoneOption: { en: "General / not sure", ms: "Umum / tidak pasti" },
