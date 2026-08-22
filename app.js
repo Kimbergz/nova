@@ -47,7 +47,8 @@
       sizeS: "Small", sizeM: "Medium", sizeL: "Large", close: "Close",
       theme: "Appearance", themeLight: "Light", themeDark: "Dark", themeAuto: "Auto",
       disclaimerLabel: "Disclaimer", questionsWord: "questions", marksWord: "marks",
-      moreSoon: "More options will live here as the site grows."
+      moreSoon: "More options will live here as the site grows.",
+      sentTag: "Sent", errorTag: "Error"
     },
     ms: {
       navSubjects: "Subjek", navQuizzes: "Kuiz", navPapers: "Kertas",
@@ -81,7 +82,8 @@
       sizeS: "Kecil", sizeM: "Sedang", sizeL: "Besar", close: "Tutup",
       theme: "Penampilan", themeLight: "Cerah", themeDark: "Gelap", themeAuto: "Auto",
       disclaimerLabel: "Penafian", questionsWord: "soalan", marksWord: "markah",
-      moreSoon: "Lebih banyak pilihan akan ditambah di sini."
+      moreSoon: "Lebih banyak pilihan akan ditambah di sini.",
+      sentTag: "Dihantar", errorTag: "Ralat"
     }
   };
 
@@ -148,7 +150,8 @@
     close: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg>',
     check: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 8.5l3.5 3.5L13.5 4"/></svg>',
     cross: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg>',
-    print: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 6V2h8v4M4 11H2V6h12v5h-2M4 9h8v5H4z"/></svg>'
+    print: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 6V2h8v4M4 11H2V6h12v5h-2M4 9h8v5H4z"/></svg>',
+    voice: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 3.5h11v8H6L2.5 15v-3.5z"/></svg>'
   };
 
   /* ---------------- manifest state ---------------- */
@@ -216,6 +219,17 @@
   }
   function findPaper(subject, file) {
     return manifest.papers.filter(function (p) { return p.subject === subject && p.file === file; })[0];
+  }
+
+  /* ---------------- "Talk to us" (private vent / academic help) ---------------- */
+  function voiceEnabled() {
+    return !!(CFG.voice && CFG.voice.enabled !== false && CFG.voice.formEndpoints);
+  }
+  function voiceCopy(kind) {
+    return (CFG.voice && CFG.voice[kind]) || {};
+  }
+  function voiceKindKnown(kind) {
+    return kind === "academic" || kind === "vent";
   }
 
   /* ---------------- markdown (untrusted -> sanitized) ---------------- */
@@ -325,6 +339,7 @@
           '<a href="' + href("subjects") + '"' + cls("subjects") + ">" + esc(t("navSubjects")) + "</a>" +
           '<a href="' + href("quizzes") + '"' + cls("quizzes") + ">" + esc(t("navQuizzes")) + "</a>" +
           '<a href="' + href("papers") + '"' + cls("papers") + ">" + esc(t("navPapers")) + "</a>" +
+          (voiceEnabled() ? '<a href="' + href("voice") + '"' + cls("voice") + ">" + esc(pick(CFG.voice.navLabel)) + "</a>" : "") +
         "</nav>" +
         '<button type="button" class="icon-btn" data-action="open-settings" aria-label="' + esc(t("settings")) + '">' +
           ICONS.sliders +
@@ -366,12 +381,16 @@
     return '<div class="label-row"><span class="mono-label">' + left + "</span>" +
       (right != null ? '<span class="mono-label">' + right + "</span>" : "") + "</div>";
   }
-  function emptyBox(titleKey, hintKey) {
-    return '<div class="empty">' +
-      '<span class="mono-label">' + esc(t("emptyTag")) + "</span>" +
-      '<div class="empty-title">' + esc(t(titleKey)) + "</div>" +
-      '<p class="empty-hint">' + esc(t(hintKey)) + "</p>" +
+  function emptyBoxRaw(tag, title, hint, extra, modifier) {
+    return '<div class="empty' + (modifier ? " empty--" + modifier : "") + '">' +
+      '<span class="mono-label">' + esc(tag) + "</span>" +
+      '<div class="empty-title">' + esc(title) + "</div>" +
+      '<p class="empty-hint">' + esc(hint) + "</p>" +
+      (extra || "") +
     "</div>";
+  }
+  function emptyBox(titleKey, hintKey) {
+    return emptyBoxRaw(t("emptyTag"), t(titleKey), t(hintKey));
   }
   function loadingHtml() {
     return sectionPaper('<span class="mono-label">' + esc(t("loading")) + " …</span>");
@@ -472,6 +491,17 @@
       '<p class="banner-text">' + esc(pick(CFG.disclaimer)) + "</p>" +
     "</div></section>";
 
+    var voiceBanner = voiceEnabled()
+      ? '<section class="sec sec--paper sec--tight"><div class="wrap">' +
+          '<a class="voice-banner" href="' + href("voice") + '">' +
+            '<span class="mono-label">' + esc(pick(CFG.voice.bannerKicker)) + "</span>" +
+            '<span class="voice-banner-heading">' + esc(pick(CFG.voice.bannerHeading)) + "</span>" +
+            '<span class="voice-banner-text">' + esc(pick(CFG.voice.bannerText)) + "</span>" +
+            '<span class="voice-banner-cta"><span class="mono-label">' + esc(pick(CFG.voice.bannerCta)) + "</span>" + ICONS.arrow + "</span>" +
+          "</a>" +
+        "</div></section>"
+      : "";
+
     var search = '<section class="sec sec--paper sec--tight"><div class="wrap">' +
       searchFormHtml("") +
     "</div></section>";
@@ -499,7 +529,7 @@
       subjectRowsHtml(subjects) +
     "</div></section>";
 
-    return hero + banner + search + indexWarning + latestSection + subjectsSection;
+    return hero + voiceBanner + banner + search + indexWarning + latestSection + subjectsSection;
   }
 
   function subjectRowsHtml(subjects) {
@@ -924,6 +954,127 @@
     if (label) label.textContent = open ? button.getAttribute("data-hide") : button.getAttribute("data-show");
   }
 
+  /* ---------------- "Talk to us" view (private form -> Formspree) ---------------- */
+  function voicePageHtml(kind) {
+    if (!voiceEnabled()) return notFoundHtml();
+    if (!kind) return voiceLandingHtml();
+    if (!voiceKindKnown(kind)) return notFoundHtml();
+    return voiceFormHtml(kind);
+  }
+
+  function voiceEntryCard(kind) {
+    var c = voiceCopy(kind);
+    return '<a class="card" href="' + href("voice", kind) + '">' +
+      '<span class="card-title">' + esc(pick(c.cardTitle)) + "</span>" +
+      '<span class="card-sub">' + esc(pick(c.cardDesc)) + "</span>" +
+      '<span class="card-foot"><span class="mono-label">' + esc(pick(c.cardCta)) + "</span>" + ICONS.arrow + "</span>" +
+    "</a>";
+  }
+
+  function voiceLandingHtml() {
+    var v = CFG.voice;
+    return sectionPaper(
+      crumbsHtml([{ label: t("home"), href: "#/" }, { label: pick(v.navLabel) }]) +
+      '<div class="page-head">' +
+        '<h1 class="page-title page-title--sans">' + esc(pick(v.introHeading)) + "</h1>" +
+        (pick(v.introText) ? '<p class="page-sub">' + esc(pick(v.introText)) + "</p>" : "") +
+      "</div>" +
+      '<div class="callout">' + esc(pick(v.confidentialNote)) + "</div>" +
+      '<div class="card-grid voice-cards">' + voiceEntryCard("academic") + voiceEntryCard("vent") + "</div>"
+    );
+  }
+
+  function voiceFormHtml(kind) {
+    var v = CFG.voice;
+    var c = voiceCopy(kind);
+    var endpoint = v.formEndpoints[kind];
+    var crumbs = crumbsHtml([
+      { label: t("home"), href: "#/" },
+      { label: pick(v.navLabel), href: href("voice") },
+      { label: pick(c.cardTitle) }
+    ]);
+    if (!endpoint) {
+      // Owner hasn't set this endpoint in config.js yet — fail gracefully
+      // instead of showing a form with nowhere to send.
+      return sectionPaper(crumbs + emptyBoxRaw(t("errorTag"), pick(c.formHeading), pick(v.errorText)));
+    }
+    var subjectField = kind === "academic"
+      ? '<div class="field">' +
+          '<label for="voice-subject">' + esc(pick(c.subjectLabel)) + "</label>" +
+          '<select class="field-select" id="voice-subject" name="subject">' +
+            '<option value="">' + esc(pick(c.subjectNoneOption)) + "</option>" +
+            subjectList().map(function (s) {
+              return '<option value="' + esc(s) + '">' + esc(subjectLabel(s)) + "</option>";
+            }).join("") +
+          "</select>" +
+        "</div>"
+      : "";
+    var mailSubject = "Nova — " + (kind === "academic" ? "Academic help" : "General vent");
+    return sectionPaper(
+      crumbs +
+      '<div class="page-head">' +
+        '<h1 class="page-title page-title--sans">' + esc(pick(c.formHeading)) + "</h1>" +
+        (pick(c.formIntro) ? '<p class="page-sub">' + esc(pick(c.formIntro)) + "</p>" : "") +
+      "</div>" +
+      '<div class="callout">' + esc(pick(v.confidentialNote)) + "</div>" +
+      '<form class="voice-form" data-voice-form data-kind="' + esc(kind) + '" action="' + esc(endpoint) + '" method="POST">' +
+        '<input type="hidden" name="_subject" value="' + esc(mailSubject) + '">' +
+        '<input class="hp-field" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">' +
+        subjectField +
+        '<div class="field">' +
+          '<label for="voice-message">' + esc(pick(c.promptLabel)) + "</label>" +
+          '<textarea class="field-textarea" id="voice-message" name="message" required placeholder="' + esc(pick(c.promptPlaceholder)) + '"></textarea>' +
+        "</div>" +
+        '<div class="field">' +
+          '<label for="voice-contact">' + esc(pick(v.contactLabel)) + "</label>" +
+          '<input class="field-input" type="text" id="voice-contact" name="contact" placeholder="' + esc(pick(v.contactPlaceholder)) + '">' +
+        "</div>" +
+        '<div class="page-actions">' +
+          '<button type="submit" class="pill pill--acid">' + esc(pick(v.submitLabel)) + "</button>" +
+          '<a class="pill pill--outline" href="' + href("voice") + '">' + esc(t("back")) + "</a>" +
+        "</div>" +
+      "</form>"
+    );
+  }
+
+  function voiceThanksHtml(kind) {
+    var v = CFG.voice, c = voiceCopy(kind);
+    return sectionPaper(
+      crumbsHtml([{ label: t("home"), href: "#/" }, { label: pick(v.navLabel), href: href("voice") }]) +
+      emptyBoxRaw(t("sentTag"), pick(c.thanksHeading), pick(c.thanksText),
+        '<a class="pill pill--outline" href="#/">' + esc(t("home")) + "</a>", "success")
+    );
+  }
+
+  function voiceErrorHtml(kind) {
+    var v = CFG.voice;
+    return sectionPaper(
+      crumbsHtml([{ label: t("home"), href: "#/" }, { label: pick(v.navLabel), href: href("voice") }]) +
+      emptyBoxRaw(t("errorTag"), pick(v.errorHeading), pick(v.errorText),
+        '<button type="button" class="pill pill--acid" data-action="retry-voice" data-kind="' + esc(kind) + '">' + esc(t("retry")) + "</button>")
+    );
+  }
+
+  function handleVoiceSubmit(form) {
+    var kind = form.getAttribute("data-kind");
+    var btn = form.querySelector('button[type="submit"]');
+    if (btn) { btn.disabled = true; btn.textContent = pick(CFG.voice.sendingLabel); }
+    var token = renderToken;
+    fetch(form.getAttribute("action"), {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" }
+    }).then(function (res) {
+      if (token !== renderToken) return;
+      if (res.ok) paintView(voiceThanksHtml(kind));
+      else paintView(voiceErrorHtml(kind));
+    }).catch(function (err) {
+      console.error("[cairn] voice submit failed:", err);
+      if (token !== renderToken) return;
+      paintView(voiceErrorHtml(kind));
+    });
+  }
+
   /* ---------------- settings sheet ---------------- */
   function settingsHtml() {
     var currentLang = lang();
@@ -1000,6 +1151,7 @@
       case "quiz": quizPage(current.parts[0] || "", current.parts[1] || ""); break;
       case "papers": paint("papers", papersPageHtml()); break;
       case "paper": paperPage(current.parts[0] || "", current.parts[1] || ""); break;
+      case "voice": paint("voice", voicePageHtml(current.parts[0] || "")); break;
       case "search": paint("", searchPageHtml(current.parts.join("/"))); break;
       default: paint("", notFoundHtml());
     }
@@ -1028,14 +1180,22 @@
     else if (action === "toggle-key") toggleAnswerKey(target);
     else if (action === "print") window.print();
     else if (action === "retry-quiz") render();
+    else if (action === "retry-voice") paintView(voiceFormHtml(target.getAttribute("data-kind")));
   });
   document.addEventListener("submit", function (event) {
-    var form = event.target.closest ? event.target.closest("form[data-search]") : null;
-    if (!form) return;
-    event.preventDefault();
-    var input = form.querySelector('input[name="q"]');
-    var query = input ? input.value.trim() : "";
-    if (query) location.hash = "#/search/" + encodeURIComponent(query);
+    var searchForm = event.target.closest ? event.target.closest("form[data-search]") : null;
+    if (searchForm) {
+      event.preventDefault();
+      var input = searchForm.querySelector('input[name="q"]');
+      var query = input ? input.value.trim() : "";
+      if (query) location.hash = "#/search/" + encodeURIComponent(query);
+      return;
+    }
+    var voiceForm = event.target.closest ? event.target.closest("form[data-voice-form]") : null;
+    if (voiceForm) {
+      event.preventDefault();
+      handleVoiceSubmit(voiceForm);
+    }
   });
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") closeSettings();
