@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 /* ============================================================
    cairn — content indexer
-   Scans content/lectures, content/quizzes and content/exam-papers
-   and writes manifest.json (the site's table of contents).
+   Scans content/lectures and writes manifest.json (the site's
+   table of contents). Exam papers are no longer scanned from
+   this repo — each subject now links straight to a Google Drive
+   folder configured in config.js (paperLinks).
 
    manifest.json is AUTO-GENERATED. Never edit it by hand.
    Run locally with:  node scripts/build-manifest.mjs
@@ -18,8 +20,6 @@ import { fileURLToPath } from "node:url";
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_FILE = join(ROOT, "manifest.json");
 const LECTURES_DIR = join(ROOT, "content", "lectures");
-const QUIZZES_DIR = join(ROOT, "content", "quizzes");
-const PAPERS_DIR = join(ROOT, "content", "exam-papers");
 
 const warn = (...args) => console.warn("[manifest] WARNING:", ...args);
 
@@ -80,10 +80,6 @@ function topicFromFilename(name) {
     .replace(/[-_]+/g, " ")
     .trim();
 }
-function firstHeading(source) {
-  const m = /^#\s+(.+)$/m.exec(source);
-  return m ? m[1].trim() : "";
-}
 
 /* --- scan lectures ------------------------------------------------------ */
 async function scanNotes() {
@@ -106,7 +102,6 @@ async function scanNotes() {
           date,
           sort: sortKey(date),
           summary: fm.summary || "",
-          quiz: fm.quiz || "",
           file,
           path: `content/lectures/${subject}/${file}`
         });
@@ -115,119 +110,22 @@ async function scanNotes() {
       }
     }
   }
+  // Sorted by date here (newest first) for the homepage "latest notes" list.
+  // Subject pages re-sort notes by filename instead — see notesFor() in app.js.
   notes.sort((a, b) => b.sort.localeCompare(a.sort) || a.topic.localeCompare(b.topic));
   return notes;
 }
 
-/* --- scan quizzes -------------------------------------------------------- */
-function isValidMcqQuestion(q) {
-  return (
-    q &&
-    typeof q.q === "string" &&
-    q.q.trim() &&
-    Array.isArray(q.options) &&
-    q.options.length >= 2 &&
-    Number.isInteger(q.answer) &&
-    q.answer >= 0 &&
-    q.answer < q.options.length
-  );
-}
-
-/* Subjective / free-response question: no "options", the "answer" is the
-   worked-solution text instead of a 0-based option index. Used by quizzes
-   that don't fit multiple choice (e.g. calculation-heavy questions). */
-function isValidSubjectiveQuestion(q) {
-  return q && typeof q.q === "string" && q.q.trim() && typeof q.answer === "string" && q.answer.trim();
-}
-
-/* A quiz file is "mcq" if it has at least one valid multiple-choice
-   question, otherwise "subjective" if it has at least one valid
-   free-response question, otherwise it has no valid questions at all. */
-function classifyQuiz(data) {
-  const list = Array.isArray(data?.questions) ? data.questions : [];
-  const mcqCount = list.filter(isValidMcqQuestion).length;
-  if (mcqCount > 0) return { type: "mcq", count: mcqCount };
-  const subjectiveCount = list.filter(isValidSubjectiveQuestion).length;
-  if (subjectiveCount > 0) return { type: "subjective", count: subjectiveCount };
-  return { type: null, count: 0 };
-}
-
-async function scanQuizzes() {
-  const quizzes = [];
-  for (const subject of await listDirs(QUIZZES_DIR)) {
-    for (const file of await listFiles(join(QUIZZES_DIR, subject), ".json")) {
-      try {
-        const raw = await readFile(join(QUIZZES_DIR, subject, file), "utf8");
-        const data = JSON.parse(raw);
-        const { type, count } = classifyQuiz(data);
-        if (count === 0) {
-          warn(`skipped quiz ${subject}/${file}: it has no valid questions yet (need "q" + either "options"+"answer" for multiple choice, or a text "answer" for free-response).`);
-          continue;
-        }
-        const id = file.replace(/\.json$/i, "");
-        quizzes.push({
-          subject,
-          id,
-          title: typeof data.title === "string" && data.title.trim() ? data.title.trim() : id,
-          type,
-          count,
-          path: `content/quizzes/${subject}/${file}`
-        });
-      } catch (err) {
-        warn(`skipped quiz ${subject}/${file}: ${err.message}`);
-      }
-    }
-  }
-  return quizzes;
-}
-
-
-/* --- scan exam papers ----------------------------------------------------- */
-async function scanPapers() {
-  const papers = [];
-  for (const subject of await listDirs(PAPERS_DIR)) {
-    for (const file of await listFiles(join(PAPERS_DIR, subject), ".md")) {
-      try {
-        const raw = await readFile(join(PAPERS_DIR, subject, file), "utf8");
-        const fm = parseFrontmatter(raw);
-        const title =
-          fm.title ||
-          firstHeading(raw) ||
-          file.replace(/\.md$/i, "").replace(/[-_]+/g, " ").trim();
-        papers.push({
-          subject,
-          file,
-          title,
-          path: `content/exam-papers/${subject}/${file}`
-        });
-      } catch (err) {
-        warn(`skipped paper ${subject}/${file}: ${err.message}`);
-      }
-    }
-  }
-  return papers;
-}
-
 /* --- write manifest -------------------------------------------------------- */
-const [notes, quizzes, papers] = await Promise.all([scanNotes(), scanQuizzes(), scanPapers()]);
-
-const subjectDirs = new Set([
-  ...(await listDirs(LECTURES_DIR)),
-  ...(await listDirs(QUIZZES_DIR)),
-  ...(await listDirs(PAPERS_DIR))
-]);
+const notes = await scanNotes();
+const subjectDirs = new Set(await listDirs(LECTURES_DIR));
 
 const manifest = {
   version: 1,
   generated: new Date().toISOString(),
   subjects: [...subjectDirs].sort(),
-  notes,
-  quizzes,
-  papers
+  notes
 };
 
 await writeFile(OUT_FILE, JSON.stringify(manifest, null, 2) + "\n", "utf8");
-console.log(
-  `[manifest] OK — ${notes.length} notes, ${quizzes.length} quizzes, ${papers.length} papers ` +
-  `across ${manifest.subjects.length} subject folders.`
-);
+console.log(`[manifest] OK — ${notes.length} notes across ${manifest.subjects.length} subject folders.`);

@@ -4,10 +4,10 @@
    Plain-English guide:
    - siteName ......... the name shown in the header and footer.
    - subjects ......... the order subjects appear in on the site.
-                        A subject only shows content once a folder
-                        with the SAME name exists under
-                        content/lectures/ (or quizzes/exam-papers).
-                        Add or reorder lines freely.
+                        A subject shows its notes once a folder with the
+                        SAME name exists under content/lectures/, and shows
+                        an exam-papers button once it has a link in
+                        paperLinks below. Add or reorder lines freely.
    - defaultLang ...... "en" (English) or "ms" (Bahasa Melayu).
                         Visitors can switch anytime in Settings.
    - heroKicker ....... the tiny label at the very top of the homepage.
@@ -65,7 +65,55 @@ window.SITE_CONFIG = {
   },
 
   /* ==========================================================
-     "Talk to us" — private message box (vent / academic help)
+     Exam papers — one Google Drive link per subject
+
+     Papers are no longer hosted on this site. Each subject gets
+     ONE button that opens that subject's Google Drive folder in
+     a new tab. To turn a subject's button on, paste the folder's
+     "Anyone with the link can view" share URL as the value below
+     (right-click the folder in Drive -> Share -> copy link).
+
+     Leave a subject as "" (empty quotes) to keep showing the
+     normal "no papers yet" message for it.
+     ========================================================== */
+  paperLinks: {
+    "Industri Pertanian dan Makanan": "",
+    "Keusahawanan dan Pemasaran Produk Pertanian": "",
+    "Biologi I": "",
+    "Biologi II": "",
+    "Kimia I": "",
+    "Kimia II": "",
+    "Matematik I": "",
+    "Matematik II": "",
+    "Fizik I": "",
+    "Fizik II": "",
+    "Foundation English": "",
+    "Academic English Skills": ""
+  },
+
+  /* ==========================================================
+     Google Analytics (optional)
+
+     1. Go to analytics.google.com and create a GA4 property for
+        this site (free). It will give you a "Measurement ID"
+        that looks like G-XXXXXXXXXX.
+     2. Paste that ID below between the quotes.
+     3. Bump the number in version.js (same as any other engine
+        change) and publish.
+     Leave it as "" to keep analytics off completely — nothing
+     extra loads and no visitor data is collected.
+     ========================================================== */
+  analyticsId: "",
+
+  // Shown as a small line in the footer, but ONLY once analyticsId
+  // above is filled in. Keep it honest about what's actually running.
+  analyticsNote: {
+    en: "This site uses Google Analytics to see which pages get visited. No personal data is sold or shared.",
+    ms: "Laman ini menggunakan Google Analytics untuk melihat halaman yang dilawati. Tiada data peribadi dijual atau dikongsi."
+  },
+
+  /* ==========================================================
+     "Talk to us" — private message box (academic help / idea box)
 
      THIS WHOLE SECTION IS YOURS. Every line of text below is a
      first-draft placeholder — rewrite it in your own words before
@@ -91,7 +139,10 @@ window.SITE_CONFIG = {
 
     formEndpoints: {
       academic: "https://formspree.io/f/xnparozk",
-      vent: "https://formspree.io/f/xdenjpln"
+      // Reusing the old "vent" Formspree form for the idea box for now —
+      // same inbox, just relabelled below. Create a separate form at
+      // formspree.io and swap the URL here if you'd rather keep them apart.
+      idea: "https://formspree.io/f/xdenjpln"
     },
 
     navLabel: { en: "Talk", ms: "Bicara" },
@@ -134,19 +185,25 @@ window.SITE_CONFIG = {
       thanksText: { en: "Thanks for telling me — I read every one of these myself.", ms: "Terima kasih kerana beritahu saya — saya baca setiap satu sendiri." }
     },
 
-    vent: {
-      cardTitle: { en: "Just need to vent", ms: "Cuma nak luahkan" },
+    idea: {
+      cardTitle: { en: "Suggest something", ms: "Cadangkan sesuatu" },
       cardDesc: {
-        en: "Anything else on your mind? — stress, a rough week, whatever. No topic required.",
-        ms: "Apa-apa lagi di fikiran anda? — tekanan, minggu yang sukar, apa sahaja. Tiada topik diperlukan."
+        en: "Want something added, built, or changed on this site or how things run? Drop it here.",
+        ms: "Nak sesuatu ditambah, dibina, atau diubah di laman ini atau cara sesuatu dijalankan? Letakkan di sini."
       },
-      cardCta: { en: "Let it out", ms: "Luahkan" },
-      formHeading: { en: "Just need to vent", ms: "Cuma nak luahkan" },
-      formIntro: { en: "Say whatever you need to. There's no right way to fill this in.", ms: "Katakan apa sahaja yang anda perlu. Tiada cara yang betul untuk mengisi ini." },
-      promptLabel: { en: "What's going on?", ms: "Apa yang berlaku?" },
-      promptPlaceholder: { en: "Write as much or as little as you want…", ms: "Tulis sebanyak atau seringkas mana yang anda mahu…" },
-      thanksHeading: { en: "Heard.", ms: "Didengari." },
-      thanksText: { en: "Thank you for trusting me with this.", ms: "Terima kasih kerana mempercayai saya dengan ini." }
+      cardCta: { en: "Suggest it", ms: "Cadangkan" },
+      formHeading: { en: "Suggest something", ms: "Cadangkan sesuatu" },
+      formIntro: {
+        en: "“I want X done,” “I think X is needed,” “I think X should change to Y” — whatever it is, say it here.",
+        ms: "“Saya nak X dibuat,” “Saya rasa X diperlukan,” “Saya rasa X patut ditukar kepada Y” — apa sahaja, beritahu di sini."
+      },
+      promptLabel: { en: "What's the idea?", ms: "Apakah cadangannya?" },
+      promptPlaceholder: {
+        en: "e.g. I think there should be past-year papers for Chapter 6, or the notes page needs a dark mode toggle…",
+        ms: "cth: Saya rasa patut ada kertas tahun lepas untuk Bab 6, atau halaman nota perlukan suis mod gelap…"
+      },
+      thanksHeading: { en: "Got it.", ms: "Diterima." },
+      thanksText: { en: "Thanks for the suggestion — I read every one of these myself.", ms: "Terima kasih atas cadangan — saya baca setiap satu sendiri." }
     },
 
     contactLabel: { en: "Want a reply? Leave a way to reach you (optional)", ms: "Nak balasan? Tinggalkan cara untuk hubungi anda (pilihan)" },

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-07-04T11:29:52.912Z",
+  "generated": "2026-08-31T13:09:26.070Z",
   "subjects": [
     "Academic English Skills",
     "Biologi I",
@@ -15,7 +15,303 @@
     "Matematik I",
     "Matematik II"
   ],
-  "notes": [],
-  "quizzes": [],
-  "papers": []
+  "notes": [
+    {
+      "subject": "Matematik I",
+      "topic": "Complex Numbers",
+      "date": "18-08-2026",
+      "sort": "2026-08-18",
+      "summary": "The imaginary unit, complex arithmetic, the Argand diagram, and polar form.",
+      "file": "18-08-2026-complex-numbers.md",
+      "path": "content/lectures/Matematik I/18-08-2026-complex-numbers.md"
+    },
+    {
+      "subject": "Matematik I",
+      "topic": "Equations, Inequalities and Absolute Values",
+      "date": "18-08-2026",
+      "sort": "2026-08-18",
+      "summary": "Solving quadratic equations, the discriminant, quadratic and rational inequalities, and absolute value equations/inequalities.",
+      "file": "18-08-2026-equations-inequalities-absolute-values.md",
+      "path": "content/lectures/Matematik I/18-08-2026-equations-inequalities-absolute-values.md"
+    },
+    {
+      "subject": "Matematik I",
+      "topic": "Matrices",
+      "date": "18-08-2026",
+      "sort": "2026-08-18",
+      "summary": "Matrix basics, operations, special matrix types, and finding inverses and determinants.",
+      "file": "18-08-2026-matrices.md",
+      "path": "content/lectures/Matematik I/18-08-2026-matrices.md"
+    },
+    {
+      "subject": "Matematik I",
+      "topic": "Polynomials",
+      "date": "18-08-2026",
+      "sort": "2026-08-18",
+      "summary": "Polynomial operations, division, the Remainder and Factor Theorems, and partial fractions.",
+      "file": "18-08-2026-polynomials.md",
+      "path": "content/lectures/Matematik I/18-08-2026-polynomials.md"
+    },
+    {
+      "subject": "Matematik I",
+      "topic": "Real Numbers",
+      "date": "18-08-2026",
+      "sort": "2026-08-18",
+      "summary": "The real number system, intervals, inequalities, indices, surds, and logarithms.",
+      "file": "18-08-2026-real-numbers.md",
+      "path": "content/lectures/Matematik I/18-08-2026-real-numbers.md"
+    },
+    {
+      "subject": "Matematik I",
+      "topic": "Sequences and Progressions",
+      "date": "18-08-2026",
+      "sort": "2026-08-18",
+      "summary": "Arithmetic and geometric sequences, their sums, and infinite geometric series.",
+      "file": "18-08-2026-sequences-progressions.md",
+      "path": "content/lectures/Matematik I/18-08-2026-sequences-progressions.md"
+    },
+    {
+      "subject": "Matematik I",
+      "topic": "System of Linear Equations",
+      "date": "18-08-2026",
+      "sort": "2026-08-18",
+      "summary": "Solving systems of linear equations using the inverse matrix, Gauss-Jordan elimination, and Cramer's Rule.",
+      "file": "18-08-2026-system-of-linear-equations.md",
+      "path": "content/lectures/Matematik I/18-08-2026-system-of-linear-equations.md"
+    },
+    {
+      "subject": "Biologi I",
+      "topic": "Topic 8 - Cellular Respiration",
+      "date": "18-08-2026",
+      "sort": "2026-08-18",
+      "summary": "How cells break down glucose into ATP via glycolysis, fermentation, and aerobic respiration (prep reaction, citric acid cycle, electron transport chain and chemiosmosis).",
+      "file": "18-08-2026-cellular-respiration.md",
+      "path": "content/lectures/Biologi I/18-08-2026-cellular-respiration.md"
+    },
+    {
+      "subject": "Matematik I",
+      "topic": "Vectors",
+      "date": "18-08-2026",
+      "sort": "2026-08-18",
+      "summary": "Vectors in 3-D space, the dot and cross products, the triple scalar product, and equations of lines and planes.",
+      "file": "18-08-2026-vectors.md",
+      "path": "content/lectures/Matematik I/18-08-2026-vectors.md"
+    },
+    {
+      "subject": "Kimia I",
+      "topic": "Chapter 6 - Periodic Table (Periodicity)",
+      "date": "17-08-2026",
+      "sort": "2026-08-17",
+      "summary": "Periodic table structure (periods, groups, blocks) and periodicity trends in atomic radius, ionic radius, ionisation energy, electronegativity and Period 3 oxide acid-base character.",
+      "file": "17-08-2026-periodic-table.md",
+      "path": "content/lectures/Kimia I/17-08-2026-periodic-table.md"
+    },
+    {
+      "subject": "Foundation English",
+      "topic": "MUET Listening (Paper 800/1) — Full Guide",
+      "date": "16-08-2026",
+      "sort": "2026-08-16",
+      "summary": "How the MUET Listening paper works, how it's marked, and how to answer each of its 5 parts with confidence.",
+      "file": "16-08-2026-muet-listening.md",
+      "path": "content/lectures/Foundation English/16-08-2026-muet-listening.md"
+    },
+    {
+      "subject": "Foundation English",
+      "topic": "MUET Reading (Paper 800/3) — Full Guide",
+      "date": "16-08-2026",
+      "sort": "2026-08-16",
+      "summary": "How the 7-part MUET Reading paper is structured, what each part tests, and how to manage time and technique for every question type.",
+      "file": "16-08-2026-muet-reading.md",
+      "path": "content/lectures/Foundation English/16-08-2026-muet-reading.md"
+    },
+    {
+      "subject": "Foundation English",
+      "topic": "MUET Speaking (Paper 800/2) — Full Guide",
+      "date": "16-08-2026",
+      "sort": "2026-08-16",
+      "summary": "How MUET Speaking (individual presentation + group discussion) is structured, marked, and how to prepare for it.",
+      "file": "16-08-2026-muet-speaking.md",
+      "path": "content/lectures/Foundation English/16-08-2026-muet-speaking.md"
+    },
+    {
+      "subject": "Foundation English",
+      "topic": "MUET Writing (Paper 800/4) — Full Guide",
+      "date": "16-08-2026",
+      "sort": "2026-08-16",
+      "summary": "How to tackle both MUET Writing tasks — the email/letter response and the 250-word essay — with structure, model language, and marking-criteria awareness.",
+      "file": "16-08-2026-muet-writing.md",
+      "path": "content/lectures/Foundation English/16-08-2026-muet-writing.md"
+    },
+    {
+      "subject": "Kimia I",
+      "topic": "Chapter 1: Matter and Measurement",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "What matter is made of, how we classify it, and how chemists measure it correctly — units, significant figures, accuracy vs precision, and dimensional analysis.",
+      "file": "13-08-2026-chapter-1-matter-and-measurement.md",
+      "path": "content/lectures/Kimia I/13-08-2026-chapter-1-matter-and-measurement.md"
+    },
+    {
+      "subject": "Kimia I",
+      "topic": "Chapter 2: Atomic Mass, Mole Concept and Concentration of Solutions",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "Protons, neutrons, isotopes and average atomic mass; the mole as chemistry's counting unit; empirical/molecular formulas; and the four ways to express solution concentration.",
+      "file": "13-08-2026-chapter-2-atomic-mass-mole-concept.md",
+      "path": "content/lectures/Kimia I/13-08-2026-chapter-2-atomic-mass-mole-concept.md"
+    },
+    {
+      "subject": "Kimia I",
+      "topic": "Chapter 3: Chemical Reaction Equations and Stoichiometry",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "Redox reactions and oxidation numbers, balancing equations (inspection and ion-electron methods), and stoichiometric calculations including limiting reagent and percentage yield.",
+      "file": "13-08-2026-chapter-3-reactions-and-stoichiometry.md",
+      "path": "content/lectures/Kimia I/13-08-2026-chapter-3-reactions-and-stoichiometry.md"
+    },
+    {
+      "subject": "Kimia I",
+      "topic": "Chapter 4: Atomic Structure",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "How the atomic model evolved from Dalton to Schrödinger, Bohr's model and its energy levels, and how the hydrogen line spectrum (Lyman, Balmer, Paschen...) reveals those energy levels.",
+      "file": "13-08-2026-chapter-4-atomic-structure.md",
+      "path": "content/lectures/Kimia I/13-08-2026-chapter-4-atomic-structure.md"
+    },
+    {
+      "subject": "Kimia I",
+      "topic": "Chapter 5: Quantum Numbers and Electron Configuration",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "The four quantum numbers that pinpoint an electron in an atom, orbital shapes, and the rules (Aufbau, Pauli, Hund) for writing electron configurations — including the Cr/Cu exceptions.",
+      "file": "13-08-2026-chapter-5-quantum-numbers-and-electron-configuration.md",
+      "path": "content/lectures/Kimia I/13-08-2026-chapter-5-quantum-numbers-and-electron-configuration.md"
+    },
+    {
+      "subject": "Biologi I",
+      "topic": "Topic 1: A View of Life",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "What makes something alive — the six characteristics of life and the levels of biological organization.",
+      "file": "13-08-2026-topic-1-a-view-of-life.md",
+      "path": "content/lectures/Biologi I/13-08-2026-topic-1-a-view-of-life.md"
+    },
+    {
+      "subject": "Industri Pertanian dan Makanan",
+      "topic": "Topic 1: Introduction and Importance of Agriculture Industry to the Country",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "What agriculture is, how it has developed, Malaysia's major agricultural sectors and agencies, the National Agro-food Policy 2.0, self-sufficiency levels, and why agriculture matters to the country.",
+      "file": "13-08-2026-topic-1-introduction-to-agriculture-industry.md",
+      "path": "content/lectures/Industri Pertanian dan Makanan/13-08-2026-topic-1-introduction-to-agriculture-industry.md"
+    },
+    {
+      "subject": "Industri Pertanian dan Makanan",
+      "topic": "Topic 2: Crop Production",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "How crops are arranged (cropping patterns) and managed (cropping systems such as mono-cropping, mixed cropping, rotation, and cash cropping), plus the key inputs — growing media, fertilisers, and pest/disease control — needed for crop production.",
+      "file": "13-08-2026-topic-2-crop-production.md",
+      "path": "content/lectures/Industri Pertanian dan Makanan/13-08-2026-topic-2-crop-production.md"
+    },
+    {
+      "subject": "Biologi I",
+      "topic": "Topic 2: Molecules of Life",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "Water's life-giving properties and the four biomolecules — carbohydrates, lipids, proteins, and nucleic acids.",
+      "file": "13-08-2026-topic-2-molecules-of-life.md",
+      "path": "content/lectures/Biologi I/13-08-2026-topic-2-molecules-of-life.md"
+    },
+    {
+      "subject": "Biologi I",
+      "topic": "Topic 3: Cell Structure and Function",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "The cell theory, prokaryotic vs eukaryotic cells, and a tour of every organelle in animal and plant cells.",
+      "file": "13-08-2026-topic-3-cell-structure-and-function.md",
+      "path": "content/lectures/Biologi I/13-08-2026-topic-3-cell-structure-and-function.md"
+    },
+    {
+      "subject": "Industri Pertanian dan Makanan",
+      "topic": "Topic 3: Crop Classification",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "How crops are classified by life cycle, use/commodity and botanical traits, plus a detailed look at horticulture (olericulture, pomology, viticulture, floriculture, turf, landscape) and Malaysia's key crops (rice, oil palm, rubber, coconut).",
+      "file": "13-08-2026-topic-3-crop-classification.md",
+      "path": "content/lectures/Industri Pertanian dan Makanan/13-08-2026-topic-3-crop-classification.md"
+    },
+    {
+      "subject": "Biologi I",
+      "topic": "Topic 4: Biology of the Plasma Membrane",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "The fluid mosaic membrane, passive and active transport, tonicity, and how cell surfaces are modified.",
+      "file": "13-08-2026-topic-4-plasma-membrane.md",
+      "path": "content/lectures/Biologi I/13-08-2026-topic-4-plasma-membrane.md"
+    },
+    {
+      "subject": "Industri Pertanian dan Makanan",
+      "topic": "Topic 4: Landscape and Nursery Industry",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "Nursery types, facilities and propagation methods; the herb and medicinal plant industry; and the landscape plant groups (shrubs, groundcover, trees, palms) plus turf grass.",
+      "file": "13-08-2026-topic-4-landscape-and-nursery-industry.md",
+      "path": "content/lectures/Industri Pertanian dan Makanan/13-08-2026-topic-4-landscape-and-nursery-industry.md"
+    },
+    {
+      "subject": "Industri Pertanian dan Makanan",
+      "topic": "Topic 5: Livestock Industry",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "Ruminant vs non-ruminant livestock, poultry and cattle farming systems, major breeds reared in Malaysia, and the products, byproducts, economic role and zoonotic risks of the livestock industry.",
+      "file": "13-08-2026-topic-5-livestock-industry.md",
+      "path": "content/lectures/Industri Pertanian dan Makanan/13-08-2026-topic-5-livestock-industry.md"
+    },
+    {
+      "subject": "Biologi I",
+      "topic": "Topic 5: Plant and Animal Tissues",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "The tissues of flowering plants (meristem, epidermal, ground, vascular) and the four animal tissues (epithelial, connective, muscular, nervous).",
+      "file": "13-08-2026-topic-5-plant-and-animal-tissues.md",
+      "path": "content/lectures/Biologi I/13-08-2026-topic-5-plant-and-animal-tissues.md"
+    },
+    {
+      "subject": "Biologi I",
+      "topic": "Topic 6: Enzymes",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "How enzymes speed up metabolic reactions — structure, activation energy, factors affecting rate, activation/inhibition, and real-world uses.",
+      "file": "13-08-2026-Topic 6 Enzyme.md",
+      "path": "content/lectures/Biologi I/13-08-2026-Topic 6 Enzyme.md"
+    },
+    {
+      "subject": "Industri Pertanian dan Makanan",
+      "topic": "Topic 6: Fishery Industry",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "Malaysia's fisheries subsectors (marine capture and inland), aquaculture systems and purposes, seaweed and ornamental fish farming, aquaculture site selection, and fishing methods and technology.",
+      "file": "13-08-2026-topic-6-fishery-industry.md",
+      "path": "content/lectures/Industri Pertanian dan Makanan/13-08-2026-topic-6-fishery-industry.md"
+    },
+    {
+      "subject": "Industri Pertanian dan Makanan",
+      "topic": "Topic 7: Introduction to Forestry and Agro-Forestry",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "The importance of Malaysia's forestry sector, its forest types and governance, major tree species and forestry products, and how agroforestry integrates trees with farming.",
+      "file": "13-08-2026-topic-7-forestry-and-agro-forestry.md",
+      "path": "content/lectures/Industri Pertanian dan Makanan/13-08-2026-topic-7-forestry-and-agro-forestry.md"
+    },
+    {
+      "subject": "Biologi I",
+      "topic": "Topic 7: Photosynthesis",
+      "date": "13-08-2026",
+      "sort": "2026-08-13",
+      "summary": "How plants convert light into chemical energy — light reactions, the Calvin cycle, and C3/C4/CAM adaptations.",
+      "file": "13-08-2026-Topic 7 Photosynthesis.md",
+      "path": "content/lectures/Biologi I/13-08-2026-Topic 7 Photosynthesis.md"
+    }
+  ]
 }

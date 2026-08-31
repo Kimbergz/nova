@@ -4,7 +4,7 @@
    scripts/build-manifest.mjs — never hand-edited).
    All content files are treated as UNTRUSTED:
    - Markdown -> marked -> DOMPurify.sanitize before display.
-   - Quiz/manifest strings -> HTML-escaped before display.
+   - Manifest strings -> HTML-escaped before display.
    No study content lives in this file. See CLAUDE.md.
    ============================================================ */
 (function () {
@@ -16,18 +16,16 @@
   /* ---------------- site chrome translations ---------------- */
   var STRINGS = {
     en: {
-      navSubjects: "Subjects", navQuizzes: "Quizzes", navPapers: "Papers",
-      subjects: "Subjects", notes: "Notes", quizzes: "Quizzes", papers: "Exam papers",
-      note: "Note", quiz: "Quiz", paper: "Paper", home: "Home", back: "Back",
+      navSubjects: "Subjects", navPapers: "Papers",
+      subjects: "Subjects", notes: "Notes", papers: "Exam papers",
+      note: "Note", paper: "Paper", home: "Home", back: "Back",
       loading: "Loading", emptyTag: "Status — empty",
-      searchPlaceholder: "Search notes, quizzes, papers…", searchAction: "Search",
+      searchPlaceholder: "Search notes, papers…", searchAction: "Search",
       latestNotes: "Latest notes", allSubjects: "All subjects",
       emptyNotesTitle: "No notes yet",
       emptyNotesHint: "Notes appear here automatically the moment a note file is dropped into the content/lectures folder on GitHub.",
-      emptyQuizzesTitle: "No quizzes yet",
-      emptyQuizzesHint: "Quizzes appear here automatically once a quiz file is dropped into the content/quizzes folder on GitHub.",
       emptyPapersTitle: "No exam papers yet",
-      emptyPapersHint: "Exam papers appear here automatically once a paper file is dropped into the content/exam-papers folder on GitHub.",
+      emptyPapersHint: "Exam papers show up here once a Google Drive folder link is added for this subject in config.js.",
       emptySubject: "Nothing here yet",
       notFoundTitle: "Page not found",
       notFoundHint: "This link points to something that does not exist (yet).",
@@ -35,34 +33,27 @@
       loadErrorHint: "The file may have been renamed or removed. Go back and try again.",
       indexErrorTitle: "Site index not ready",
       indexErrorHint: "manifest.json is generated automatically when the site is published on GitHub. Running locally? Run: node scripts/build-manifest.mjs",
-      answered: "Answered", correct: "Correct", explanation: "Why",
-      yourScore: "Your score", retry: "Try again",
-      takeQuiz: "Take the quiz", relatedNote: "Read the note",
-      startQuiz: "Start quiz", openPaper: "Open paper", readNote: "Read note",
-      showKey: "Show answer key", hideKey: "Hide answer key",
-      print: "Print", answerKey: "Answer key",
+      openPapersDrive: "Open exam papers", readNote: "Read note",
       resultsFor: "Results for", noResultsTitle: "Nothing found",
       noResultsHint: "Try a shorter word, or check the spelling.",
       settings: "Settings", language: "Language", textSize: "Text size",
       sizeS: "Small", sizeM: "Medium", sizeL: "Large", close: "Close",
       theme: "Appearance", themeLight: "Light", themeDark: "Dark", themeAuto: "Auto",
-      disclaimerLabel: "Disclaimer", questionsWord: "questions", marksWord: "marks",
+      disclaimerLabel: "Disclaimer",
       moreSoon: "More options will live here as the site grows.",
       sentTag: "Sent", errorTag: "Error"
     },
     ms: {
-      navSubjects: "Subjek", navQuizzes: "Kuiz", navPapers: "Kertas",
-      subjects: "Subjek", notes: "Nota", quizzes: "Kuiz", papers: "Kertas peperiksaan",
-      note: "Nota", quiz: "Kuiz", paper: "Kertas", home: "Utama", back: "Kembali",
+      navSubjects: "Subjek", navPapers: "Kertas",
+      subjects: "Subjek", notes: "Nota", papers: "Kertas peperiksaan",
+      note: "Nota", paper: "Kertas", home: "Utama", back: "Kembali",
       loading: "Memuatkan", emptyTag: "Status — kosong",
-      searchPlaceholder: "Cari nota, kuiz, kertas…", searchAction: "Cari",
+      searchPlaceholder: "Cari nota, kertas…", searchAction: "Cari",
       latestNotes: "Nota terkini", allSubjects: "Semua subjek",
       emptyNotesTitle: "Belum ada nota",
       emptyNotesHint: "Nota akan muncul di sini secara automatik sebaik sahaja fail nota diletakkan dalam folder content/lectures di GitHub.",
-      emptyQuizzesTitle: "Belum ada kuiz",
-      emptyQuizzesHint: "Kuiz akan muncul di sini secara automatik sebaik sahaja fail kuiz diletakkan dalam folder content/quizzes di GitHub.",
       emptyPapersTitle: "Belum ada kertas peperiksaan",
-      emptyPapersHint: "Kertas peperiksaan akan muncul di sini secara automatik sebaik sahaja fail diletakkan dalam folder content/exam-papers di GitHub.",
+      emptyPapersHint: "Kertas peperiksaan akan muncul di sini sebaik sahaja pautan folder Google Drive ditambah untuk subjek ini dalam config.js.",
       emptySubject: "Belum ada apa-apa di sini",
       notFoundTitle: "Halaman tidak dijumpai",
       notFoundHint: "Pautan ini menuju ke sesuatu yang belum wujud.",
@@ -70,18 +61,13 @@
       loadErrorHint: "Fail mungkin telah dinamakan semula atau dipadam. Sila kembali dan cuba lagi.",
       indexErrorTitle: "Indeks laman belum sedia",
       indexErrorHint: "manifest.json dijana secara automatik semasa laman diterbitkan di GitHub. Jalankan secara lokal: node scripts/build-manifest.mjs",
-      answered: "Dijawab", correct: "Betul", explanation: "Kenapa",
-      yourScore: "Markah anda", retry: "Cuba lagi",
-      takeQuiz: "Jawab kuiz", relatedNote: "Baca nota",
-      startQuiz: "Mula kuiz", openPaper: "Buka kertas", readNote: "Baca nota",
-      showKey: "Tunjuk skema jawapan", hideKey: "Sembunyikan skema jawapan",
-      print: "Cetak", answerKey: "Skema jawapan",
+      openPapersDrive: "Buka kertas peperiksaan", readNote: "Baca nota",
       resultsFor: "Hasil carian untuk", noResultsTitle: "Tiada hasil",
       noResultsHint: "Cuba perkataan lebih pendek, atau semak ejaan.",
       settings: "Tetapan", language: "Bahasa", textSize: "Saiz teks",
       sizeS: "Kecil", sizeM: "Sedang", sizeL: "Besar", close: "Tutup",
       theme: "Penampilan", themeLight: "Cerah", themeDark: "Gelap", themeAuto: "Auto",
-      disclaimerLabel: "Penafian", questionsWord: "soalan", marksWord: "markah",
+      disclaimerLabel: "Penafian",
       moreSoon: "Lebih banyak pilihan akan ditambah di sini.",
       sentTag: "Dihantar", errorTag: "Ralat"
     }
@@ -150,12 +136,11 @@
     close: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg>',
     check: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 8.5l3.5 3.5L13.5 4"/></svg>',
     cross: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg>',
-    print: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 6V2h8v4M4 11H2V6h12v5h-2M4 9h8v5H4z"/></svg>',
     voice: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 3.5h11v8H6L2.5 15v-3.5z"/></svg>'
   };
 
   /* ---------------- manifest state ---------------- */
-  var manifest = { subjects: [], notes: [], quizzes: [], papers: [] };
+  var manifest = { subjects: [], notes: [] };
   var manifestFailed = false;
   var renderToken = 0;
   var appEl = null;
@@ -165,9 +150,7 @@
     data = data || {};
     return {
       subjects: Array.isArray(data.subjects) ? data.subjects : [],
-      notes: Array.isArray(data.notes) ? data.notes : [],
-      quizzes: Array.isArray(data.quizzes) ? data.quizzes : [],
-      papers: Array.isArray(data.papers) ? data.papers : []
+      notes: Array.isArray(data.notes) ? data.notes : []
     };
   }
   function loadManifest() {
@@ -202,26 +185,57 @@
     return String(b.sort || "").localeCompare(String(a.sort || "")) ||
            String(a.topic || a.title || "").localeCompare(String(b.topic || b.title || ""));
   }
+  /* Natural / numeric-aware compare on filenames, e.g. so "topic-2" sorts
+     before "topic-10" instead of after (plain string sort would put "10"
+     before "2"). Splits each string into alternating text/number chunks
+     and compares number chunks as numbers, text chunks as text. Used to
+     list a subject's notes in curriculum order (topic 1, 2, 3…) instead
+     of the order they happened to be uploaded in. */
+  function naturalCompare(a, b) {
+    var re = /(\d+)|(\D+)/g;
+    var chunksA = String(a || "").match(re) || [];
+    var chunksB = String(b || "").match(re) || [];
+    var len = Math.max(chunksA.length, chunksB.length);
+    for (var i = 0; i < len; i++) {
+      var ca = chunksA[i], cb = chunksB[i];
+      if (ca === undefined) return -1;
+      if (cb === undefined) return 1;
+      var na = /^\d+$/.test(ca), nb = /^\d+$/.test(cb);
+      if (na && nb) {
+        var diff = parseInt(ca, 10) - parseInt(cb, 10);
+        if (diff) return diff;
+      } else {
+        var cmp = ca.toLowerCase().localeCompare(cb.toLowerCase());
+        if (cmp) return cmp;
+      }
+    }
+    return 0;
+  }
+  /* Filenames are DD-MM-YYYY-topic.md (date first, so they sort sensibly
+     on GitHub) — sorting on the raw filename would let that leading
+     day/month/year dominate the comparison and just reproduce date order.
+     Sort on the note's displayed topic instead (falling back to the
+     filename with its date prefix stripped, for the rare note with no
+     topic set) — that's also what "Topic 6" vs "Topic 10" numbering
+     naturally lives in, since topics are written by hand with the
+     chapter/topic number included. */
+  function sortNameOf(note) {
+    return note.topic || String(note.file || "").replace(/^\d{2}-\d{2}-\d{4}[-\s]*/, "");
+  }
   function notesFor(subject) {
-    return manifest.notes.filter(function (n) { return n.subject === subject; }).sort(byDateDesc);
+    return manifest.notes.filter(function (n) { return n.subject === subject; })
+      .sort(function (a, b) { return naturalCompare(sortNameOf(a), sortNameOf(b)); });
   }
-  function quizzesFor(subject) {
-    return manifest.quizzes.filter(function (q) { return q.subject === subject; });
-  }
-  function papersFor(subject) {
-    return manifest.papers.filter(function (p) { return p.subject === subject; });
+  function paperLinkFor(subject) {
+    var links = CFG.paperLinks || {};
+    var url = links[subject];
+    return typeof url === "string" && url.trim() ? url.trim() : "";
   }
   function findNote(subject, file) {
     return manifest.notes.filter(function (n) { return n.subject === subject && n.file === file; })[0];
   }
-  function findQuiz(subject, id) {
-    return manifest.quizzes.filter(function (q) { return q.subject === subject && q.id === id; })[0];
-  }
-  function findPaper(subject, file) {
-    return manifest.papers.filter(function (p) { return p.subject === subject && p.file === file; })[0];
-  }
 
-  /* ---------------- "Talk to us" (private vent / academic help) ---------------- */
+  /* ---------------- "Talk to us" (private academic help / idea box) ---------------- */
   function voiceEnabled() {
     return !!(CFG.voice && CFG.voice.enabled !== false && CFG.voice.formEndpoints);
   }
@@ -229,7 +243,7 @@
     return (CFG.voice && CFG.voice[kind]) || {};
   }
   function voiceKindKnown(kind) {
-    return kind === "academic" || kind === "vent";
+    return kind === "academic" || kind === "idea";
   }
 
   /* ---------------- markdown (untrusted -> sanitized) ---------------- */
@@ -337,7 +351,6 @@
         '<a class="brand" href="#/">' + esc(CFG.siteName || "cairn") + "</a>" +
         '<nav class="site-nav" aria-label="Main">' +
           '<a href="' + href("subjects") + '"' + cls("subjects") + ">" + esc(t("navSubjects")) + "</a>" +
-          '<a href="' + href("quizzes") + '"' + cls("quizzes") + ">" + esc(t("navQuizzes")) + "</a>" +
           '<a href="' + href("papers") + '"' + cls("papers") + ">" + esc(t("navPapers")) + "</a>" +
           (voiceEnabled() ? '<a href="' + href("voice") + '"' + cls("voice") + ">" + esc(pick(CFG.voice.navLabel)) + "</a>" : "") +
         "</nav>" +
@@ -347,13 +360,17 @@
       "</div></header>";
   }
   function footerHtml() {
+    var analyticsLine = (CFG.analyticsId && String(CFG.analyticsId).trim())
+      ? '<p class="foot-analytics">' + esc(pick(CFG.analyticsNote)) + "</p>"
+      : "";
     return '<footer class="site-foot">' +
       '<div class="wrap">' +
         '<div class="foot-brand">' + esc(CFG.siteName || "cairn") + '<span class="dot">.</span></div>' +
         '<p class="foot-disclaimer"><span class="mono-label">' + esc(t("disclaimerLabel")) + " — </span>" +
           esc(pick(CFG.disclaimer)) + "</p>" +
+        analyticsLine +
         '<div class="foot-meta">' +
-          '<span class="mono-label">' + esc(CFG.siteName || "cairn") + " · static archive · github pages</span>" +
+          '<span class="foot-tag">' + esc(CFG.siteName || "cairn") + " · static archive · github pages</span>" +
           '<button type="button" class="mono-label" data-action="open-settings">' + esc(t("settings")) + "</button>" +
         "</div>" +
       "</div></footer>";
@@ -430,25 +447,14 @@
       '<span class="row-end"><span class="row-arrow">' + ICONS.arrow + "</span></span>" +
     "</a>";
   }
-  function quizRow(quizMeta, index) {
-    return '<a class="row" href="' + href("quiz", quizMeta.subject, quizMeta.id) + '">' +
-      '<span class="row-num">' + pad2(index + 1) + "</span>" +
-      '<span class="row-main">' +
-        '<span class="mono-label row-meta">' + esc(subjectLabel(quizMeta.subject)) + " · " + esc(t("quiz")) +
-          " · " + pad2(quizMeta.count) + " " + esc(t("questionsWord")) + "</span>" +
-        '<span class="row-title">' + esc(quizMeta.title) + "</span>" +
-      "</span>" +
-      '<span class="row-end"><span class="row-arrow">' + ICONS.arrow + "</span></span>" +
-    "</a>";
-  }
-  function paperRow(paper, index) {
-    return '<a class="row" href="' + href("paper", paper.subject, paper.file) + '">' +
-      '<span class="row-num">' + pad2(index + 1) + "</span>" +
-      '<span class="row-main">' +
-        '<span class="mono-label row-meta">' + esc(subjectLabel(paper.subject)) + " · " + esc(t("paper")) + "</span>" +
-        '<span class="row-title">' + esc(paper.title) + "</span>" +
-      "</span>" +
-      '<span class="row-end"><span class="row-arrow">' + ICONS.arrow + "</span></span>" +
+  /* Papers are no longer individual files on this site — each subject
+     with a link configured (config.js: paperLinks) gets one button that
+     opens that subject's Google Drive folder in a new tab. */
+  function papersButtonHtml(subject) {
+    var url = paperLinkFor(subject);
+    if (!url) return emptyBox("emptyPapersTitle", "emptyPapersHint");
+    return '<a class="pill pill--acid papers-drive-btn" href="' + esc(url) + '" target="_blank" rel="noopener">' +
+      esc(subjectLabel(subject)) + " — " + esc(t("openPapersDrive")) + " " + ICONS.arrow +
     "</a>";
   }
   function searchFormHtml(prefill) {
@@ -478,11 +484,6 @@
           lines.map(function (line) {
             return '<span class="statement-line">' + esc(line) + "</span>";
           }).join("") +
-        "</div>" +
-        '<div class="hero-foot">' +
-          '<div class="stat"><span class="stat-num">' + pad2(manifest.notes.length) + '</span><span class="mono-label">' + esc(t("notes")) + "</span></div>" +
-          '<div class="stat"><span class="stat-num">' + pad2(manifest.quizzes.length) + '</span><span class="mono-label">' + esc(t("quizzes")) + "</span></div>" +
-          '<div class="stat"><span class="stat-num">' + pad2(manifest.papers.length) + '</span><span class="mono-label">' + esc(t("papers")) + "</span></div>" +
         "</div>" +
       "</div></section>";
 
@@ -529,21 +530,17 @@
       subjectRowsHtml(subjects) +
     "</div></section>";
 
-    return hero + voiceBanner + banner + search + indexWarning + latestSection + subjectsSection;
+    return hero + banner + search + indexWarning + latestSection + subjectsSection + voiceBanner;
   }
 
   function subjectRowsHtml(subjects) {
     return '<div class="index-rows">' + subjects.map(function (subject, i) {
       var n = notesFor(subject).length;
-      var q = quizzesFor(subject).length;
-      var p = papersFor(subject).length;
-      var counts = (n + q + p) === 0
-        ? esc(t("emptySubject"))
-        : esc([
-            n + " " + t("notes").toLowerCase(),
-            q + " " + t("quizzes").toLowerCase(),
-            p + " " + t("papers").toLowerCase()
-          ].join(" · "));
+      var hasPapers = !!paperLinkFor(subject);
+      var parts = [];
+      if (n) parts.push(n + " " + t("notes").toLowerCase());
+      if (hasPapers) parts.push(t("papers").toLowerCase());
+      var counts = parts.length ? esc(parts.join(" · ")) : esc(t("emptySubject"));
       return '<a class="row" href="' + href("subject", subject) + '">' +
         '<span class="row-num">' + pad2(i + 1) + "</span>" +
         '<span class="row-main">' +
@@ -567,8 +564,6 @@
     var known = subjectList().indexOf(subject) !== -1;
     if (!known) return notFoundHtml();
     var notes = notesFor(subject);
-    var quizzes = quizzesFor(subject);
-    var papers = papersFor(subject);
     var body =
       crumbsHtml([{ label: t("home"), href: "#/" }, { label: t("subjects"), href: href("subjects") }, { label: subjectLabel(subject) }]) +
       '<div class="page-head">' +
@@ -579,53 +574,30 @@
         (notes.length
           ? '<div class="index-rows">' + notes.map(noteRow).join("") + "</div>"
           : emptyBox("emptyNotesTitle", "emptyNotesHint")) +
-        labelRow(esc(t("quizzes")), pad2(quizzes.length)) +
-        (quizzes.length
-          ? '<div class="index-rows">' + quizzes.map(quizRow).join("") + "</div>"
-          : emptyBox("emptyQuizzesTitle", "emptyQuizzesHint")) +
-        labelRow(esc(t("papers")), pad2(papers.length)) +
-        (papers.length
-          ? '<div class="index-rows">' + papers.map(paperRow).join("") + "</div>"
-          : emptyBox("emptyPapersTitle", "emptyPapersHint")) +
+        labelRow(esc(t("papers"))) +
+        papersButtonHtml(subject) +
       "</div>";
     return sectionPaper(body);
   }
 
-  function quizzesPageHtml() {
-    var all = manifest.quizzes;
-    var body = crumbsHtml([{ label: t("home"), href: "#/" }, { label: t("quizzes") }]) +
-      '<div class="page-head"><h1 class="page-title page-title--sans">' + esc(t("quizzes")) + "</h1></div>";
-    if (!all.length) return sectionPaper(body + emptyBox("emptyQuizzesTitle", "emptyQuizzesHint"));
-    var grouped = subjectList().map(function (subject) {
-      var items = quizzesFor(subject);
-      if (!items.length) return "";
-      return labelRow(esc(subjectLabel(subject)), pad2(items.length)) +
-        '<div class="index-rows">' + items.map(quizRow).join("") + "</div>";
-    }).join("");
-    return sectionPaper(body + '<div class="stack">' + grouped + "</div>");
-  }
-
   function papersPageHtml() {
-    var all = manifest.papers;
+    var subjects = subjectList();
+    var linked = subjects.filter(function (s) { return !!paperLinkFor(s); });
     var body = crumbsHtml([{ label: t("home"), href: "#/" }, { label: t("papers") }]) +
       '<div class="page-head"><h1 class="page-title page-title--sans">' + esc(t("papers")) + "</h1></div>";
-    if (!all.length) return sectionPaper(body + emptyBox("emptyPapersTitle", "emptyPapersHint"));
-    var grouped = subjectList().map(function (subject) {
-      var items = papersFor(subject);
-      if (!items.length) return "";
-      return labelRow(esc(subjectLabel(subject)), pad2(items.length)) +
-        '<div class="index-rows">' + items.map(paperRow).join("") + "</div>";
-    }).join("");
-    return sectionPaper(body + '<div class="stack">' + grouped + "</div>");
+    if (!linked.length) return sectionPaper(body + emptyBox("emptyPapersTitle", "emptyPapersHint"));
+    var buttons = '<div class="papers-drive-list">' +
+      linked.map(function (s) { return papersButtonHtml(s); }).join("") +
+    "</div>";
+    return sectionPaper(body + buttons);
   }
 
   function searchPageHtml(query) {
     var needle = String(query || "").trim().toLowerCase();
     function hit(value) { return String(value || "").toLowerCase().indexOf(needle) !== -1; }
     var noteHits = needle ? manifest.notes.filter(function (n) { return hit(n.subject) || hit(subjectLabel(n.subject)) || hit(n.topic) || hit(n.summary); }) : [];
-    var quizHits = needle ? manifest.quizzes.filter(function (q) { return hit(q.subject) || hit(subjectLabel(q.subject)) || hit(q.title); }) : [];
-    var paperHits = needle ? manifest.papers.filter(function (p) { return hit(p.subject) || hit(subjectLabel(p.subject)) || hit(p.title); }) : [];
-    var total = noteHits.length + quizHits.length + paperHits.length;
+    var paperHits = needle ? subjectList().filter(function (s) { return !!paperLinkFor(s) && (hit(s) || hit(subjectLabel(s))); }) : [];
+    var total = noteHits.length + paperHits.length;
 
     var body = crumbsHtml([{ label: t("home"), href: "#/" }, { label: t("searchAction") }]) +
       '<div class="page-head">' +
@@ -643,8 +615,7 @@
     }
     var out = "";
     if (noteHits.length) out += labelRow(esc(t("notes")), pad2(noteHits.length)) + '<div class="index-rows">' + noteHits.map(noteRow).join("") + "</div>";
-    if (quizHits.length) out += labelRow(esc(t("quizzes")), pad2(quizHits.length)) + '<div class="index-rows">' + quizHits.map(quizRow).join("") + "</div>";
-    if (paperHits.length) out += labelRow(esc(t("papers")), pad2(paperHits.length)) + '<div class="index-rows">' + paperHits.map(paperRow).join("") + "</div>";
+    if (paperHits.length) out += labelRow(esc(t("papers")), pad2(paperHits.length)) + '<div class="papers-drive-list">' + paperHits.map(function (s) { return papersButtonHtml(s); }).join("") + "</div>";
     return sectionPaper(body + '<div class="stack">' + out + "</div>");
   }
 
@@ -657,7 +628,6 @@
     fetchText(note.path).then(function (md) {
       if (token !== renderToken) return;
       var html = renderMarkdown(stripFrontmatter(md), dirOf(note.path));
-      var quizMeta = note.quiz ? findQuiz(subject, note.quiz) : null;
       paintView(sectionPaper(
         crumbsHtml([
           { label: t("home"), href: "#/" },
@@ -669,10 +639,6 @@
             (note.date ? " · " + esc(note.date) : "") + " · " + esc(t("note")) + "</span>" +
           '<h1 class="page-title">' + esc(note.topic) + "</h1>" +
           (note.summary ? '<p class="page-sub">' + esc(note.summary) + "</p>" : "") +
-          (quizMeta
-            ? '<div class="page-actions"><a class="pill pill--acid" href="' + href("quiz", subject, quizMeta.id) + '">' +
-                esc(t("takeQuiz")) + " " + ICONS.arrow + "</a></div>"
-            : "") +
         "</div>" +
         '<article class="prose">' + html + "</article>" +
         '<div class="page-actions"><a class="pill pill--outline" href="' + href("subject", subject) + '">' + esc(t("back")) + "</a></div>"
@@ -682,276 +648,6 @@
       if (token !== renderToken) return;
       paintView(loadErrorHtml(href("subject", subject)));
     });
-  }
-
-  /* ---------------- quiz view (async fetch + interaction) ---------------- */
-  var quizState = null;
-
-  function validQuestions(data) {
-    var list = (data && Array.isArray(data.questions)) ? data.questions : [];
-    return list.filter(function (q) {
-      return q && typeof q.q === "string" && q.q.trim() &&
-        Array.isArray(q.options) && q.options.length >= 2 &&
-        typeof q.answer === "number" && q.answer >= 0 && q.answer < q.options.length;
-    });
-  }
-
-  /* Subjective / free-response questions: no options — "answer" is the
-     worked-solution text (used by quizzes that don't fit multiple choice,
-     e.g. calculation-heavy structured questions). */
-  function validSubjectiveQuestions(data) {
-    var list = (data && Array.isArray(data.questions)) ? data.questions : [];
-    return list.filter(function (q) {
-      return q && typeof q.q === "string" && q.q.trim() &&
-        typeof q.answer === "string" && q.answer.trim();
-    });
-  }
-
-  /* Escape untrusted text, then turn blank-line-separated paragraphs into
-     <p> tags and single line breaks into <br>. Used for subjective quiz
-     question/answer text, which is often multi-line (worked solutions). */
-  function escMulti(value) {
-    var safe = esc(value);
-    var paras = safe.split(/\n{2,}/);
-    return paras.map(function (p) { return "<p>" + p.replace(/\n/g, "<br>") + "</p>"; }).join("");
-  }
-
-  function quizPage(subject, id) {
-    var meta = findQuiz(subject, id);
-    if (!meta) { paint("quizzes", notFoundHtml()); return; }
-    paint("quizzes", loadingHtml());
-    var token = renderToken;
-    fetchText(meta.path).then(function (text) {
-      if (token !== renderToken) return;
-      var data;
-      try { data = JSON.parse(text); } catch (err) { throw new Error("bad JSON: " + err.message); }
-
-      var mcqQuestions = validQuestions(data);
-      if (mcqQuestions.length) {
-        renderMcqQuiz(subject, meta, data, mcqQuestions);
-        return;
-      }
-      var subjQuestions = validSubjectiveQuestions(data);
-      if (!subjQuestions.length) { paintView(loadErrorHtml(href("subject", subject))); return; }
-      renderSubjectiveQuiz(subject, meta, data, subjQuestions);
-    }).catch(function (err) {
-      console.error("[cairn] quiz load failed:", err);
-      if (token !== renderToken) return;
-      paintView(loadErrorHtml(href("subject", subject)));
-    });
-  }
-
-  function renderMcqQuiz(subject, meta, data, questions) {
-    quizState = { total: questions.length, answered: 0, correct: 0 };
-    var relatedNote = manifest.notes.filter(function (n) {
-      return n.subject === subject && n.quiz === meta.id;
-    })[0];
-
-    var blocks = questions.map(function (q, qi) {
-      var opts = q.options.map(function (option, oi) {
-        return '<button type="button" class="opt" data-action="quiz-option" data-opt="' + oi + '">' +
-          '<span class="opt-key">' + String.fromCharCode(65 + oi) + "</span>" +
-          "<span>" + esc(option) + "</span>" +
-          '<span class="opt-mark-slot" aria-hidden="true"></span>' +
-        "</button>";
-      }).join("");
-      var explain = (typeof q.explain === "string" && q.explain.trim())
-        ? '<div class="explain"><span class="mono-label">' + esc(t("explanation")) + "</span>" + esc(q.explain) + "</div>"
-        : "";
-      return '<div class="q-block" data-answer="' + q.answer + '">' +
-        '<div class="q-head"><span class="mono-label">Q' + pad2(qi + 1) + '</span><span class="q-text">' + esc(q.q) + "</span></div>" +
-        '<div class="opts">' + opts + "</div>" + explain +
-      "</div>";
-    }).join("");
-
-    paintView(sectionPaper(
-      crumbsHtml([
-        { label: t("home"), href: "#/" },
-        { label: subjectLabel(subject), href: href("subject", subject) },
-        { label: t("quiz") }
-      ]) +
-      '<div class="page-head">' +
-        '<span class="mono-label page-meta">' + esc(subjectLabel(subject)) + " · " + esc(t("quiz")) +
-          " · " + pad2(questions.length) + " " + esc(t("questionsWord")) + "</span>" +
-        '<h1 class="page-title">' + esc(data.title || meta.title) + "</h1>" +
-        (relatedNote
-          ? '<div class="page-actions"><a class="pill pill--outline" href="' + href("note", subject, relatedNote.file) + '">' + esc(t("relatedNote")) + "</a></div>"
-          : "") +
-      "</div>" +
-      '<div class="quiz-bar">' +
-        '<span class="mono-label">' + esc(t("answered")) + ' <strong id="quiz-answered">00</strong>/' + pad2(questions.length) + "</span>" +
-        '<span class="mono-label">' + esc(t("correct")) + ' <strong id="quiz-correct">00</strong></span>' +
-      "</div>" +
-      blocks +
-      '<div class="quiz-final" id="quiz-final">' +
-        '<span class="mono-label">' + esc(t("yourScore")) + "</span>" +
-        '<div class="score-big" id="quiz-score"></div>' +
-        '<div class="page-actions">' +
-          '<button type="button" class="pill pill--acid" data-action="retry-quiz">' + esc(t("retry")) + "</button>" +
-          '<a class="pill pill--outline" href="' + href("subject", subject) + '">' + esc(t("back")) + "</a>" +
-        "</div>" +
-      "</div>"
-    ));
-  }
-
-  /* Subjective quiz: no clicking / scoring — list every question, then a
-     Show/Hide "answer key" panel underneath (same pattern already used for
-     exam papers) revealing every worked answer in the same order. */
-  function renderSubjectiveQuiz(subject, meta, data, questions) {
-    quizState = null;
-    var relatedNote = manifest.notes.filter(function (n) {
-      return n.subject === subject && n.quiz === meta.id;
-    })[0];
-
-    var qBlocks = questions.map(function (q, qi) {
-      var marks = (typeof q.marks === "number" && q.marks > 0)
-        ? '<span class="mono-label q-marks">' + q.marks + " " + esc(t("marksWord")) + "</span>"
-        : "";
-      return '<div class="q-block">' +
-        '<div class="q-head"><span class="mono-label">Q' + pad2(qi + 1) + "</span>" + marks + "</div>" +
-        '<div class="q-text q-text--multi">' + escMulti(q.q) + "</div>" +
-      "</div>";
-    }).join("");
-
-    var aBlocks = questions.map(function (q, qi) {
-      return '<div class="q-block">' +
-        '<div class="q-head"><span class="mono-label">A' + pad2(qi + 1) + "</span></div>" +
-        '<div class="answer-text">' + escMulti(q.answer) + "</div>" +
-      "</div>";
-    }).join("");
-
-    paintView(sectionPaper(
-      crumbsHtml([
-        { label: t("home"), href: "#/" },
-        { label: subjectLabel(subject), href: href("subject", subject) },
-        { label: t("quiz") }
-      ]) +
-      '<div class="page-head">' +
-        '<span class="mono-label page-meta">' + esc(subjectLabel(subject)) + " · " + esc(t("quiz")) +
-          " · " + pad2(questions.length) + " " + esc(t("questionsWord")) + "</span>" +
-        '<h1 class="page-title">' + esc(data.title || meta.title) + "</h1>" +
-        (relatedNote
-          ? '<div class="page-actions no-print"><a class="pill pill--outline" href="' + href("note", subject, relatedNote.file) + '">' + esc(t("relatedNote")) + "</a></div>"
-          : "") +
-      "</div>" +
-      qBlocks +
-      '<div class="keywrap">' +
-        '<button type="button" class="pill pill--outline no-print" data-action="toggle-key"' +
-          ' data-show="' + esc(t("showKey")) + '" data-hide="' + esc(t("hideKey")) + '">' +
-          '<span class="key-toggle-label">' + esc(t("showKey")) + "</span>" +
-        "</button>" +
-        '<div class="key-body">' +
-          labelRow(esc(t("answerKey"))) +
-          aBlocks +
-        "</div>" +
-      "</div>" +
-      '<div class="page-actions no-print"><a class="pill pill--outline" href="' + href("subject", subject) + '">' + esc(t("back")) + "</a></div>"
-    ));
-  }
-
-  function handleQuizOption(button) {
-    var block = button.closest(".q-block");
-    if (!block || block.getAttribute("data-done") === "1" || !quizState) return;
-    block.setAttribute("data-done", "1");
-    var answer = parseInt(block.getAttribute("data-answer"), 10);
-    var picked = parseInt(button.getAttribute("data-opt"), 10);
-    var options = block.querySelectorAll(".opt");
-    for (var i = 0; i < options.length; i++) {
-      options[i].disabled = true;
-      var slot = options[i].querySelector(".opt-mark-slot");
-      if (i === answer) {
-        options[i].classList.add("is-correct");
-        if (slot) slot.innerHTML = ICONS.check;
-      } else if (i === picked) {
-        options[i].classList.add("is-wrong");
-        if (slot) slot.innerHTML = ICONS.cross;
-      } else {
-        options[i].classList.add("is-dim");
-      }
-    }
-    var explain = block.querySelector(".explain");
-    if (explain) explain.classList.add("is-open");
-
-    quizState.answered += 1;
-    if (picked === answer) quizState.correct += 1;
-    var answeredEl = document.getElementById("quiz-answered");
-    var correctEl = document.getElementById("quiz-correct");
-    if (answeredEl) answeredEl.textContent = pad2(quizState.answered);
-    if (correctEl) correctEl.textContent = pad2(quizState.correct);
-
-    if (quizState.answered === quizState.total) {
-      var finalPanel = document.getElementById("quiz-final");
-      var score = document.getElementById("quiz-score");
-      if (score) score.textContent = quizState.correct + "/" + quizState.total;
-      if (finalPanel) {
-        finalPanel.classList.add("is-open");
-        finalPanel.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-    }
-  }
-
-  /* ---------------- exam paper view (async fetch) ---------------- */
-  function splitAnswerKey(md) {
-    var match = /^##\s+(answer key|skema jawapan)\s*$/im.exec(md);
-    if (!match) return { body: md, key: "" };
-    return {
-      body: md.slice(0, match.index),
-      key: md.slice(match.index + match[0].length)
-    };
-  }
-
-  function paperPage(subject, file) {
-    var paper = findPaper(subject, file);
-    if (!paper) { paint("papers", notFoundHtml()); return; }
-    paint("papers", loadingHtml());
-    var token = renderToken;
-    fetchText(paper.path).then(function (md) {
-      if (token !== renderToken) return;
-      var split = splitAnswerKey(stripFrontmatter(md));
-      var baseDir = dirOf(paper.path);
-      var keySection = split.key.trim()
-        ? '<div class="keywrap">' +
-            '<button type="button" class="pill pill--outline no-print" data-action="toggle-key"' +
-              ' data-show="' + esc(t("showKey")) + '" data-hide="' + esc(t("hideKey")) + '">' +
-              '<span class="key-toggle-label">' + esc(t("showKey")) + "</span>" +
-            "</button>" +
-            '<div class="key-body">' +
-              labelRow(esc(t("answerKey"))) +
-              '<article class="prose">' + renderMarkdown(split.key, baseDir) + "</article>" +
-            "</div>" +
-          "</div>"
-        : "";
-      paintView(sectionPaper(
-        crumbsHtml([
-          { label: t("home"), href: "#/" },
-          { label: subjectLabel(subject), href: href("subject", subject) },
-          { label: t("paper") }
-        ]) +
-        '<div class="page-head">' +
-          '<span class="mono-label page-meta">' + esc(subjectLabel(subject)) + " · " + esc(t("paper")) + "</span>" +
-          '<h1 class="page-title">' + esc(paper.title) + "</h1>" +
-          '<div class="page-actions"><button type="button" class="pill pill--acid no-print" data-action="print">' +
-            ICONS.print + " " + esc(t("print")) + "</button></div>" +
-        "</div>" +
-        '<article class="prose">' + renderMarkdown(split.body, baseDir) + "</article>" +
-        keySection +
-        '<div class="page-actions no-print"><a class="pill pill--outline" href="' + href("subject", subject) + '">' + esc(t("back")) + "</a></div>"
-      ));
-    }).catch(function (err) {
-      console.error("[cairn] paper load failed:", err);
-      if (token !== renderToken) return;
-      paintView(loadErrorHtml(href("subject", subject)));
-    });
-  }
-
-  function toggleAnswerKey(button) {
-    var wrap = button.closest(".keywrap");
-    if (!wrap) return;
-    var body = wrap.querySelector(".key-body");
-    var label = button.querySelector(".key-toggle-label");
-    if (!body) return;
-    var open = body.classList.toggle("is-open");
-    if (label) label.textContent = open ? button.getAttribute("data-hide") : button.getAttribute("data-show");
   }
 
   /* ---------------- "Talk to us" view (private form -> Formspree) ---------------- */
@@ -980,7 +676,7 @@
         (pick(v.introText) ? '<p class="page-sub">' + esc(pick(v.introText)) + "</p>" : "") +
       "</div>" +
       '<div class="callout">' + esc(pick(v.confidentialNote)) + "</div>" +
-      '<div class="card-grid voice-cards">' + voiceEntryCard("academic") + voiceEntryCard("vent") + "</div>"
+      '<div class="card-grid voice-cards">' + voiceEntryCard("academic") + voiceEntryCard("idea") + "</div>"
     );
   }
 
@@ -1140,21 +836,18 @@
   /* ---------------- render dispatcher ---------------- */
   function render() {
     renderToken += 1;
-    quizState = null;
     var current = route();
     switch (current.name) {
       case "home": paint("", homeHtml()); break;
       case "subjects": paint("subjects", subjectsPageHtml()); break;
       case "subject": paint("subjects", subjectPageHtml(current.parts[0] || "")); break;
       case "note": notePage(current.parts[0] || "", current.parts[1] || ""); break;
-      case "quizzes": paint("quizzes", quizzesPageHtml()); break;
-      case "quiz": quizPage(current.parts[0] || "", current.parts[1] || ""); break;
       case "papers": paint("papers", papersPageHtml()); break;
-      case "paper": paperPage(current.parts[0] || "", current.parts[1] || ""); break;
       case "voice": paint("voice", voicePageHtml(current.parts[0] || "")); break;
       case "search": paint("", searchPageHtml(current.parts.join("/"))); break;
       default: paint("", notFoundHtml());
     }
+    trackPageview(current);
   }
 
   /* ---------------- global event delegation ---------------- */
@@ -1176,10 +869,6 @@
       setPref(PREF_THEME, target.getAttribute("data-value"));
       applyPrefs(); renderSettings();
     }
-    else if (action === "quiz-option") handleQuizOption(target);
-    else if (action === "toggle-key") toggleAnswerKey(target);
-    else if (action === "print") window.print();
-    else if (action === "retry-quiz") render();
     else if (action === "retry-voice") paintView(voiceFormHtml(target.getAttribute("data-kind")));
   });
   document.addEventListener("submit", function (event) {
@@ -1201,6 +890,34 @@
     if (event.key === "Escape") closeSettings();
   });
 
+  /* ---------------- analytics (optional, config.js: analyticsId) ----------------
+     NOVA is a single hash-routed page, so GA's own automatic pageview only
+     fires once on load. We turn that off (send_page_view: false) and fire
+     a page_view event ourselves on every route change instead, so each
+     note/subject/etc. visited actually counts as its own pageview. */
+  function initAnalytics() {
+    var id = CFG.analyticsId && String(CFG.analyticsId).trim();
+    if (!id) return;
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag("js", new Date());
+    gtag("config", id, { send_page_view: false });
+    var script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
+    document.head.appendChild(script);
+  }
+  function trackPageview(current) {
+    if (!window.gtag) return;
+    var path = "/" + (current.name || "home") + (current.parts.length ? "/" + current.parts.join("/") : "");
+    window.gtag("event", "page_view", {
+      page_path: "#" + path,
+      page_title: document.title,
+      page_location: location.href
+    });
+  }
+
   /* ---------------- boot ---------------- */
   function init() {
     appEl = document.getElementById("app");
@@ -1210,6 +927,7 @@
       return;
     }
     applyPrefs();
+    initAnalytics();
     window.addEventListener("hashchange", function () {
       closeSettings();
       render();
