@@ -34,7 +34,8 @@
       indexErrorTitle: "Site index not ready",
       indexErrorHint: "manifest.json is generated automatically when the site is published on GitHub. Running locally? Run: node scripts/build-manifest.mjs",
       openPapersDrive: "Open exam papers", readNote: "Read note",
-      resultsFor: "Results for", noResultsTitle: "Nothing found",
+      resultsFor: "Results for", foundInNotes: "Found inside notes", searchingNotes: "Searching your notes",
+      noResultsTitle: "Nothing found",
       noResultsHint: "Try a shorter word, or check the spelling.",
       settings: "Settings", language: "Language", textSize: "Text size",
       sizeS: "Small", sizeM: "Medium", sizeL: "Large", close: "Close",
@@ -62,7 +63,8 @@
       indexErrorTitle: "Indeks laman belum sedia",
       indexErrorHint: "manifest.json dijana secara automatik semasa laman diterbitkan di GitHub. Jalankan secara lokal: node scripts/build-manifest.mjs",
       openPapersDrive: "Buka kertas peperiksaan", readNote: "Baca nota",
-      resultsFor: "Hasil carian untuk", noResultsTitle: "Tiada hasil",
+      resultsFor: "Hasil carian untuk", foundInNotes: "Dijumpai dalam nota", searchingNotes: "Mencari dalam nota anda",
+      noResultsTitle: "Tiada hasil",
       noResultsHint: "Cuba perkataan lebih pendek, atau semak ejaan.",
       settings: "Tetapan", language: "Bahasa", textSize: "Saiz teks",
       sizeS: "Kecil", sizeM: "Sedang", sizeL: "Besar", close: "Tutup",
@@ -592,20 +594,75 @@
     return sectionPaper(body + buttons);
   }
 
-  function searchPageHtml(query) {
-    var needle = String(query || "").trim().toLowerCase();
-    function hit(value) { return String(value || "").toLowerCase().indexOf(needle) !== -1; }
-    var noteHits = needle ? manifest.notes.filter(function (n) { return hit(n.subject) || hit(subjectLabel(n.subject)) || hit(n.topic) || hit(n.summary); }) : [];
-    var paperHits = needle ? subjectList().filter(function (s) { return !!paperLinkFor(s) && (hit(s) || hit(subjectLabel(s))); }) : [];
-    var total = noteHits.length + paperHits.length;
+  /* Full-text search inside note bodies. The manifest only carries
+     title/summary, not content, so matching INSIDE a note means actually
+     fetching it. We fetch each note's text once (only the notes not
+     already searched this visit) and cache the cleaned-up plain text, so
+     repeat searches are instant after the first one. Results come back
+     in two waves: title/subject/summary matches render immediately (no
+     fetch needed), then content matches fill in once their files load. */
+  var noteBodyCache = {};
 
+  /* Strip the frontmatter block, then knock down common Markdown syntax
+     (headings, bold/italic, links, code fences, list bullets, table
+     pipes) so search snippets read as plain sentences instead of raw
+     Markdown. Not a full parser — just enough for clean-looking snippets. */
+  function plainifyMarkdown(md) {
+    return stripFrontmatter(md)
+      .replace(/```[\s\S]*?```/g, " ")
+      .replace(/`([^`]*)`/g, "$1")
+      .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+      .replace(/^#{1,6}\s*/gm, "")
+      .replace(/[*_]{1,3}([^*_]+)[*_]{1,3}/g, "$1")
+      .replace(/^\s*[-*+]\s+/gm, "")
+      .replace(/\|/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+  function fetchNoteBody(note) {
+    if (Object.prototype.hasOwnProperty.call(noteBodyCache, note.path)) {
+      return Promise.resolve(noteBodyCache[note.path]);
+    }
+    return fetchText(note.path)
+      .then(function (md) { return (noteBodyCache[note.path] = plainifyMarkdown(md)); })
+      .catch(function () { return (noteBodyCache[note.path] = ""); });
+  }
+  function snippetAround(text, needle, radius) {
+    var idx = text.toLowerCase().indexOf(needle);
+    if (idx === -1) return "";
+    var start = Math.max(0, idx - radius);
+    var end = Math.min(text.length, idx + needle.length + radius);
+    return (start > 0 ? "…" : "") + text.slice(start, end).trim() + (end < text.length ? "…" : "");
+  }
+  function highlightSnippet(snippet, needle) {
+    var idx = snippet.toLowerCase().indexOf(needle.toLowerCase());
+    if (idx === -1) return esc(snippet);
+    return esc(snippet.slice(0, idx)) + "<mark>" + esc(snippet.slice(idx, idx + needle.length)) + "</mark>" +
+      esc(snippet.slice(idx + needle.length));
+  }
+  function noteContentRow(hit, index) {
+    var note = hit.note;
+    return '<a class="row" href="' + href("note", note.subject, note.file) + '">' +
+      '<span class="row-num">' + pad2(index + 1) + "</span>" +
+      '<span class="row-main">' +
+        '<span class="mono-label row-meta">' + esc(subjectLabel(note.subject)) + (note.date ? " · " + esc(note.date) : "") + "</span>" +
+        '<span class="row-title">' + esc(note.topic) + "</span>" +
+        '<span class="row-sub search-snippet">' + hit.snippetHtml + "</span>" +
+      "</span>" +
+      '<span class="row-end"><span class="row-arrow">' + ICONS.arrow + "</span></span>" +
+    "</a>";
+  }
+
+  function searchResultsHtml(query, metaHits, contentHits, paperHits, scanning) {
+    var total = metaHits.length + contentHits.length + paperHits.length;
     var body = crumbsHtml([{ label: t("home"), href: "#/" }, { label: t("searchAction") }]) +
       '<div class="page-head">' +
         '<span class="mono-label page-meta">' + esc(t("resultsFor")) + " “" + esc(query) + "” — " + pad2(total) + "</span>" +
         searchFormHtml(query) +
       "</div>";
 
-    if (!total) {
+    if (!total && !scanning) {
       return sectionPaper(body +
         '<div class="empty">' +
           '<span class="mono-label">' + esc(t("emptyTag")) + "</span>" +
@@ -614,9 +671,39 @@
         "</div>");
     }
     var out = "";
-    if (noteHits.length) out += labelRow(esc(t("notes")), pad2(noteHits.length)) + '<div class="index-rows">' + noteHits.map(noteRow).join("") + "</div>";
+    if (metaHits.length) out += labelRow(esc(t("notes")), pad2(metaHits.length)) + '<div class="index-rows">' + metaHits.map(noteRow).join("") + "</div>";
+    if (contentHits.length) out += labelRow(esc(t("foundInNotes")), pad2(contentHits.length)) + '<div class="index-rows">' + contentHits.map(noteContentRow).join("") + "</div>";
+    if (scanning) out += '<div class="search-scanning"><span class="mono-label">' + esc(t("searchingNotes")) + " …</span></div>";
     if (paperHits.length) out += labelRow(esc(t("papers")), pad2(paperHits.length)) + '<div class="papers-drive-list">' + paperHits.map(function (s) { return papersButtonHtml(s); }).join("") + "</div>";
     return sectionPaper(body + '<div class="stack">' + out + "</div>");
+  }
+
+  function searchPage(query) {
+    var needle = String(query || "").trim().toLowerCase();
+    function hit(value) { return String(value || "").toLowerCase().indexOf(needle) !== -1; }
+    var metaHits = needle ? manifest.notes.filter(function (n) { return hit(n.subject) || hit(subjectLabel(n.subject)) || hit(n.topic) || hit(n.summary); }) : [];
+    var paperHits = needle ? subjectList().filter(function (s) { return !!paperLinkFor(s) && (hit(s) || hit(subjectLabel(s))); }) : [];
+
+    if (!needle) { paint("", searchResultsHtml(query, [], [], [], false)); return; }
+
+    var matched = {};
+    metaHits.forEach(function (n) { matched[n.path] = true; });
+    var candidates = manifest.notes.filter(function (n) { return !matched[n.path]; });
+
+    var token = renderToken;
+    if (!candidates.length) { paint("", searchResultsHtml(query, metaHits, [], paperHits, false)); return; }
+
+    paint("", searchResultsHtml(query, metaHits, [], paperHits, true));
+    Promise.all(candidates.map(function (n) {
+      return fetchNoteBody(n).then(function (body) {
+        return body.toLowerCase().indexOf(needle) === -1
+          ? null
+          : { note: n, snippetHtml: highlightSnippet(snippetAround(body, needle, 60), needle) };
+      });
+    })).then(function (results) {
+      if (token !== renderToken) return;
+      paintView(searchResultsHtml(query, metaHits, results.filter(Boolean), paperHits, false));
+    });
   }
 
   /* ---------------- note view (async fetch) ---------------- */
@@ -844,7 +931,7 @@
       case "note": notePage(current.parts[0] || "", current.parts[1] || ""); break;
       case "papers": paint("papers", papersPageHtml()); break;
       case "voice": paint("voice", voicePageHtml(current.parts[0] || "")); break;
-      case "search": paint("", searchPageHtml(current.parts.join("/"))); break;
+      case "search": searchPage(current.parts.join("/")); break;
       default: paint("", notFoundHtml());
     }
     trackPageview(current);
