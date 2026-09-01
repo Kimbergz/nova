@@ -920,10 +920,51 @@
     if (meta) meta.setAttribute("content", dark ? "#1A1A1D" : "#F9F6F0");
   }
 
+  /* ---------------- page title (browser tab + GA page_title) ----------------
+     The tab title used to always say "NOVA — study notes" no matter what
+     page you were on, since this is one HTML page that never reloads. That
+     also meant Google Analytics' "Pages and screens" report couldn't tell
+     pages apart by title (only by the #/... path). Set a real per-page
+     title here, before anything paints — trackPageview() below reads
+     document.title, so this has to run first. */
+  function pageTitleFor(current) {
+    var parts = current.parts;
+    switch (current.name) {
+      case "home": return "";
+      case "subjects": return t("subjects");
+      case "subject": {
+        var subject = parts[0] || "";
+        return subjectList().indexOf(subject) === -1 ? t("notFoundTitle") : subjectLabel(subject);
+      }
+      case "note": {
+        var note = findNote(parts[0] || "", parts[1] || "");
+        return note ? note.topic : t("notFoundTitle");
+      }
+      case "papers": return t("papers");
+      case "voice": {
+        var kind = parts[0];
+        if (!kind) return voiceEnabled() ? pick(CFG.voice.navLabel) : t("notFoundTitle");
+        if (!voiceKindKnown(kind)) return t("notFoundTitle");
+        return pick(voiceCopy(kind).cardTitle) || pick(CFG.voice.navLabel);
+      }
+      case "search": {
+        var query = parts.join("/");
+        return query ? t("searchAction") + ": " + query : t("searchAction");
+      }
+      default: return t("notFoundTitle");
+    }
+  }
+  function setDocumentTitle(current) {
+    var site = CFG.siteName || "NOVA";
+    var pageTitle = pageTitleFor(current);
+    document.title = pageTitle ? pageTitle + " · " + site : site + " — study notes";
+  }
+
   /* ---------------- render dispatcher ---------------- */
   function render() {
     renderToken += 1;
     var current = route();
+    setDocumentTitle(current);
     switch (current.name) {
       case "home": paint("", homeHtml()); break;
       case "subjects": paint("subjects", subjectsPageHtml()); break;

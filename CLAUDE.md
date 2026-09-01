@@ -50,6 +50,10 @@ The owner adds ALL study material by hand. Claude builds/maintains the ENGINE on
   (`analyticsId`). When set, app.js injects gtag.js itself and fires a
   manual `page_view` on every hash-route change (GA's automatic pageview
   only fires once on a page like this, since it never reloads).
+- `document.title` is set per-route in `setDocumentTitle()` (called at the
+  top of `render()`, before anything paints) — e.g. a note's tab title is
+  its topic, not a static "NOVA — study notes". This also feeds Google
+  Analytics' page_title, so add a case there for any new route.
 - Search matches note titles/subjects/summaries instantly (from manifest.json),
   then also searches inside note bodies — fetched and cached in the browser
   on first search, so it's a network request per uncached note, not free.
