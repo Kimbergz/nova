@@ -103,7 +103,7 @@ window.SITE_CONFIG = {
      Leave it as "" to keep analytics off completely — nothing
      extra loads and no visitor data is collected.
      ========================================================== */
-  analyticsId: "",
+  analyticsId: "G-XEWBC8WBFT",
 
   // Shown as a small line in the footer, but ONLY once analyticsId
   // above is filled in. Keep it honest about what's actually running.
