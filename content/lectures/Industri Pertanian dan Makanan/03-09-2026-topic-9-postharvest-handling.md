@@ -1,15 +1,13 @@
 ---
 subject: Agriculture and Food Industry
-topic: Postharvest Handling
+topic: "Topic 9: Postharvest Handling"
 date: 03-09-2026
 summary: How crops, livestock/poultry, and fish are handled after harvest to cut losses and extend shelf life.
 ---
 
-# Postharvest Handling
+# Topic 9: Postharvest Handling
 
 *ASA0104 Agriculture and Food Industry — Lecture 9, Agriculture Unit, Centre for Foundation Studies in Science, Universiti Putra Malaysia*
-
-![Fresh fruits and vegetables](https://commons.wikimedia.org/wiki/Special:FilePath/Fresh_fruits_and_vegetables_in_2020_08.jpg?width=900)
 
 ## Learning Outcomes
 
@@ -69,13 +67,19 @@ Four common pre-cooling methods:
 
 **(A) Room cooling** — Low-cost, slow method. Produce is simply loaded into a cool room and cool air is allowed to circulate among the cartons, sacks, bins, or pallet bins.
 
+![Room cooling](images/room-cooling.png)
+
 **(B) Forced-air cooling** — The fastest pre-cooling method and the one most widely used across horticultural produce. Cold air is pulled or pushed through vents/holes in the storage containers; uniform cooling is achieved when pallet-bin stacks are properly aligned.
+
+![Forced-air cooling](images/forced-air-cooling.jpg)
 
 **(C) Hydro-cooling** — One of the fastest precooling methods. Produce is cooled rapidly by direct contact with cold, moving water. Its advantage is that it doesn't remove water from the produce, and can even revive slightly wilted produce.
 
+![Hydro-cooling](images/hydro-cooling.jpg)
+
 **(D) Vacuum cooling** — Cooling happens through water evaporation from the product at very low air pressure, inside a sealed steel chamber from which air is pumped out. It causes roughly **1% produce weight loss (mostly water) for every 6 °C of cooling**.
 
-![Cold storage room](https://commons.wikimedia.org/wiki/Special:FilePath/Cold_Room.jpg?width=800)
+![Vacuum cooling](images/vacuum-cooling.jpg)
 
 ### 1.3 Washing and Cleaning
 
