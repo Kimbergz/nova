@@ -25,7 +25,7 @@ Split into two main types based on distance from shore:
 | **Range** | Within **30 nautical miles** of the coastline | Beyond **30 nautical miles** from the shoreline |
 | **Target species** | **Pelagic species** (live near the surface) | **Demersal/benthic species** (live near the seabed) |
 | **Status** | Already at **maximum level of exploitation** | Fishers moving further offshore as technology improves |
-| **Examples** | Shrimp, Indian mackerel, round scads, squid, tuna, anchovies, ox-eye scads | — |
+| **Examples** | Shrimp, Indian mackerel, round scads, squid, tuna, anchovies, ox-eye scads | Silver white coraker, Gray mullet, Stringray, Red snapper. Largehead hairtail, Cuttlefish |
 
 ![Traditional purse seine fishing boat](https://commons.wikimedia.org/wiki/Special:FilePath/Kapal%20Nelayan%20Purse%20Seine%201.jpg?width=600)
 *Image: "Kapal Nelayan Purse Seine 1" by Toriqun Nuril Anwar, Wikimedia Commons (CC BY-SA 4.0).*
