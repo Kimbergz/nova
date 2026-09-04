@@ -144,13 +144,13 @@ A firmness (pressure) tester is a simple, practical tool: a probe is pushed into
 
 ### Key definitions
 
-- **Abattoir** — A food factory where every operation is governed by standards of hygiene and animal welfare, aiming to produce wholesome meat for consumers in the most humane way possible.
+- **Abattoir (Slaughter house)** — A food factory where every operation is governed by standards of hygiene and animal welfare, aiming to produce wholesome meat for consumers in the most humane way possible.
 - **Carcass** — The harvested, dressed animal, with the hide, hooves, head, and internal organs removed.
 - **Lairage** — The place where animals are rested before slaughter, to preserve enough glycogen for it to be converted into lactic acid.
 
 ### Slaughtering
 
-Slaughtering refers to the killing of domestic livestock. It involves initial cutting to open the major body cavities and remove the entrails, usually keeping the carcass in one piece, which is then butchered into smaller cuts. It can be carried out by two broad methods:
+Slaughtering refers to the killing of domestic livestock. It involves initial cutting to open the major body cavities and remove the entrails (internal organs), usually keeping the carcass in one piece, which is then butchered into smaller cuts. It can be carried out by two broad methods:
 
 | Traditional | Modern |
 |---|---|
@@ -169,9 +169,9 @@ Environmental factors (temperature, humidity), improper resting time, feeding, s
 
 1. **Procurement** — the age of the bird is judged by feeling the pliability of the posterior breast with the fingers.
 2. **Lairage** — birds rest for about 6 hours to preserve glycogen reserves.
-3. **Ante-mortem inspection** — carcasses are checked for obvious signs of disease, extreme emaciation, and lumps.
+3. **Ante-mortem inspection (Before slaughtering)** — Poultries are checked for obvious signs of disease, extreme emaciation, and lumps.
 4. **Bleeding** — done for 2 minutes per bird; roughly 60% of the blood is lost on sticking, 22–25% remains under the viscera, and 10% stays in the carcass.
-5. **Scalding** — birds are dipped in hot water to loosen feather follicles (dip-scald or spray-scald).
+5. **Scalding** — birds are dipped in hot water to loosen feather follicles(Pores) via dip-scald or spray-scald.
 6. **Picking** — feather removal by hand-picking, a blunt knife, or mechanical pickers.
 7. **Pinning** — removal of remaining pin-like feathers with a knife.
 8. **Singeing** — remaining filoplumes are burned off with a flame for surface sterilization and a clean, uniform appearance.
