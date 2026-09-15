@@ -66,7 +66,7 @@ A **naked virus** has no envelope around the capsid; an **enveloped virus** has 
 
 ![The lytic cycle (attachment, penetration, biosynthesis, maturation, release) and its branch point into the lysogenic cycle](images/lytic-lysogenic-cycle-overview.jpg)
 
-**Lysogenic cycle:** After the phage DNA is inserted, it can instead **integrate into the host cell's DNA** with no destruction of the host DNA. The integrated, dormant viral DNA is called a **prophage**; the phage is said to be **latent**. The prophage is replicated along with the host's DNA every time the bacterium divides, so all descendant ("lysogenic") cells carry a copy of the prophage genome — viral reproduction doesn't happen immediately, but may occur later. Certain environmental factors (UV radiation, nutrient scarcity, chemical treatment, etc.) can induce the prophage to **re-enter the lytic cycle**, resuming the lytic steps above and ultimately bursting the cell.
+**Lysogenic cycle:** After the phage DNA is inserted, it can instead **integrate into the host cell's DNA** with no destruction of the host DNA. The integrated, dormant viral DNA is called a **prophage**; the phage is said to be **dormant**. The prophage is replicated along with the host's DNA every time the bacterium divides, so all descendant ("lysogenic") cells carry a copy of the prophage genome — viral reproduction doesn't happen immediately, but may occur later. Certain environmental factors (UV radiation, nutrient scarcity, chemical treatment, etc.) can induce the prophage to **re-enter the lytic cycle**, resuming the lytic steps above and ultimately bursting the cell.
 
 ![The lysogenic cycle followed across bacterial generations, and its trigger back into the lytic cycle](images/lysogenic-cycle-generational.jpg)
 
@@ -80,7 +80,7 @@ A **retrovirus** is a type of virus that specifically contains **RNA** (instead 
 
 1. **Attachment** — the animal virus attaches to a host-cell receptor; enveloped viruses fuse with the cell's plasma membrane.
 2. **Entry** — capsid and nucleic acid are released into the host cell's cytoplasm; the capsid is removed by enzymes, uncoating and releasing the viral RNA.
-3. **Reverse transcription** — the enzyme **reverse transcriptase** converts the viral RNA into complementary DNA (cDNA), which becomes double-stranded and is then **integrated** into the host's DNA (via the enzyme integrase) as a **provirus**. The provirus is replicated whenever the host DNA replicates, and the retrovirus can remain latent in the host genome for years. (The "retro" in retrovirus refers to this reverse — RNA to DNA — process.)
+3. **Reverse transcription** — the enzyme **reverse transcriptase** converts the viral RNA into complementary DNA (cDNA), which becomes double-stranded and is then **integrated** into the host's DNA (via the enzyme integrase) as a **provirus**. The provirus is replicated whenever the host DNA replicates, and the retrovirus can remain dormant in the host genome for years. (The "retro" in retrovirus refers to this reverse — RNA to DNA — process.)
 4. **Biosynthesis** — the provirus is transcribed into viral mRNA and translated to make the proteins/enzymes needed for new retrovirus components.
 5. **Maturation** — retrovirus components (capsid, viral RNA, viral enzymes) are assembled into new retroviruses.
 6. **Release** — new retroviruses **bud** off the cell, using the host's plasma membrane to form their new viral envelope.

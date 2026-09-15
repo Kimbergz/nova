@@ -77,7 +77,7 @@ window.SITE_CONFIG = {
      normal "no papers yet" message for it.
      ========================================================== */
   paperLinks: {
-    "Industri Pertanian dan Makanan": "",
+    "Industri Pertanian dan Makanan": "https://drive.google.com/drive/folders/1lnFKGpiDTxlNaUvBaC4lOexJvVnGKxMa?usp=sharing",
     "Keusahawanan dan Pemasaran Produk Pertanian": "",
     "Biologi I": "",
     "Biologi II": "",
