@@ -79,7 +79,7 @@ window.SITE_CONFIG = {
   paperLinks: {
     "Industri Pertanian dan Makanan": "https://drive.google.com/drive/folders/1lnFKGpiDTxlNaUvBaC4lOexJvVnGKxMa?usp=sharing",
     "Keusahawanan dan Pemasaran Produk Pertanian": "",
-    "Biologi I": "",
+    "Biologi I": "https://drive.google.com/drive/folders/155oI05C5y_dy6jFHi_BSoimzjsYDlyXr?usp=sharing",
     "Biologi II": "",
     "Kimia I": "",
     "Kimia II": "",
