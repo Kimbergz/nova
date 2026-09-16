@@ -81,7 +81,7 @@ window.SITE_CONFIG = {
     "Keusahawanan dan Pemasaran Produk Pertanian": "",
     "Biologi I": "https://drive.google.com/drive/folders/155oI05C5y_dy6jFHi_BSoimzjsYDlyXr?usp=sharing",
     "Biologi II": "",
-    "Kimia I": "",
+    "Kimia I": "https://drive.google.com/drive/folders/12SgQ87PiHJTtFgM5aw7_8stuQ8BGjUQh?usp=drive_link",
     "Kimia II": "",
     "Matematik I": "",
     "Matematik II": "",
