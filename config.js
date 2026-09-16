@@ -83,7 +83,7 @@ window.SITE_CONFIG = {
     "Biologi II": "",
     "Kimia I": "https://drive.google.com/drive/folders/12SgQ87PiHJTtFgM5aw7_8stuQ8BGjUQh?usp=drive_link",
     "Kimia II": "",
-    "Matematik I": "",
+    "Matematik I": "https://drive.google.com/drive/folders/1B8dGEjc9g_Js3CSmwRE1SAxI4T8PVZPu?usp=drive_link",
     "Matematik II": "",
     "Fizik I": "https://drive.google.com/drive/folders/1c-nPkZefbqzRqV8oml3ozhkeeJX8VpCm?usp=drive_link",
     "Fizik II": "",
