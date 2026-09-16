@@ -85,7 +85,7 @@ window.SITE_CONFIG = {
     "Kimia II": "",
     "Matematik I": "",
     "Matematik II": "",
-    "Fizik I": "",
+    "Fizik I": "https://drive.google.com/drive/folders/1c-nPkZefbqzRqV8oml3ozhkeeJX8VpCm?usp=drive_link",
     "Fizik II": "",
     "Foundation English": "",
     "Academic English Skills": ""
